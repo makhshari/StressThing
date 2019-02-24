@@ -1,0 +1,42 @@
+{
+  "thing 1":
+  {
+  "IP":"http://192.168.1.15",
+  "method":"GET",
+  "Services":[
+    {
+      "device":{
+         "path":"/api/device",
+         "description":"Set and get the device discovery configuration and see its status. In order to get the current device configuration, call without any parameters and to change the device configuration, supply at least one of the following parameters.",
+         "parameters":[
+            {
+              "param":"name",
+              "param-type":"string",
+              "param-description":"Device network name"
+            },
+            {
+              "param":"description",
+              "param-type":"string",
+              "param-description":"Name to discover device by"
+            },
+            {
+              "param":"uuid",
+              "param-type":"string",
+              "param-description":"device unique identifier"
+            },
+            {
+              "param":"user",
+              "param-type":"string",
+              "param-description":"Login name"
+            },
+            {
+              "param":"pass",
+              "param-type":"string",
+              "param-description":"Login password"
+            }
+          ]
+        }
+     }
+    ]
+  }
+}
