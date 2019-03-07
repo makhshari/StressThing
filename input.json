@@ -1,11 +1,11 @@
 {
-  "thing 1":
+  "things":[
   {
+  "name":"AMH thing",
   "IP":"http://192.168.1.15",
   "method":"GET",
-  "Services":[
-    {
-      "device":{
+  "services":[
+      {
          "path":"/api/device",
          "description":"Set and get the device discovery configuration and see its status. In order to get the current device configuration, call without any parameters and to change the device configuration, supply at least one of the following parameters.",
          "parameters":[
@@ -35,8 +35,27 @@
               "param-description":"Login password"
             }
           ]
-        }
-     }
+        },
+     {
+        "path":"/api/state",
+        "description":"Set and get the light color and intensity state of the bulb. In order to get the current state, call without any parameters. In order to change the state, supply at least one of the following parameters. ",
+        "parameters":[
+           {
+             "param":"color",
+             "param-type":"Number",
+             "param-description":"A hex number between 000000 and ffffff representing the RGB color value to be set"
+           },
+           {
+             "param":"fade",
+             "param-type":"Number",
+             "param-description":"The morphing time during which the transition from the current state to the new state should take place. An integer number with units of 10ms"
+           }
+          ]
+       }
     ]
+  },
+  {
+    "name":"thing 2"
   }
+]
 }
