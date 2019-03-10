@@ -3,11 +3,12 @@
   {
   "name":"AMH thing",
   "IP":"http://192.168.1.15",
-  "method":"GET",
   "services":[
       {
          "path":"/api/device",
          "description":"Set and get the device discovery configuration and see its status. In order to get the current device configuration, call without any parameters and to change the device configuration, supply at least one of the following parameters.",
+         "method":"GET",
+         "query-parameters":"No",
          "parameters":[
             {
               "param":"name",
@@ -39,6 +40,7 @@
      {
         "path":"/api/state",
         "description":"Set and get the light color and intensity state of the bulb. In order to get the current state, call without any parameters. In order to change the state, supply at least one of the following parameters. ",
+        "method":"GET",
         "parameters":[
            {
              "param":"color",
