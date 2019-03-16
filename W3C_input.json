@@ -1,0 +1,154 @@
+{
+"things": [{
+  "id": "urn:dev:wot:com:example:servient:lamp",
+  "name": "MyLampThing",
+  "description" : "MyLampThing uses JSON-LD 1.1 serialization",
+  "security": [{"scheme": "psk"}],
+  "properties": {
+      "status": {
+          "description" : "Shows the current status of the lamp",
+          "type": "string",
+          "forms": [{
+              "href": "coaps://mylamp.example.com/status"
+          }]
+      }
+  },
+  "actions": {
+      "toggle": {
+          "description" : "Turn on or off the lamp",
+          "forms": [{
+              "href": "coaps://mylamp.example.com/toggle"
+          }]
+      }
+  },
+  "events": {
+      "overheating": {
+          "description" : "Lamp reaches a critical temperature (overheating)",
+          "type": "string",
+          "forms": [{
+              "href": "coaps://mylamp.example.com/oh"
+          }]
+      }
+  }
+},
+{
+  "@context": "http://www.w3.org/ns/td",
+  "@type": "Thing",
+  "id": "urn:dev:wot:com:example:servient:myThing",
+  "name": "MyThing",
+  "description": "Additional (human) readable information of the Thing.",
+  "support": "https://servient.example.com/contact",
+  "security": [
+    {
+      "scheme": "digest",
+      "proxyUrl": "https://portal.example.com/"
+    },
+    {
+      "scheme": "bearer",
+      "format": "jwt",
+      "alg": "ES256",
+      "authorizationUrl": "https://servient.example.com:8443/"
+    }
+  ],
+  "base": "https://servient.example.com/",
+  "properties": {
+    "on": {
+        "@type": "iot:SwitchToggle",
+        "label": "On/Off",
+        "writable": false,
+        "observable": false,
+        "type": "boolean",
+        "forms": [{
+          "href" : "http://mytemp.example.com:5683/temp",
+          "mediaType": "application/json",
+          "http:methodName": "POST",
+          "rel": "writeProperty",
+          "security": [{"scheme":"basic", "in":"header"}]
+      }]
+    },
+    "status": {
+        "writable": false,
+        "observable": false,
+        "type": "object",
+        "properties": {
+            "brightness": {
+                "@type": "iot:CurrentLevel",
+                "type": "number",
+                "minimum": 0.0,
+                "maximum": 100.0
+            },
+            "rgb": {
+                "@type": "iot:rgbData",
+                "type": "array",
+                "items" : {
+                    "type" : "number",
+                    "minimum": 0,
+                    "maximum": 255
+                },
+                "minItems": 3,
+                "maxItems": 3
+            }
+        },
+        "required": ["brightness","rgb"],
+        "forms": [{
+          "href" : "http://mytemp.example.com:5683/temp",
+          "mediaType": "application/json",
+          "http:methodName": "POST",
+          "rel": "writeProperty",
+          "security": [{"scheme":"basic", "in":"header"}]
+      }]
+    }
+  },
+  "actions":{
+    "fade":{
+        "label": "Fade in/out",
+        "description": "Smooth fade in and out animation.",
+        "input": {
+            "type": "object",
+            "properties": {
+                "from": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 100
+                },
+                "to": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 100
+                },
+                "duration": {"type": "number"}
+            },
+            "required": ["to","duration"]
+        },
+        "output": {"type": "string"},
+        "forms": [{
+          "href" : "http://mytemp.example.com:5683/temp",
+          "mediaType": "application/json",
+          "http:methodName": "POST",
+          "rel": "writeProperty",
+          "security": [{"scheme":"basic", "in":"header"}]
+      }]
+    }
+  },
+    "event": {
+      "overheated": {
+          "type": "object",
+          "properties": {
+              "temperature": { "type": "number" }
+          },
+          "forms": [{
+            "href" : "http://mytemp.example.com:5683/temp",
+            "mediaType": "application/json",
+            "http:methodName": "POST",
+            "rel": "writeProperty",
+            "security": [{"scheme":"basic", "in":"header"}]
+        }]
+      },
+      "links": [{
+        "href": "https://servient.example.com/things/lampController",
+        "rel": "controlledBy",
+        "mediaType": "application/td+json"
+    }]
+    }
+}
+]}

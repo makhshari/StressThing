@@ -1,0 +1,6 @@
+Created the tree successfully using /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-34-14.553965/modified_requests.jmx
+Starting the test @ Sat Mar 16 19:34:41 IRST 2019 (1552752281760)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4446
+Command: Shutdown received from /127.0.0.1
+Tidying up ...    @ Sat Mar 16 19:38:45 IRST 2019 (1552752525589)
+... end of run

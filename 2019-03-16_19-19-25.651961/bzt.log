@@ -1,0 +1,772 @@
+[2019-03-16 19:19:25,474 INFO root] Taurus CLI Tool v1.13.2
+[2019-03-16 19:19:25,475 DEBUG root] Command-line options: {'log': '/var/folders/9w/fj8tc51n59dgtrxfgskpxd9h0000gn/T/bzt_35nmsqhq.log', 'option': None, 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': []}
+[2019-03-16 19:19:25,475 DEBUG root] Python: CPython 3.7.2
+[2019-03-16 19:19:25,475 DEBUG root] OS: uname_result(system='Darwin', node='amirhosein-mac.local', release='17.5.0', version='Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64', machine='x86_64', processor='i386')
+[2019-03-16 19:19:25,476 INFO root] Starting with configs: ['output.json']
+[2019-03-16 19:19:25,476 DEBUG root] Using personal config: /Users/apple/.bzt-rc
+[2019-03-16 19:19:25,476 INFO Engine] Configuring...
+[2019-03-16 19:19:25,540 DEBUG Engine] Base configs list: ['/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/resources/10-base-config.yml']
+[2019-03-16 19:19:25,540 DEBUG Engine.Configuration] Configs: ['/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/resources/10-base-config.yml']
+[2019-03-16 19:19:25,541 DEBUG Engine.Configuration] Reading /usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/resources/10-base-config.yml as YAML
+[2019-03-16 19:19:25,617 DEBUG Engine] User configs list: ['/Users/apple/.bzt-rc', 'output.json']
+[2019-03-16 19:19:25,617 DEBUG Engine.Configuration] Configs: ['/Users/apple/.bzt-rc', 'output.json']
+[2019-03-16 19:19:25,618 DEBUG Engine.Configuration] Reading /Users/apple/.bzt-rc as YAML
+[2019-03-16 19:19:25,628 DEBUG Engine.Configuration] Reading output.json as YAML
+[2019-03-16 19:19:25,631 DEBUG Engine.Configuration] Configs: ['/Users/apple/.bzt-rc', 'output.json']
+[2019-03-16 19:19:25,632 DEBUG Engine.Configuration] Reading /Users/apple/.bzt-rc as YAML
+[2019-03-16 19:19:25,644 DEBUG Engine.Configuration] Reading output.json as YAML
+[2019-03-16 19:19:25,651 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.13.2&installID=macos-3c075440e027
+[2019-03-16 19:19:25,653 DEBUG HTTPClient] Making HTTP request GET http://gettaurus.org/updates/?version=1.13.2&installID=macos-3c075440e027
+[2019-03-16 19:19:25,652 INFO Engine] Artifacts dir: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961
+[2019-03-16 19:19:25,658 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/effective
+[2019-03-16 19:19:25,663 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/effective.yml
+[2019-03-16 19:19:25,717 DEBUG urllib3.connectionpool] Starting new HTTP connection (1): gettaurus.org:80
+[2019-03-16 19:19:25,739 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/effective.json
+[2019-03-16 19:19:25,741 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/merged.yml
+[2019-03-16 19:19:25,741 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/merged.yml
+[2019-03-16 19:19:25,744 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/merged.json
+[2019-03-16 19:19:25,744 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/merged.json
+[2019-03-16 19:19:25,745 DEBUG Engine] Add existing artifact (move=False): output.json
+[2019-03-16 19:19:25,745 DEBUG Engine] Copying output.json to /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/output.json
+[2019-03-16 19:19:25,746 DEBUG Engine.Environment] Replace 'TAURUS_ARTIFACTS_DIR' in environment
+[2019-03-16 19:19:25,747 DEBUG root] Closing log handler: /var/folders/9w/fj8tc51n59dgtrxfgskpxd9h0000gn/T/bzt_35nmsqhq.log
+[2019-03-16 19:19:25,748 DEBUG root] Switched writing logs to /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/bzt.log
+[2019-03-16 19:19:25,749 DEBUG root] Linting config
+[2019-03-16 19:19:25,752 INFO Engine] Preparing...
+[2019-03-16 19:19:25,753 DEBUG Engine] Module config: consolidator {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'}
+[2019-03-16 19:19:25,753 DEBUG root] Importing module: bzt.modules.aggregator
+[2019-03-16 19:19:26,112 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/aggregator.py'>
+[2019-03-16 19:19:26,113 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2019-03-16 19:19:26,113 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2019-03-16 19:19:26,113 DEBUG root] Importing module: bzt.modules.monitoring
+[2019-03-16 19:19:26,116 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/monitoring.py'>
+[2019-03-16 19:19:26,116 DEBUG Engine] Module config: local {'class': 'bzt.modules.provisioning.Local'}
+[2019-03-16 19:19:26,116 DEBUG root] Importing module: bzt.modules.provisioning
+[2019-03-16 19:19:26,116 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py'>
+[2019-03-16 19:19:26,117 DEBUG Engine] Module config: jmeter {'class': 'bzt.modules.jmeter.JMeterExecutor', 'protocol-handlers': {'http': 'bzt.jmx.http.HTTPProtocolHandler'}, 'plugins': ['jpgc-casutg', 'jpgc-dummy', 'jpgc-ffw', 'jpgc-fifo', 'jpgc-functions', 'jpgc-json', 'jpgc-perfmon', 'jpgc-prmctl', 'jpgc-tst'], 'properties': {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': ''}}
+[2019-03-16 19:19:26,117 DEBUG root] Importing module: bzt.modules.jmeter
+[2019-03-16 19:19:26,140 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/jmeter.py'>
+[2019-03-16 19:19:26,141 DEBUG Engine.local] Preparing executor: jmeter/4485497968
+[2019-03-16 19:19:26,141 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/jmeter.log
+[2019-03-16 19:19:26,141 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2019-03-16 19:19:26,142 DEBUG Engine.jmeter] Port 4445 is free
+[2019-03-16 19:19:26,142 DEBUG Engine.jmeter] Using port 4445 for management
+[2019-03-16 19:19:26,142 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/requests.jmx
+[2019-03-16 19:19:26,146 DEBUG root] Importing module: bzt.jmx.http
+[2019-03-16 19:19:26,147 DEBUG root] Loading class: 'HTTPProtocolHandler' from <module 'bzt.jmx.http' from '/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/jmx/http.py'>
+[2019-03-16 19:19:26,150 DEBUG JMeterScenarioBuilder] Saving JMX to: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/requests.jmx
+[2019-03-16 19:19:26,152 DEBUG Engine.jmeter] Additional system properties {'sun.net.inetaddr.ttl': 0}
+[2019-03-16 19:19:26,153 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/system.properties
+[2019-03-16 19:19:26,154 DEBUG Engine.jmeter] Additional properties: {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': '', 'jmeterengine.nongui.port': 4445, 'jmeterengine.nongui.maxport': 4445, 'jmeter.save.saveservice.timestamp_format': 'ms', 'sampleresult.default.encoding': 'UTF-8', 'user.classpath': '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961:/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961'}
+[2019-03-16 19:19:26,155 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/jmeter-bzt.properties
+[2019-03-16 19:19:26,157 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2019-03-16 19:19:26,689 DEBUG Engine.jmeter.JavaVM] JavaVM output: java version "1.8.0_66"
+Java(TM) SE Runtime Environment (build 1.8.0_66-b17)
+Java HotSpot(TM) 64-Bit Server VM (build 25.66-b17, mixed mode)
+[2019-03-16 19:19:26,690 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2019-03-16 19:19:26,692 DEBUG Engine.jmeter.JMeter] Trying jmeter: /Users/apple/.bzt/jmeter-taurus/5.0/bin/jmeter.sh
+[2019-03-16 19:19:26,692 DEBUG bzt.utils] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.0/bin/jmeter.sh', '-j', '/var/folders/9w/fj8tc51n59dgtrxfgskpxd9h0000gn/T/jmetervt13hiielog', '--version'] at .
+[2019-03-16 19:19:26,965 DEBUG urllib3.connectionpool] http://gettaurus.org:80 "GET /updates/?version=1.13.2&installID=macos-3c075440e027 HTTP/1.1" 403 1587
+[2019-03-16 19:19:26,975 DEBUG Engine] Failed to check for updates: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/engine.py", line 699, in _check_updates
+    data = response.json()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2019-03-16 19:19:26,975 WARNING Engine] Failed to check for updates
+[2019-03-16 19:19:29,539 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____     
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \   
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) | 
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <  
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 5.0 r1840935  
+
+Copyright (c) 1999-2018 The Apache Software Foundation
+
+ / None
+[2019-03-16 19:19:29,540 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=100, throughput=None, ramp_up=30.0, hold=60.0, iterations=0, duration=90.0, steps=None)
+[2019-03-16 19:19:29,546 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/kpi.jtl
+[2019-03-16 19:19:29,548 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/error.jtl
+[2019-03-16 19:19:29,557 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (quick-test) to ConcurrencyThreadGroup and apply load parameters
+[2019-03-16 19:19:29,558 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/modified_requests.jmx
+[2019-03-16 19:19:29,558 DEBUG JMX] Saving JMX to: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/modified_requests.jmx
+[2019-03-16 19:19:29,560 DEBUG bzt.utils] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.0/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/modified_requests.jmx'] at .
+[2019-03-16 19:19:37,657 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/modified_requests.jmx
+2019-03-16 19:19:31,344 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
+2019-03-16 19:19:31,482 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=mac_os_x-19b339e6bd1b32a2f743870c4a324fd0-nongui
+2019-03-16 19:19:36,032 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.1, jpgc-casutg=2.6, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=1.3, jpgc-tst=2.5, jmeter-core=5.0, jmeter-ftp=5.0, jmeter-http=5.0, jmeter-jdbc=5.0, jmeter-jms=5.0, jmeter-junit=5.0, jmeter-java=5.0, jmeter-ldap=5.0, jmeter-mail=5.0, jmeter-mongodb=5.0, jmeter-native=5.0, jmeter-tcp=5.0, jmeter-components=5.0]
+2019-03-16 19:19:36,039 INFO o.j.r.PluginManagerCMD: Params line is: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/modified_requests.jmx
+2019-03-16 19:19:36,747 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-03-16 19:19:36,789 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-03-16 19:19:36,801 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2019-03-16 19:19:36,986 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2019-03-16 19:19:36,993 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2019-03-16 19:19:37,000 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [option]
+2019-03-16 19:19:37,001 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [add]
+2019-03-16 19:19:37,006 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [add_host]
+2019-03-16 19:19:37,007 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [delete]
+2019-03-16 19:19:37,007 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [delete_host]
+2019-03-16 19:19:37,007 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [use_system_dns_resolver]
+2019-03-16 19:19:37,008 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [use_custom_dns_resolver]
+2019-03-16 19:19:37,008 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [dns_hostname_or_ip]
+2019-03-16 19:19:37,008 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [dns_host]
+2019-03-16 19:19:37,008 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [dns_hostname_or_ip]
+2019-03-16 19:19:37,135 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-03-16 19:19:37,136 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-03-16 19:19:37,136 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-03-16 19:19:37,136 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-03-16 19:19:37,137 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-03-16 19:19:37,137 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-03-16 19:19:37,273 INFO o.j.r.PluginManager: Finishing without changes
+
+
+[2019-03-16 19:19:37,661 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/jmeter.out
+[2019-03-16 19:19:37,662 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/jmeter.err
+[2019-03-16 19:19:37,669 DEBUG Engine] Module config: final-stats {'class': 'bzt.modules.reporting.FinalStatus'}
+[2019-03-16 19:19:37,669 DEBUG root] Importing module: bzt.modules.reporting
+[2019-03-16 19:19:37,715 DEBUG easyprocess] version=0.2.3
+[2019-03-16 19:19:37,719 DEBUG pyvirtualdisplay] version=0.2.1
+[2019-03-16 19:19:37,725 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/reporting.py'>
+[2019-03-16 19:19:37,726 DEBUG Engine] Module config: console {'class': 'bzt.modules.console.ConsoleStatusReporter'}
+[2019-03-16 19:19:37,726 DEBUG root] Importing module: bzt.modules.console
+[2019-03-16 19:19:37,726 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/console.py'>
+[2019-03-16 19:19:37,727 DEBUG Engine] Module config: blazemeter {'class': 'bzt.modules.blazemeter.BlazeMeterUploader'}
+[2019-03-16 19:19:37,727 DEBUG root] Importing module: bzt.modules.blazemeter
+[2019-03-16 19:19:37,727 DEBUG root] Loading class: 'BlazeMeterUploader' from <module 'bzt.modules.blazemeter' from '/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py'>
+[2019-03-16 19:19:37,758 WARNING Engine.blazemeter] No BlazeMeter API key provided, will upload anonymously
+[2019-03-16 19:19:37,759 DEBUG Engine.blazemeter] Installing http client
+[2019-03-16 19:19:37,759 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/web/version None
+[2019-03-16 19:19:37,760 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/web/version
+[2019-03-16 19:19:37,771 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2019-03-16 19:19:38,702 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/web/version HTTP/1.1" 200 234
+[2019-03-16 19:19:38,705 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": "blazemeter-php7-backend-package 399 release/2019-03-05_124 646464f0533cf14bf3753c5862c7538dcae2a9d6 Wed Mar 13 16:34:07 2019 +0200 e913b34e231fd66a6d7eeccd852977ebfb028b0d\n"
+}
+[2019-03-16 19:19:38,710 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/effective.yml
+[2019-03-16 19:19:38,761 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/effective.json
+[2019-03-16 19:19:38,763 INFO Engine] Starting...
+[2019-03-16 19:19:38,764 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x10b36cb00>
+[2019-03-16 19:19:38,765 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10b08acc0>
+[2019-03-16 19:19:38,765 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x1076daa58>
+[2019-03-16 19:19:38,766 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x10b36cc50>
+[2019-03-16 19:19:38,767 INFO Engine.console] Waiting for results...
+[2019-03-16 19:19:38,767 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x10b6b33c8>
+[2019-03-16 19:19:38,767 DEBUG Engine] Startup <bzt.modules.blazemeter.BlazeMeterUploader object at 0x10b6b3358>
+[2019-03-16 19:19:38,768 INFO Engine.blazemeter] Initiating data feeding...
+[2019-03-16 19:19:38,771 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/sessions None
+[2019-03-16 19:19:38,771 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/sessions
+[2019-03-16 19:19:44,573 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/sessions HTTP/1.1" 201 3141
+[2019-03-16 19:19:44,586 DEBUG User] Response [201]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "session": {
+            "id": "r-ext-5c8d1b136d14e",
+            "name": "external",
+            "userId": 386483,
+            "publicToken": "iFX9GsR7lHAnyv3YFl7ce2LvG72YKnEcr85XqxKzrx9nx
+[2019-03-16 19:19:44,597 INFO Engine.blazemeter] Started data feeding: https://a.blazemeter.com/app/?public-token=iFX9GsR7lHAnyv3YFl7ce2LvG72YKnEcr85XqxKzrx9nxl91hi#reports/r-ext-5c8d1b136d14e/summary
+[2019-03-16 19:19:45,084 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x109b8bf60>
+[2019-03-16 19:19:45,094 DEBUG Engine.local] Delay setup for jmeter/quick-test: 0(start-at) + 0(delay) = 0
+[2019-03-16 19:19:45,104 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/effective.yml
+[2019-03-16 19:19:45,267 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/effective.json
+[2019-03-16 19:19:45,269 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-03-16 19:19:45,270 DEBUG root] Leveled up log file verbosity
+[2019-03-16 19:19:45,276 DEBUG bzt.utils] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.0/bin/jmeter.sh', '-n', '-t', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/modified_requests.jmx', '-j', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/jmeter.log', '-q', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/jmeter-bzt.properties', '-S', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/system.properties'] at /Users/apple/Desktop/bachelorProject/stressThing/StressThing
+[2019-03-16 19:19:45,299 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-03-16 19:19:45,570 INFO Engine.console] Waiting for finish...
+[2019-03-16 19:20:11,633 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 8s
+[2019-03-16 19:20:46,641 WARNING Engine.blazemeter] Failed to send data, will retry in 30.0 sec...
+[2019-03-16 19:21:45,702 ERROR Engine.blazemeter] Fatal error sending data: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1321, in getresponse
+    response.begin()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 367, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 306, in _raise_timeout
+    raise ReadTimeoutError(self, url, "Read timed out. (read timeout=%s)" % timeout_value)
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Read timed out. (read timeout=30.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1075, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Read timed out. (read timeout=30.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 119, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 504, in __send_monitoring
+    self._session.send_monitoring_data(engine_id, data)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 685, in send_monitoring_data
+    self.upload_file(file_name, to_json(data))
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 713, in upload_file
+    response = self._request(url, body.form_as_bytes(), headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1082, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://data.blazemeter.com/api/v4/image/r-ext-5c8d1b136d14e/files?signature=ci1leHQtNWM4ZDFiMTM2ZDE0ZToxNTUzOTYwOTc5OjNiYzM2OGNkYTliNzI1MTU0OGIwY2YyMmIxYjdjMTBjOWNlZWZkYTZiNzdhZmFkZDFlYWYyMzBkMzg3MDhhMTc4ODdkM2E5ZDE5OTc0NDQxNWU0Y2JmYTcxOTNmMzJjYjRhOTU3MGZlMDBmYjQ5NzU2YmEyOGFjYmFhZWVhMjlj&masterId=19155044 failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 344, in connect
+    ssl_context=context)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 344, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 367, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/packages/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 344, in connect
+    ssl_context=context)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 344, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1075, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 125, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 504, in __send_monitoring
+    self._session.send_monitoring_data(engine_id, data)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 685, in send_monitoring_data
+    self.upload_file(file_name, to_json(data))
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 713, in upload_file
+    response = self._request(url, body.form_as_bytes(), headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1082, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://data.blazemeter.com/api/v4/image/r-ext-5c8d1b136d14e/files?signature=ci1leHQtNWM4ZDFiMTM2ZDE0ZToxNTUzOTYwOTc5OjNiYzM2OGNkYTliNzI1MTU0OGIwY2YyMmIxYjdjMTBjOWNlZWZkYTZiNzdhZmFkZDFlYWYyMzBkMzg3MDhhMTc4ODdkM2E5ZDE5OTc0NDQxNWU0Y2JmYTcxOTNmMzJjYjRhOTU3MGZlMDBmYjQ5NzU2YmEyOGFjYmFhZWVhMjlj&masterId=19155044 failed
+
+[2019-03-16 19:21:45,764 WARNING Engine.blazemeter] Will skip failed data and continue running
+[2019-03-16 19:22:36,614 WARNING Engine.blazemeter] Failed to send data, will retry in 30.0 sec...
+[2019-03-16 19:23:47,882 ERROR Engine.blazemeter] Fatal error sending data: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 344, in connect
+    ssl_context=context)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 344, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1039: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 367, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 346, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 306, in _raise_timeout
+    raise ReadTimeoutError(self, url, "Read timed out. (read timeout=%s)" % timeout_value)
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Read timed out. (read timeout=30.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1075, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Read timed out. (read timeout=30.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 119, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 484, in __send_data
+    self._session.send_kpi_data(serialized, do_check)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 670, in send_kpi_data
+    response = self._request(url, data, headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1082, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://data.blazemeter.com/submit.php?session_id=r-ext-5c8d1b136d14e&signature=ci1leHQtNWM4ZDFiMTM2ZDE0ZToxNTUzOTYwOTc5OjNiYzM2OGNkYTliNzI1MTU0OGIwY2YyMmIxYjdjMTBjOWNlZWZkYTZiNzdhZmFkZDFlYWYyMzBkMzg3MDhhMTc4ODdkM2E5ZDE5OTc0NDQxNWU0Y2JmYTcxOTNmMzJjYjRhOTU3MGZlMDBmYjQ5NzU2YmEyOGFjYmFhZWVhMjlj&test_id=6690924&user_id=386483&pq=0&target=labels_bulk&update=1 failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 344, in connect
+    ssl_context=context)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 344, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1039: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 367, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 346, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 306, in _raise_timeout
+    raise ReadTimeoutError(self, url, "Read timed out. (read timeout=%s)" % timeout_value)
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Read timed out. (read timeout=30.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1075, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Read timed out. (read timeout=30.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 125, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 484, in __send_data
+    self._session.send_kpi_data(serialized, do_check)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 670, in send_kpi_data
+    response = self._request(url, data, headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1082, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://data.blazemeter.com/submit.php?session_id=r-ext-5c8d1b136d14e&signature=ci1leHQtNWM4ZDFiMTM2ZDE0ZToxNTUzOTYwOTc5OjNiYzM2OGNkYTliNzI1MTU0OGIwY2YyMmIxYjdjMTBjOWNlZWZkYTZiNzdhZmFkZDFlYWYyMzBkMzg3MDhhMTc4ODdkM2E5ZDE5OTc0NDQxNWU0Y2JmYTcxOTNmMzJjYjRhOTU3MGZlMDBmYjQ5NzU2YmEyOGFjYmFhZWVhMjlj&test_id=6690924&user_id=386483&pq=0&target=labels_bulk&update=1 failed
+
+[2019-03-16 19:23:47,898 WARNING Engine.blazemeter] Will skip failed data and continue running
+[2019-03-16 19:24:25,921 WARNING Engine.blazemeter] Failed to send data, will retry in 30.0 sec...
+[2019-03-16 19:24:58,504 WARNING Engine] Please wait for graceful shutdown...
+[2019-03-16 19:24:58,798 DEBUG root] Leveled up log file verbosity
+[2019-03-16 19:24:58,798 INFO Engine] Shutting down...
+[2019-03-16 19:24:58,808 DEBUG Engine] Current stop reason: 
+[2019-03-16 19:24:58,810 DEBUG Engine.local] Shutdown jmeter/quick-test
+[2019-03-16 19:24:59,151 DEBUG Engine.local] Exception in shutdown of JMeterExecutor:  Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py", line 144, in shutdown
+    executor.shutdown()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/jmeter.py", line 422, in shutdown
+    if self._process_stopped(1):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/jmeter.py", line 466, in _process_stopped
+    time.sleep(self.engine.check_interval)
+KeyboardInterrupt
+
+[2019-03-16 19:24:59,210 DEBUG Engine] :
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/engine.py", line 307, in _shutdown
+    module.shutdown()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py", line 153, in shutdown
+    reraise(exc_info, exc_value)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/six/py3.py", line 86, in reraise
+    raise exc
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py", line 144, in shutdown
+    executor.shutdown()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/jmeter.py", line 422, in shutdown
+    if self._process_stopped(1):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/jmeter.py", line 466, in _process_stopped
+    time.sleep(self.engine.check_interval)
+KeyboardInterrupt
+
+[2019-03-16 19:24:59,212 DEBUG Engine.console] Restoring logging streams, [<StreamHandler (INFO)>]/{<StreamHandler (INFO)>: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>}
+[2019-03-16 19:25:01,953 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/effective.yml
+[2019-03-16 19:25:02,037 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/effective.json
+[2019-03-16 19:25:02,042 DEBUG Engine] :
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/engine.py", line 251, in run
+    self._shutdown()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/engine.py", line 318, in _shutdown
+    reraise(exc_info, exc_value)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/six/py3.py", line 86, in reraise
+    raise exc
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/engine.py", line 307, in _shutdown
+    module.shutdown()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py", line 153, in shutdown
+    reraise(exc_info, exc_value)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/six/py3.py", line 86, in reraise
+    raise exc
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py", line 144, in shutdown
+    executor.shutdown()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/jmeter.py", line 422, in shutdown
+    if self._process_stopped(1):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/jmeter.py", line 466, in _process_stopped
+    time.sleep(self.engine.check_interval)
+KeyboardInterrupt
+
+[2019-03-16 19:25:02,043 WARNING root] Keyboard interrupt
+[2019-03-16 19:25:02,047 DEBUG root] KeyboardInterrupt: 
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/cli.py", line 258, in perform
+    self.engine.run()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/engine.py", line 261, in run
+    reraise(exc_info, exc_value)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/six/py3.py", line 86, in reraise
+    raise exc
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/engine.py", line 240, in run
+    self._wait()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/engine.py", line 282, in _wait
+    while not self._check_modules_list():
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/engine.py", line 269, in _check_modules_list
+    finished = bool(module.check())
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 472, in check
+    self.__send_monitoring()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 125, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 504, in __send_monitoring
+    self._session.send_monitoring_data(engine_id, data)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 685, in send_monitoring_data
+    self.upload_file(file_name, to_json(data))
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 713, in upload_file
+    response = self._request(url, body.form_as_bytes(), headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1075, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/util/connection.py", line 70, in create_connection
+    sock.connect(sa)
+[2019-03-16 19:25:02,047 INFO Engine] Post-processing...
+[2019-03-16 19:25:02,048 DEBUG Engine.local] Post-process jmeter/quick-test
+[2019-03-16 19:25:02,048 DEBUG Engine] Add existing artifact (move=True): /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/modified_requests.jmx
+[2019-03-16 19:25:02,049 DEBUG Engine] No need to copy /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/modified_requests.jmx
+[2019-03-16 19:25:02,051 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] Reading: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/error.jtl
+[2019-03-16 19:25:02,066 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] Reading: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/error.jtl
+[2019-03-16 19:25:02,066 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader.FileReader] Reading: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/kpi.jtl
+[2019-03-16 19:25:02,067 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read: 1 lines / 2059 bytes (at speed 1048576)
+[2019-03-16 19:25:02,068 DEBUG Engine.jmeter.JTLReader] Putting sample 1552751409 into 1552751474
+[2019-03-16 19:25:02,075 DEBUG Engine.jmeter.JTLReader] Buffer len: 5; Known errors count: 5
+[2019-03-16 19:25:02,523 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 75s
+[2019-03-16 19:25:02,524 DEBUG Engine.jmeter.JTLReader] Aggregating: 1552751474
+[2019-03-16 19:25:02,525 DEBUG aggregator] Growing HDR from 43000.0 to 253000.0
+[2019-03-16 19:25:02,542 DEBUG aggregator] Growing HDR from 43000.0 to 253000.0
+[2019-03-16 19:25:02,558 DEBUG aggregator] Growing HDR from 43000.0 to 253000.0
+[2019-03-16 19:25:02,582 DEBUG aggregator] Growing HDR from 43000.0 to 253000.0
+[2019-03-16 19:25:02,603 DEBUG Engine.jmeter.JTLReader] Aggregating: 1552751476
+[2019-03-16 19:25:02,611 DEBUG Engine.jmeter.JTLReader] Aggregating: 1552751477
+[2019-03-16 19:25:02,663 DEBUG Engine.jmeter.JTLReader] Aggregating: 1552751480
+[2019-03-16 19:25:02,709 DEBUG Engine.jmeter.JTLReader] Aggregating: 1552751481
+[2019-03-16 19:25:02,728 DEBUG Engine.consolidator] Consolidator buffer[7]: dict_keys([1552751472, 1552751473, 1552751474, 1552751476, 1552751477, 1552751480, 1552751481])
+[2019-03-16 19:25:02,728 DEBUG Engine.consolidator] Merging into 1552751472
+[2019-03-16 19:25:02,728 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-03-16 19:25:03,355 DEBUG Engine.consolidator] Processed datapoint: 1552751472/4458080408
+[2019-03-16 19:25:03,356 DEBUG Engine.consolidator] Merging into 1552751473
+[2019-03-16 19:25:03,356 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-03-16 19:25:04,091 DEBUG Engine.consolidator] Processed datapoint: 1552751473/4458080408
+[2019-03-16 19:25:04,091 DEBUG Engine.consolidator] Merging into 1552751474
+[2019-03-16 19:25:04,091 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-03-16 19:25:04,092 DEBUG aggregator] Growing HDR from 43000.0 to 253000.0
+[2019-03-16 19:25:04,108 DEBUG aggregator] Growing HDR from 43000.0 to 253000.0
+[2019-03-16 19:25:04,928 DEBUG Engine.consolidator] Processed datapoint: 1552751474/4458080408
+[2019-03-16 19:25:04,928 DEBUG Engine.consolidator] Merging into 1552751476
+[2019-03-16 19:25:04,929 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-03-16 19:25:05,523 DEBUG Engine.consolidator] Processed datapoint: 1552751476/4458080408
+[2019-03-16 19:25:05,524 DEBUG Engine.consolidator] Merging into 1552751477
+[2019-03-16 19:25:05,524 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-03-16 19:25:06,026 DEBUG Engine.consolidator] Processed datapoint: 1552751477/4458080408
+[2019-03-16 19:25:06,026 DEBUG Engine.consolidator] Merging into 1552751480
+[2019-03-16 19:25:06,026 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-03-16 19:25:06,650 DEBUG Engine.consolidator] Processed datapoint: 1552751480/4458080408
+[2019-03-16 19:25:06,650 DEBUG Engine.consolidator] Merging into 1552751481
+[2019-03-16 19:25:06,651 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-03-16 19:25:07,125 DEBUG Engine.consolidator] Processed datapoint: 1552751481/4458080408
+[2019-03-16 19:25:07,127 INFO Engine.final-stats] Test duration: 0:05:21
+[2019-03-16 19:25:07,132 INFO Engine.final-stats] Samples count: 180, 100.00% failures
+[2019-03-16 19:25:07,133 INFO Engine.final-stats] Average times: total 9.395, latency 0.708, connect 0.001
+[2019-03-16 19:25:07,137 INFO Engine.final-stats] Percentiles:
+(0lqqqqqqqqqqqqqqqwqqqqqqqqqqqqqqqk(B
+(0x(B Percentile, % (0x(B Resp. Time, s (0x(B
+(0tqqqqqqqqqqqqqqqnqqqqqqqqqqqqqqqu(B
+(0x(B           0.0 (0x(B          4.05 (0x(B
+(0x(B          50.0 (0x(B         4.078 (0x(B
+(0x(B          90.0 (0x(B        29.712 (0x(B
+(0x(B          95.0 (0x(B        37.024 (0x(B
+(0x(B          99.0 (0x(B        42.912 (0x(B
+(0x(B          99.9 (0x(B       251.904 (0x(B
+(0x(B         100.0 (0x(B       251.904 (0x(B
+(0mqqqqqqqqqqqqqqqvqqqqqqqqqqqqqqqj(B
+[2019-03-16 19:25:07,158 INFO Engine.final-stats] Request label stats:
+(0lqqqqqqqqqqqqqqqqqqwqqqqqqqqwqqqqqqqwqqqqqqqqwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk(B
+(0x(B label            (0x(B status (0x(B  succ (0x(B avg_rt (0x(B error                                                                     (0x(B
+(0tqqqqqqqqqqqqqqqqqqnqqqqqqqqnqqqqqqqnqqqqqqqqnqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqu(B
+(0x(B http://apple.com (0x(B  FAIL  (0x(B 0.00% (0x(B  9.395 (0x(B Non HTTP response message: Remote host closed connection during handshake (0x(B
+(0x(B                  (0x(B        (0x(B       (0x(B        (0x(B Moved Permanently                                                         (0x(B
+(0x(B                  (0x(B        (0x(B       (0x(B        (0x(B Non HTTP response message: apple.com:80 failed to respond                 (0x(B
+(0x(B                  (0x(B        (0x(B       (0x(B        (0x(B Non HTTP response message: Connection reset                               (0x(B
+(0x(B                  (0x(B        (0x(B       (0x(B        (0x(B Non HTTP response message: www.apple.com:443 failed to respond            (0x(B
+(0mqqqqqqqqqqqqqqqqqqvqqqqqqqqvqqqqqqqvqqqqqqqqvqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj(B
+[2019-03-16 19:25:07,416 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2019-03-16 19:25:07,417 INFO Engine.final-stats] Test duration: 0:05:23
+[2019-03-16 19:25:07,417 INFO Engine.final-stats] Samples count: 180, 100.00% failures
+[2019-03-16 19:25:07,418 INFO Engine.final-stats] Average times: total 9.395, latency 0.708, connect 0.001
+[2019-03-16 19:25:07,421 INFO Engine.final-stats] Percentiles:
+(0lqqqqqqqqqqqqqqqwqqqqqqqqqqqqqqqk(B
+(0x(B Percentile, % (0x(B Resp. Time, s (0x(B
+(0tqqqqqqqqqqqqqqqnqqqqqqqqqqqqqqqu(B
+(0x(B           0.0 (0x(B          4.05 (0x(B
+(0x(B          50.0 (0x(B         4.078 (0x(B
+(0x(B          90.0 (0x(B        29.712 (0x(B
+(0x(B          95.0 (0x(B        37.024 (0x(B
+(0x(B          99.0 (0x(B        42.912 (0x(B
+(0x(B          99.9 (0x(B       251.904 (0x(B
+(0x(B         100.0 (0x(B       251.904 (0x(B
+(0mqqqqqqqqqqqqqqqvqqqqqqqqqqqqqqqj(B
+[2019-03-16 19:25:07,424 INFO Engine.final-stats] Request label stats:
+(0lqqqqqqqqqqqqqqqqqqwqqqqqqqqwqqqqqqqwqqqqqqqqwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk(B
+(0x(B label            (0x(B status (0x(B  succ (0x(B avg_rt (0x(B error                                                                     (0x(B
+(0tqqqqqqqqqqqqqqqqqqnqqqqqqqqnqqqqqqqnqqqqqqqqnqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqu(B
+(0x(B http://apple.com (0x(B  FAIL  (0x(B 0.00% (0x(B  9.395 (0x(B Non HTTP response message: Remote host closed connection during handshake (0x(B
+(0x(B                  (0x(B        (0x(B       (0x(B        (0x(B Moved Permanently                                                         (0x(B
+(0x(B                  (0x(B        (0x(B       (0x(B        (0x(B Non HTTP response message: apple.com:80 failed to respond                 (0x(B
+(0x(B                  (0x(B        (0x(B       (0x(B        (0x(B Non HTTP response message: Connection reset                               (0x(B
+(0x(B                  (0x(B        (0x(B       (0x(B        (0x(B Non HTTP response message: www.apple.com:443 failed to respond            (0x(B
+(0mqqqqqqqqqqqqqqqqqqvqqqqqqqqvqqqqqqqvqqqqqqqqvqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj(B
+[2019-03-16 19:25:07,618 DEBUG Engine.blazemeter] KPI bulk buffer len in post-proc: 7
+[2019-03-16 19:25:07,618 INFO Engine.blazemeter] Sending remaining KPI data to server...
+[2019-03-16 19:25:08,700 DEBUG User] Request: POST https://data.blazemeter.com/submit.php?session_id=r-ext-5c8d1b136d14e&signature=ci1leHQtNWM4ZDFiMTM2ZDE0ZToxNTUzOTYwOTc5OjNiYzM2OGNkYTliNzI1MTU0OGIwY2YyMmIxYjdjMTBjOWNlZWZkYTZiNzdhZmFkZDFlYWYyMzBkMzg3MDhhMTc4ODdkM2E5ZDE5OTc0NDQxNWU0Y2JmYTcxOTNmMzJjYjRhOTU3MGZlMDBmYjQ5NzU2YmEyOGFjYmFhZWVhMjlj&test_id=6690924&user_id=386483&pq=0&target=labels_bulk&update=1 b'{\n "labels": [\n  {\n   "n": 180,\n   "name": "ALL",\n   "interval": 1,\n   "intervals": [\n    {\n     "ec": 10,\n     "ts": 1552751472,\n     "na": 100,\n     "n": 10,\n     "failed": 10,\n     "rc": [\n      {\n       "n": 10,\n       "f": [],\n       "rc": "NoHttpResp'
+[2019-03-16 19:25:08,701 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/submit.php?session_id=r-ext-5c8d1b136d14e&signature=ci1leHQtNWM4ZDFiMTM2ZDE0ZToxNTUzOTYwOTc5OjNiYzM2OGNkYTliNzI1MTU0OGIwY2YyMmIxYjdjMTBjOWNlZWZkYTZiNzdhZmFkZDFlYWYyMzBkMzg3MDhhMTc4ODdkM2E5ZDE5OTc0NDQxNWU0Y2JmYTcxOTNmMzJjYjRhOTU3MGZlMDBmYjQ5NzU2YmEyOGFjYmFhZWVhMjlj&test_id=6690924&user_id=386483&pq=0&target=labels_bulk&update=1
+[2019-03-16 19:25:08,717 DEBUG urllib3.connectionpool] Starting new HTTPS connection (7): data.blazemeter.com:443
+[2019-03-16 19:25:49,929 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /submit.php?session_id=r-ext-5c8d1b136d14e&signature=ci1leHQtNWM4ZDFiMTM2ZDE0ZToxNTUzOTYwOTc5OjNiYzM2OGNkYTliNzI1MTU0OGIwY2YyMmIxYjdjMTBjOWNlZWZkYTZiNzdhZmFkZDFlYWYyMzBkMzg3MDhhMTc4ODdkM2E5ZDE5OTc0NDQxNWU0Y2JmYTcxOTNmMzJjYjRhOTU3MGZlMDBmYjQ5NzU2YmEyOGFjYmFhZWVhMjlj&test_id=6690924&user_id=386483&pq=0&target=labels_bulk&update=1 HTTP/1.1" 500 0
+[2019-03-16 19:25:49,953 DEBUG User] Response [500]: None
+[2019-03-16 19:25:49,956 DEBUG Engine.blazemeter] Error sending data: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 119, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 484, in __send_data
+    self._session.send_kpi_data(serialized, do_check)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 670, in send_kpi_data
+    response = self._request(url, data, headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 104, in _request
+    raise TaurusNetworkError("API call error %s on %s: %s" % (response.status_code, url, result))
+bzt.TaurusNetworkError: API call error 500 on https://data.blazemeter.com/submit.php?session_id=r-ext-5c8d1b136d14e&signature=ci1leHQtNWM4ZDFiMTM2ZDE0ZToxNTUzOTYwOTc5OjNiYzM2OGNkYTliNzI1MTU0OGIwY2YyMmIxYjdjMTBjOWNlZWZkYTZiNzdhZmFkZDFlYWYyMzBkMzg3MDhhMTc4ODdkM2E5ZDE5OTc0NDQxNWU0Y2JmYTcxOTNmMzJjYjRhOTU3MGZlMDBmYjQ5NzU2YmEyOGFjYmFhZWVhMjlj&test_id=6690924&user_id=386483&pq=0&target=labels_bulk&update=1: {}
+
+[2019-03-16 19:25:49,957 WARNING Engine.blazemeter] Failed to send data, will retry in 30.0 sec...
+[2019-03-16 19:26:19,979 DEBUG User] Request: POST https://data.blazemeter.com/submit.php?session_id=r-ext-5c8d1b136d14e&signature=ci1leHQtNWM4ZDFiMTM2ZDE0ZToxNTUzOTYwOTc5OjNiYzM2OGNkYTliNzI1MTU0OGIwY2YyMmIxYjdjMTBjOWNlZWZkYTZiNzdhZmFkZDFlYWYyMzBkMzg3MDhhMTc4ODdkM2E5ZDE5OTc0NDQxNWU0Y2JmYTcxOTNmMzJjYjRhOTU3MGZlMDBmYjQ5NzU2YmEyOGFjYmFhZWVhMjlj&test_id=6690924&user_id=386483&pq=0&target=labels_bulk&update=1 b'{\n "labels": [\n  {\n   "n": 180,\n   "name": "ALL",\n   "interval": 1,\n   "intervals": [\n    {\n     "ec": 10,\n     "ts": 1552751472,\n     "na": 100,\n     "n": 10,\n     "failed": 10,\n     "rc": [\n      {\n       "n": 10,\n       "f": [],\n       "rc": "NoHttpResp'
+[2019-03-16 19:26:19,987 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/submit.php?session_id=r-ext-5c8d1b136d14e&signature=ci1leHQtNWM4ZDFiMTM2ZDE0ZToxNTUzOTYwOTc5OjNiYzM2OGNkYTliNzI1MTU0OGIwY2YyMmIxYjdjMTBjOWNlZWZkYTZiNzdhZmFkZDFlYWYyMzBkMzg3MDhhMTc4ODdkM2E5ZDE5OTc0NDQxNWU0Y2JmYTcxOTNmMzJjYjRhOTU3MGZlMDBmYjQ5NzU2YmEyOGFjYmFhZWVhMjlj&test_id=6690924&user_id=386483&pq=0&target=labels_bulk&update=1
+[2019-03-16 19:26:35,658 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /submit.php?session_id=r-ext-5c8d1b136d14e&signature=ci1leHQtNWM4ZDFiMTM2ZDE0ZToxNTUzOTYwOTc5OjNiYzM2OGNkYTliNzI1MTU0OGIwY2YyMmIxYjdjMTBjOWNlZWZkYTZiNzdhZmFkZDFlYWYyMzBkMzg3MDhhMTc4ODdkM2E5ZDE5OTc0NDQxNWU0Y2JmYTcxOTNmMzJjYjRhOTU3MGZlMDBmYjQ5NzU2YmEyOGFjYmFhZWVhMjlj&test_id=6690924&user_id=386483&pq=0&target=labels_bulk&update=1 HTTP/1.1" 500 0
+[2019-03-16 19:26:35,674 DEBUG User] Response [500]: None
+[2019-03-16 19:26:35,678 ERROR Engine.blazemeter] Fatal error sending data: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 119, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 484, in __send_data
+    self._session.send_kpi_data(serialized, do_check)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 670, in send_kpi_data
+    response = self._request(url, data, headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 104, in _request
+    raise TaurusNetworkError("API call error %s on %s: %s" % (response.status_code, url, result))
+bzt.TaurusNetworkError: API call error 500 on https://data.blazemeter.com/submit.php?session_id=r-ext-5c8d1b136d14e&signature=ci1leHQtNWM4ZDFiMTM2ZDE0ZToxNTUzOTYwOTc5OjNiYzM2OGNkYTliNzI1MTU0OGIwY2YyMmIxYjdjMTBjOWNlZWZkYTZiNzdhZmFkZDFlYWYyMzBkMzg3MDhhMTc4ODdkM2E5ZDE5OTc0NDQxNWU0Y2JmYTcxOTNmMzJjYjRhOTU3MGZlMDBmYjQ5NzU2YmEyOGFjYmFhZWVhMjlj&test_id=6690924&user_id=386483&pq=0&target=labels_bulk&update=1: {}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 125, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 484, in __send_data
+    self._session.send_kpi_data(serialized, do_check)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 670, in send_kpi_data
+    response = self._request(url, data, headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 104, in _request
+    raise TaurusNetworkError("API call error %s on %s: %s" % (response.status_code, url, result))
+bzt.TaurusNetworkError: API call error 500 on https://data.blazemeter.com/submit.php?session_id=r-ext-5c8d1b136d14e&signature=ci1leHQtNWM4ZDFiMTM2ZDE0ZToxNTUzOTYwOTc5OjNiYzM2OGNkYTliNzI1MTU0OGIwY2YyMmIxYjdjMTBjOWNlZWZkYTZiNzdhZmFkZDFlYWYyMzBkMzg3MDhhMTc4ODdkM2E5ZDE5OTc0NDQxNWU0Y2JmYTcxOTNmMzJjYjRhOTU3MGZlMDBmYjQ5NzU2YmEyOGFjYmFhZWVhMjlj&test_id=6690924&user_id=386483&pq=0&target=labels_bulk&update=1: {}
+
+[2019-03-16 19:26:35,688 WARNING Engine.blazemeter] Will skip failed data and continue running
+[2019-03-16 19:26:35,715 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext-5c8d1b136d14e/files?signature=ci1leHQtNWM4ZDFiMTM2ZDE0ZToxNTUzOTYwOTc5OjNiYzM2OGNkYTliNzI1MTU0OGIwY2YyMmIxYjdjMTBjOWNlZWZkYTZiNzdhZmFkZDFlYWYyMzBkMzg3MDhhMTc4ODdkM2E5ZDE5OTc0NDQxNWU0Y2JmYTcxOTNmMzJjYjRhOTU3MGZlMDBmYjQ5NzU2YmEyOGFjYmFhZWVhMjlj&masterId=19155044 b'--===============7453669028845638304==\r\nContent-Disposition: file; name="file"; filename="r-ext-5c8d1b136d14e-0-c.monitoring.json"\r\nContent-Type: application/json\r\n\r\n{\n "reportInfo": {\n  "sessionId": "r-ext-5c8d1b136d14e",\n  "timestamp": 1552751795.698373,'
+[2019-03-16 19:26:35,716 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/api/v4/image/r-ext-5c8d1b136d14e/files?signature=ci1leHQtNWM4ZDFiMTM2ZDE0ZToxNTUzOTYwOTc5OjNiYzM2OGNkYTliNzI1MTU0OGIwY2YyMmIxYjdjMTBjOWNlZWZkYTZiNzdhZmFkZDFlYWYyMzBkMzg3MDhhMTc4ODdkM2E5ZDE5OTc0NDQxNWU0Y2JmYTcxOTNmMzJjYjRhOTU3MGZlMDBmYjQ5NzU2YmEyOGFjYmFhZWVhMjlj&masterId=19155044
+[2019-03-16 19:26:53,642 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-ext-5c8d1b136d14e/files?signature=ci1leHQtNWM4ZDFiMTM2ZDE0ZToxNTUzOTYwOTc5OjNiYzM2OGNkYTliNzI1MTU0OGIwY2YyMmIxYjdjMTBjOWNlZWZkYTZiNzdhZmFkZDFlYWYyMzBkMzg3MDhhMTc4ODdkM2E5ZDE5OTc0NDQxNWU0Y2JmYTcxOTNmMzJjYjRhOTU3MGZlMDBmYjQ5NzU2YmEyOGFjYmFhZWVhMjlj&masterId=19155044 HTTP/1.1" 200 61
+[2019-03-16 19:26:53,659 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": []
+}
+[2019-03-16 19:26:53,663 DEBUG Engine.blazemeter] Error sending data: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 119, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 504, in __send_monitoring
+    self._session.send_monitoring_data(engine_id, data)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 685, in send_monitoring_data
+    self.upload_file(file_name, to_json(data))
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 715, in upload_file
+    raise TaurusNetworkError("Upload failed: %s" % response)
+bzt.TaurusNetworkError: Upload failed: {'api_version': 4, 'error': None, 'result': []}
+
+[2019-03-16 19:26:53,663 WARNING Engine.blazemeter] Failed to send data, will retry in 30.0 sec...
+[2019-03-16 19:27:01,307 DEBUG Engine.blazemeter] Set last check time to: 1552751377.728032
+[2019-03-16 19:27:01,319 INFO Engine.blazemeter] Ending data feeding...
+[2019-03-16 19:27:01,321 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/sessions/r-ext-5c8d1b136d14e/terminate-external {
+ "signature": "ci1leHQtNWM4ZDFiMTM2ZDE0ZToxNTUzOTYwOTc5OjNiYzM2OGNkYTliNzI1MTU0OGIwY2YyMmIxYjdjMTBjOWNlZWZkYTZiNzdhZmFkZDFlYWYyMzBkMzg3MDhhMTc4ODdkM2E5ZDE5OTc0NDQxNWU0Y2JmYTcxOTNmMzJjYjRhOTU3MGZlMDBmYjQ5NzU2YmEyOGFjYmFhZWVhMjlj",
+ "testId": 6690924,
+ "se
+[2019-03-16 19:27:01,321 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/sessions/r-ext-5c8d1b136d14e/terminate-external
+[2019-03-16 19:27:04,486 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/sessions/r-ext-5c8d1b136d14e/terminate-external HTTP/1.1" 200 1519
+[2019-03-16 19:27:04,491 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "success": "Terminating",
+        "session": {
+            "id": "r-ext-5c8d1b136d14e",
+            "name": "external",
+            "userId": 386483,
+            "publicToken": "iFX9GsR7lHA
+[2019-03-16 19:27:04,492 DEBUG Engine] post_process: 
+[2019-03-16 19:27:04,498 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/effective.yml
+[2019-03-16 19:27:04,564 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/effective.json
+[2019-03-16 19:27:04,567 DEBUG root] Keyboard interrupt
+[2019-03-16 19:27:04,568 DEBUG root] KeyboardInterrupt: 
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/cli.py", line 265, in perform
+    self.engine.post_process()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/engine.py", line 346, in post_process
+    reraise(exc_info, exc_value)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/six/py3.py", line 86, in reraise
+    raise exc
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/engine.py", line 332, in post_process
+    module.post_process()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 386, in post_process
+    self.__send_monitoring()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 124, in _impl
+    time.sleep(self._user.timeout)
+[2019-03-16 19:27:04,568 INFO root] Artifacts dir: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961
+[2019-03-16 19:27:04,569 WARNING root] Done performing with code: 1
+[2019-03-16 19:27:04,569 DEBUG root] Closing log handler: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-19-25.651961/bzt.log

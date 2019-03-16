@@ -8,32 +8,32 @@
          "path":"/api/device",
          "description":"Set and get the device discovery configuration and see its status. In order to get the current device configuration, call without any parameters and to change the device configuration, supply at least one of the following parameters.",
          "method":"GET",
-         "query-parameters":"No",
+         "queryParameters":"No",
          "parameters":[
             {
               "param":"name",
-              "param-type":"string",
-              "param-description":"Device network name"
+              "paramType":"string",
+              "paramDescription":"Device network name"
             },
             {
               "param":"description",
-              "param-type":"string",
-              "param-description":"Name to discover device by"
+              "paramType":"string",
+              "paramDescription":"Name to discover device by"
             },
             {
               "param":"uuid",
-              "param-type":"string",
-              "param-description":"device unique identifier"
+              "paramType":"string",
+              "paramDescription":"device unique identifier"
             },
             {
               "param":"user",
-              "param-type":"string",
-              "param-description":"Login name"
+              "paramType":"string",
+              "paramDescription":"Login name"
             },
             {
               "param":"pass",
-              "param-type":"string",
-              "param-description":"Login password"
+              "paramType":"string",
+              "paramDescription":"Login password"
             }
           ]
         },
@@ -41,16 +41,17 @@
         "path":"/api/state",
         "description":"Set and get the light color and intensity state of the bulb. In order to get the current state, call without any parameters. In order to change the state, supply at least one of the following parameters. ",
         "method":"GET",
+        "queryParameters":"No",
         "parameters":[
            {
              "param":"color",
-             "param-type":"Number",
-             "param-description":"A hex number between 000000 and ffffff representing the RGB color value to be set"
+             "paramType":"Number",
+             "paramDescription":"A hex number between 000000 and ffffff representing the RGB color value to be set"
            },
            {
              "param":"fade",
-             "param-type":"Number",
-             "param-description":"The morphing time during which the transition from the current state to the new state should take place. An integer number with units of 10ms"
+             "paramType":"Number",
+             "paramDescription":"The morphing time during which the transition from the current state to the new state should take place. An integer number with units of 10ms"
            }
           ]
        }
