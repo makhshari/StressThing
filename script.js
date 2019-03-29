@@ -1,4 +1,10 @@
 'use strict';
+
+var RequestArr=[];
+var PropertiesRequests=[];
+var actionsRequest=[];
+
+
   const system_input = (param1, param2) => {
     console.log("\nLet Read the input JSON file");
     console.log("\n^________________^\n")
@@ -7,30 +13,48 @@
     let jsondata = JSON.parse(rawdata);  
     let things=jsondata.things;
     for(var i=0;i<things.length;i++){
-      toAPI(things[i]);
-      console.log("********************")
+      extractServices(things[i]);
     }
   };
-  const toAPI = (thing) => {
+  const extractServices = (thing) => {
       console.log("we are going to find proper service calls for the thing named:", thing.name)
-
-      var APIArr=[];
-
-
+      console.log("\n")
       // extracting properties
       for(var i in thing.properties){
-        console.log("Properties:",thing.properties[i].forms[0].href)
+        extractProperties(thing,i,thing.properties[i]);
       }
-
        // extracting actions
        for(var i in thing.actions){
-        console.log("actions",thing.actions[i].forms[0].href)
-      }
-
-       // extracting events
-      
-      
+        extractActions(thing,i,thing.actions[i]);
+       }
+       // extracting events ???
     };
+  const extractProperties=(thing,name,body)=>{
+      console.log("Property NAME:",name)
+      console.log("\n")
+      console.log("Property BODY of",name,":",body)
+      console.log("\n")
+      console.log("@@@@:",body.forms[0].href)
+    
+      var reqTuple={
+        "thing":thing.name,
+        "href":body.forms[0].href,
+      }
+      PropertiesRequests.push(reqTuple)
+  }
+  const extractActions=(thing,name,body)=>{
+      console.log("ACTION NAME:",name)
+      console.log("\n")
+      console.log("ACTION BODY of",name,":",body)
+      console.log("\n")
+
+      var reqTuple={
+        "thing":thing.name,
+        "href":body.forms[0].href,
+      }
+      actionsRequest.push(reqTuple)
+
+  }
   const toTarausJson = () => {
         var tarausJsonData={
           "execution": [
@@ -80,7 +104,7 @@
   }
 (function main() {
   console.log("\nWelcome to StressThing *__*")
-  //system_input();
-  runTaraus();
-   
+  system_input();
+  //toTarausJson
+  //runTaraus();
 })();

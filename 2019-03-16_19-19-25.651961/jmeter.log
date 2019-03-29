@@ -210,3 +210,5 @@
 2019-03-16 19:30:38,155 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-1
 2019-03-16 19:31:12,915 INFO o.a.j.t.JMeterThread: Thread is done: quick-test 1-5
 2019-03-16 19:31:12,917 INFO o.a.j.t.JMeterThread: Thread finished: quick-test 1-5
+2019-03-18 19:22:12,058 INFO o.a.j.r.ResultCollector: Shutdown hook started
+2019-03-18 19:22:12,106 INFO o.a.j.r.ResultCollector: Shutdown hook ended

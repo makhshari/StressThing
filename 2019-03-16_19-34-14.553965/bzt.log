@@ -546,3 +546,169 @@ bzt.TaurusNetworkError: API call error 500 on https://data.blazemeter.com/submit
 bzt.TaurusNetworkError: Upload failed: {'api_version': 4, 'error': None, 'result': []}
 
 [2019-03-16 19:40:32,514 WARNING Engine.blazemeter] Failed to send data, will retry in 30.0 sec...
+[2019-03-16 19:41:02,550 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext-5c8d1e920fe7e/files?signature=ci1leHQtNWM4ZDFlOTIwZmU3ZToxNTUzOTYxODc0OjUxNzIzYzg2ZDgwNTM4Y2E1YWJlNDU0MTMwZmE3MTE4OWNmM2YwYjAwNWVhYmFiNTgyZGUzNzhhOTg4M2I5ZTE1ZDQ1ZmE4Y2YyOTBiNDQ4MTFiYTY3OTM5MjY2MTNmYmZkNDI0MzJiZTI5NGQ5NjQwODA2NTc0N2Y5OTA2NWIx&masterId=19155083 b'--===============0585944178617661861==\r\nContent-Disposition: file; name="file"; filename="r-ext-5c8d1e920fe7e-0-c.monitoring.json"\r\nContent-Type: application/json\r\n\r\n{\n "reportInfo": {\n  "sessionId": "r-ext-5c8d1e920fe7e",\n  "timestamp": 1552752662.530901,'
+[2019-03-16 19:41:02,552 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/api/v4/image/r-ext-5c8d1e920fe7e/files?signature=ci1leHQtNWM4ZDFlOTIwZmU3ZToxNTUzOTYxODc0OjUxNzIzYzg2ZDgwNTM4Y2E1YWJlNDU0MTMwZmE3MTE4OWNmM2YwYjAwNWVhYmFiNTgyZGUzNzhhOTg4M2I5ZTE1ZDQ1ZmE4Y2YyOTBiNDQ4MTFiYTY3OTM5MjY2MTNmYmZkNDI0MzJiZTI5NGQ5NjQwODA2NTc0N2Y5OTA2NWIx&masterId=19155083
+[2019-03-16 19:41:12,838 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-ext-5c8d1e920fe7e/files?signature=ci1leHQtNWM4ZDFlOTIwZmU3ZToxNTUzOTYxODc0OjUxNzIzYzg2ZDgwNTM4Y2E1YWJlNDU0MTMwZmE3MTE4OWNmM2YwYjAwNWVhYmFiNTgyZGUzNzhhOTg4M2I5ZTE1ZDQ1ZmE4Y2YyOTBiNDQ4MTFiYTY3OTM5MjY2MTNmYmZkNDI0MzJiZTI5NGQ5NjQwODA2NTc0N2Y5OTA2NWIx&masterId=19155083 HTTP/1.1" 200 61
+[2019-03-16 19:41:12,853 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": []
+}
+[2019-03-16 19:41:12,856 ERROR Engine.blazemeter] Fatal error sending data: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 119, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 504, in __send_monitoring
+    self._session.send_monitoring_data(engine_id, data)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 685, in send_monitoring_data
+    self.upload_file(file_name, to_json(data))
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 715, in upload_file
+    raise TaurusNetworkError("Upload failed: %s" % response)
+bzt.TaurusNetworkError: Upload failed: {'api_version': 4, 'error': None, 'result': []}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 125, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 504, in __send_monitoring
+    self._session.send_monitoring_data(engine_id, data)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 685, in send_monitoring_data
+    self.upload_file(file_name, to_json(data))
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 715, in upload_file
+    raise TaurusNetworkError("Upload failed: %s" % response)
+bzt.TaurusNetworkError: Upload failed: {'api_version': 4, 'error': None, 'result': []}
+
+[2019-03-16 19:41:12,859 WARNING Engine.blazemeter] Will skip failed data and continue running
+[2019-03-16 19:41:12,862 DEBUG Engine.blazemeter] Set last check time to: 1552752269.3677409
+[2019-03-16 19:41:12,863 INFO Engine.blazemeter] Ending data feeding...
+[2019-03-16 19:41:12,865 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/sessions/r-ext-5c8d1e920fe7e/terminate-external {
+ "signature": "ci1leHQtNWM4ZDFlOTIwZmU3ZToxNTUzOTYxODc0OjUxNzIzYzg2ZDgwNTM4Y2E1YWJlNDU0MTMwZmE3MTE4OWNmM2YwYjAwNWVhYmFiNTgyZGUzNzhhOTg4M2I5ZTE1ZDQ1ZmE4Y2YyOTBiNDQ4MTFiYTY3OTM5MjY2MTNmYmZkNDI0MzJiZTI5NGQ5NjQwODA2NTc0N2Y5OTA2NWIx",
+ "testId": 6690936,
+ "se
+[2019-03-16 19:41:12,866 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/sessions/r-ext-5c8d1e920fe7e/terminate-external
+[2019-03-16 19:41:42,926 DEBUG HTTPClient] Request resulted in exception: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1321, in getresponse
+    response.begin()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 367, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 306, in _raise_timeout
+    raise ReadTimeoutError(self, url, "Read timed out. (read timeout=%s)" % timeout_value)
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='a.blazemeter.com', port=443): Read timed out. (read timeout=30.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1075, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='a.blazemeter.com', port=443): Read timed out. (read timeout=30.0)
+
+[2019-03-16 19:41:42,933 DEBUG Engine.blazemeter] Failed to finish online: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1321, in getresponse
+    response.begin()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 367, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 306, in _raise_timeout
+    raise ReadTimeoutError(self, url, "Read timed out. (read timeout=%s)" % timeout_value)
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='a.blazemeter.com', port=443): Read timed out. (read timeout=30.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1075, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='a.blazemeter.com', port=443): Read timed out. (read timeout=30.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 416, in _postproc_phase3
+    self.end_online()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 442, in end_online
+    self._session.stop_anonymous()
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 655, in stop_anonymous
+    self._request(url, data)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.2_1/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1082, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://a.blazemeter.com/api/v4/sessions/r-ext-5c8d1e920fe7e/terminate-external failed
+
+[2019-03-16 19:41:42,933 WARNING Engine.blazemeter] Failed to finish online: Request to https://a.blazemeter.com/api/v4/sessions/r-ext-5c8d1e920fe7e/terminate-external failed
+[2019-03-16 19:41:42,946 INFO Engine.blazemeter] Online report link: https://a.blazemeter.com/app/?public-token=YXJxp2JcKfDPlMSLqBqGSPyyKCPxeM1A2LIJrCJYsK8bCWIVRW#reports/r-ext-5c8d1e920fe7e/summary
+[2019-03-16 19:41:42,959 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-34-14.553965/effective.yml
+[2019-03-16 19:41:43,075 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-34-14.553965/effective.json
+[2019-03-16 19:41:43,079 INFO root] Artifacts dir: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-34-14.553965
+[2019-03-16 19:41:43,080 WARNING root] Done performing with code: 1
+[2019-03-16 19:41:43,082 DEBUG root] Closing log handler: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-03-16_19-34-14.553965/bzt.log

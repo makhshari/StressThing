@@ -1,0 +1,14 @@
+---
+execution:
+- concurrency: 100
+  hold-for: 60s
+  ramp-up: 30s
+  scenario: quick-test
+reporting:
+- module: final-stats
+- module: blazemeter
+scenarios:
+  quick-test:
+    requests:
+    - http://apple.com
+
