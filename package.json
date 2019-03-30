@@ -1,0 +1,28 @@
+{
+  "name": "StressThing",
+  "version": "1.0.0",
+  "description": "a software testing platform to perform stress test on web of things",
+  "main": "script.js",
+  "dependencies": {
+    "eslint": "^5.14.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "scripts": {
+    "build": "babel src -d public",
+    "play":"node ./public/js/script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirosein/StressThing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amirosein/StressThing/issues"
+  },
+  "homepage": "https://github.com/amirosein/StressThing#readme"
+}

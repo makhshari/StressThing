@@ -10,7 +10,7 @@
 	"scenarios": {
 		"quick-test": {
 			"requests": [
-				"http://apple.com"
+				"http://google.com"
 			]
 		}
 	},
