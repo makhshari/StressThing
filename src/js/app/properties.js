@@ -1,4 +1,5 @@
 
+var PropertiesRequests=[];
 
   export function extractProperties(thing,name,body){
     console.log("Property NAME:",name)
@@ -17,10 +18,11 @@
     var reqTuple={
       "thing":thing.name,
       "property":name,
-      "href":body.forms[0].href,
+      "url":body.forms[0].href,
       "Method":httpMethod,
       "dataType":body.type,
       "data": reqData
     }
-    //PropertiesRequests.push(reqTuple)
+    PropertiesRequests.push(reqTuple)
+    console.log("Properties Requests array:",PropertiesRequests)
 }

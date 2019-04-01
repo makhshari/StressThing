@@ -5,7 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 var RequestArr = [];
-var PropertiesRequests = [];
 var actionsRequest = [];
 
 var properties = require('./properties');
@@ -18,7 +17,7 @@ var extractServices = function extractServices(thing) {
   for (var i in thing.properties) {
     properties.extractProperties(thing, i, thing.properties[i]);
   }
-  console.log("properties requests: \n", PropertiesRequests);
+  console.log("properties requests: \n", properties.PropertiesRequests);
   console.log("\n");
   // extracting actions
   //   for(var i in thing.actions){

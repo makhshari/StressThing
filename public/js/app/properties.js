@@ -4,6 +4,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.extractProperties = extractProperties;
+
+var PropertiesRequests = [];
+
 function extractProperties(thing, name, body) {
   console.log("Property NAME:", name);
   console.log("\n");
@@ -25,6 +28,7 @@ function extractProperties(thing, name, body) {
     "Method": httpMethod,
     "dataType": body.type,
     "data": reqData
-    //PropertiesRequests.push(reqTuple)
   };
+  PropertiesRequests.push(reqTuple);
+  console.log("^^^^^:", PropertiesRequests);
 }
