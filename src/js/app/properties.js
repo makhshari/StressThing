@@ -1,28 +1,43 @@
 
-var PropertiesRequests=[];
+const dataGenerator = require('./generator');
 
-  export function extractProperties(thing,name,body){
-    console.log("Property NAME:",name)
-    console.log("\n")
-    console.log("Property BODY of",name,":",body)
-    console.log("\n")
-    console.log("@@@@:",body.forms[0].href)
-  
-    var reqData=[]
+  export function extractProperties(thing,name,body,requestArr){
+
+    var reqTuple={};
+    var reqbody={};
     var httpMethod=""
     if(body.forms[0]['http:methodName']){
       var httpMethod= body.forms[0]['http:methodName']
     }else{
       httpMethod="GET"
     }
-    var reqTuple={
-      "thing":thing.name,
-      "property":name,
+    reqTuple={
+      "label":"PROPERTY:"+name+"THING:"+thing.name,
       "url":body.forms[0].href,
-      "Method":httpMethod,
-      "dataType":body.type,
-      "data": reqData
+      "Method":httpMethod
     }
-    PropertiesRequests.push(reqTuple)
-    console.log("Properties Requests array:",PropertiesRequests)
+    if(httpMethod=="POST"){
+      if(body.properties){
+        for(var i in body.properties){
+          var key=i;
+          var value=dataGenerator.generateData(body.properties[i])
+          reqbody[key]=value;
+          }
+      }else{
+        var key=name;
+        var value="";
+        if(body.type=="boolean")
+            value=dataGenerator.generateBoolean()
+        if(body.type=="integer")
+            value=dataGenerator.generateInteger()
+        if(body.type=="number")
+            value=dataGenerator.generateNumber()
+        if(body.type=="string")
+            value=dataGenerator.generateString()
+        reqbody[key]=value;
+      }
+      reqTuple["body"]=reqbody
+    }
+    requestArr.push(reqTuple)
+    return requestArr
 }

@@ -2,6 +2,7 @@
 
 var extractor = require('./app/extractor');
 var testingTools = require('./app/testingTools');
+var allRequests = [];
 
 var system_input = function system_input(param1, param2) {
   console.log("\nLet Read the input JSON file");
@@ -11,8 +12,9 @@ var system_input = function system_input(param1, param2) {
   var jsondata = JSON.parse(rawdata);
   var things = jsondata.things;
   for (var i = 0; i < things.length; i++) {
-    extractor.extractServices(things[i]);
+    allRequests.push(extractor.extractServices(things[i]));
   }
+  console.log(allRequests);
 };
 
 (function main() {

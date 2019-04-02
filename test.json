@@ -1,8 +1,8 @@
 {
 	"execution": [
 		{
-			"concurrency": 100,
-			"ramp-up": "30s",
+			"concurrency": "30",
+			"ramp-up": "20s",
 			"hold-for": "60s",
 			"scenario": "quick-test"
 		}
