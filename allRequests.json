@@ -1,45 +1,118 @@
 {
-  "requests": [
+  "execution": [
     {
-      "label": "PROPERTY: statusTHING: MyLampThing",
-      "url": "coaps://mylamp.example.com/status",
-      "Method": "GET"
+      "concurrency": "60",
+      "ramp-up": "10",
+      "hold-for": "60",
+      "throughput": "20",
+      "scenario": "scenario1"
     },
     {
-      "label": "ACTION: toggleTHING: MyLampThing",
-      "url": "coaps://mylamp.example.com/toggle",
-      "Method": "POST"
+      "concurrency": "1",
+      "ramp-up": "10",
+      "hold-for": "60",
+      "throughput": "100",
+      "scenario": "scenario2"
+    }
+  ],
+  "scenarios": {
+    "scenario1": {
+      "requests": [
+        {
+          "label": "PROPERTY: statusTHING: MyLampThing",
+          "url": "coaps://mylamp.example.com/status",
+          "Method": "GET"
+        },
+        {
+          "label": "ACTION: toggleTHING: MyLampThing",
+          "url": "coaps://mylamp.example.com/toggle",
+          "Method": "POST"
+        },
+        {
+          "label": "PROPERTY: onTHING: MyThing",
+          "url": "http://mytemp.example.com:5683/temp",
+          "Method": "POST",
+          "body": {
+            "on": "0"
+          }
+        },
+        {
+          "label": "PROPERTY: statusTHING: MyThing",
+          "url": "http://mytemp.example.com:5683/temp",
+          "Method": "POST",
+          "body": {
+            "brightness": "85.98212833696597",
+            "rgb": [
+              "47.3121969848189",
+              "216.76984362117074",
+              "153.78263659075787"
+            ]
+          }
+        },
+        {
+          "label": "ACTION: fadeTHING: MyThing",
+          "url": "http://mytemp.example.com:5683/temp",
+          "Method": "POST",
+          "body": {
+            "from": "57",
+            "to": "9",
+            "duration": "2667.7432738267880"
+          }
+        }
+      ]
+    },
+    "scenario2": {
+      "requests": [
+        {
+          "label": "PROPERTY: statusTHING: MyLampThing",
+          "url": "coaps://mylamp.example.com/status",
+          "Method": "GET"
+        },
+        {
+          "label": "ACTION: toggleTHING: MyLampThing",
+          "url": "coaps://mylamp.example.com/toggle",
+          "Method": "POST"
+        },
+        {
+          "label": "PROPERTY: onTHING: MyThing",
+          "url": "http://mytemp.example.com:5683/temp",
+          "Method": "POST",
+          "body": {
+            "on": "0"
+          }
+        },
+        {
+          "label": "PROPERTY: statusTHING: MyThing",
+          "url": "http://mytemp.example.com:5683/temp",
+          "Method": "POST",
+          "body": {
+            "brightness": "85.98212833696597",
+            "rgb": [
+              "47.3121969848189",
+              "216.76984362117074",
+              "153.78263659075787"
+            ]
+          }
+        },
+        {
+          "label": "ACTION: fadeTHING: MyThing",
+          "url": "http://mytemp.example.com:5683/temp",
+          "Method": "POST",
+          "body": {
+            "from": "57",
+            "to": "9",
+            "duration": "2667.7432738267880"
+          }
+        }
+      ]
+    }
+  },
+  "reporting": [
+    {
+      "module": "console"
     },
     {
-      "label": "PROPERTY: onTHING: MyThing",
-      "url": "http://mytemp.example.com:5683/temp",
-      "Method": "POST",
-      "body": {
-        "on": "0"
-      }
-    },
-    {
-      "label": "PROPERTY: statusTHING: MyThing",
-      "url": "http://mytemp.example.com:5683/temp",
-      "Method": "POST",
-      "body": {
-        "brightness": "61.78630713610811",
-        "rgb": [
-          "187.81659598112034",
-          "23.601659499644757",
-          "55.816728598617885"
-        ]
-      }
-    },
-    {
-      "label": "ACTION: fadeTHING: MyThing",
-      "url": "http://mytemp.example.com:5683/temp",
-      "Method": "POST",
-      "body": {
-        "from": "69",
-        "to": "9",
-        "duration": "3270034783227339.50"
-      }
+      "module": "blazemeter"
     }
   ]
 }

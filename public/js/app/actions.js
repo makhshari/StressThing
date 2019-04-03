@@ -32,6 +32,5 @@ function extractActions(thing, name, body) {
       reqTuple["body"] = reqbody;
     } else {}
   }
-  console.log("UHUHUHU: ", reqTuple);
   return reqTuple;
 }

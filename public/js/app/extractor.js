@@ -20,8 +20,8 @@ var extractServices = function extractServices(thing, allRequestsArr) {
   for (var i in thing.actions) {
     allRequestsArr.push(actions.extractActions(thing, i, thing.actions[i]));
   }
-
   // extracting events ???
+
   return allRequestsArr;
 };
 exports.extractServices = extractServices;

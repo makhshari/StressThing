@@ -1,8 +1,11 @@
 'use strict';
 
 var extractor = require('./app/extractor');
-var testingTools = require('./app/testingTools');
+var myScenarios = require('./app/scenarios');
+var tarausConfigs = require('./app/tarausConfigs');
+//const testingTools = require('./app/testingTools');
 var allRequestsArr = [];
+var scenarios = {};
 var FinalJSON = {};
 
 var executeInput = function executeInput(jsondata) {
@@ -10,7 +13,16 @@ var executeInput = function executeInput(jsondata) {
   for (var i = 0; i < things.length; i++) {
     allRequestsArr = extractor.extractServices(things[i], allRequestsArr);
   }
-  FinalJSON["requests"] = allRequestsArr;
+  var allExecutions = myScenarios.getExecutions();
+  FinalJSON["execution"] = allExecutions;
+  for (var j in allExecutions) {
+    console.log(allExecutions[j].scenario);
+    var x = {};
+    x["requests"] = allRequestsArr;
+    scenarios[allExecutions[j].scenario] = x;
+  }
+  FinalJSON["scenarios"] = scenarios;
+  FinalJSON["reporting"] = tarausConfigs.getReporting();
   fileSaver(FinalJSON, "allRequests");
 };
 

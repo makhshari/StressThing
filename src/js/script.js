@@ -1,7 +1,10 @@
 'use strict';
 const extractor = require('./app/extractor');
-const testingTools = require('./app/testingTools');
+const myScenarios = require('./app/scenarios');
+const tarausConfigs = require('./app/tarausConfigs');
+//const testingTools = require('./app/testingTools');
 var allRequestsArr=[];
+var scenarios={}
 var FinalJSON={};
 
   const executeInput=(jsondata)=>{
@@ -9,8 +12,17 @@ var FinalJSON={};
     for(var i=0;i<things.length;i++){
       allRequestsArr=(extractor.extractServices(things[i],allRequestsArr));
     }
-    FinalJSON["requests"]=allRequestsArr
-    fileSaver(FinalJSON,"allRequests")
+    var allExecutions=myScenarios.getExecutions()
+    FinalJSON["execution"]= allExecutions
+    for(var j in allExecutions){
+      console.log(allExecutions[j].scenario)
+      var x={}
+      x["requests"]=allRequestsArr
+      scenarios[allExecutions[j].scenario]=x
+    }
+   FinalJSON["scenarios"]=scenarios
+   FinalJSON["reporting"]=tarausConfigs.getReporting()
+   fileSaver(FinalJSON,"allRequests")
   };
 
 function fileSaver(myJSON,filename){
