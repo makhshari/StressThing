@@ -1,7 +1,7 @@
 
 const dataGenerator = require('./generator');
 
-  export function extractProperties(thing,name,body,requestArr){
+  export function extractProperties(thing,name,body){
 
     var reqTuple={};
     var reqbody={};
@@ -12,7 +12,7 @@ const dataGenerator = require('./generator');
       httpMethod="GET"
     }
     reqTuple={
-      "label":"PROPERTY:"+name+"THING:"+thing.name,
+      "label":"PROPERTY: "+name+"THING: "+thing.name,
       "url":body.forms[0].href,
       "Method":httpMethod
     }
@@ -38,6 +38,5 @@ const dataGenerator = require('./generator');
       }
       reqTuple["body"]=reqbody
     }
-    requestArr.push(reqTuple)
-    return requestArr
+    return reqTuple
 }

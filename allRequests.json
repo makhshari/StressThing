@@ -1,0 +1,45 @@
+{
+  "requests": [
+    {
+      "label": "PROPERTY: statusTHING: MyLampThing",
+      "url": "coaps://mylamp.example.com/status",
+      "Method": "GET"
+    },
+    {
+      "label": "ACTION: toggleTHING: MyLampThing",
+      "url": "coaps://mylamp.example.com/toggle",
+      "Method": "POST"
+    },
+    {
+      "label": "PROPERTY: onTHING: MyThing",
+      "url": "http://mytemp.example.com:5683/temp",
+      "Method": "POST",
+      "body": {
+        "on": "0"
+      }
+    },
+    {
+      "label": "PROPERTY: statusTHING: MyThing",
+      "url": "http://mytemp.example.com:5683/temp",
+      "Method": "POST",
+      "body": {
+        "brightness": "61.78630713610811",
+        "rgb": [
+          "187.81659598112034",
+          "23.601659499644757",
+          "55.816728598617885"
+        ]
+      }
+    },
+    {
+      "label": "ACTION: fadeTHING: MyThing",
+      "url": "http://mytemp.example.com:5683/temp",
+      "Method": "POST",
+      "body": {
+        "from": "69",
+        "to": "9",
+        "duration": "3270034783227339.50"
+      }
+    }
+  ]
+}

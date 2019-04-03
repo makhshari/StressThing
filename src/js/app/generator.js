@@ -32,14 +32,22 @@ return this.generateData(postDataProperty.properties)
 
 }
 export function generateNumber(min,max){
-  return Math.random() * (max - min)+ min;
+  if(min==null)
+    min=0
+  if(max==null)
+    max=10000
+  return ((Math.random() * (max - min) ) + min).toString();
 }
 export function generateInteger(min,max){
-  return Math.floor(Math.random() * (max - min) ) + min;
+  if(min==null)
+    min=0
+  if(max==null)
+    max=10000
+  return (Math.floor(Math.random() * (max - min) ) + min).toString();
 }
 export function generateString(){
   return Math.random().toString(36)
 }
 export function generateBoolean(){
-  return Math.floor(Math.random()+0.5); 
+  return (Math.floor(Math.random()+0.5)).toString(); 
 }

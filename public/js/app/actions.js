@@ -1,14 +1,37 @@
-"use strict";
+'use strict';
 
-var extractActions = function extractActions(thing, name, body) {
-  console.log("ACTION NAME:", name);
-  console.log("\n");
-  console.log("ACTION BODY of", name, ":", body);
-  console.log("\n");
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.extractActions = extractActions;
 
-  var reqTuple = {
-    "thing": thing.name,
-    "href": body.forms[0].href
+var dataGenerator = require('./generator');
+
+function extractActions(thing, name, body) {
+
+  var reqTuple = {};
+  var reqbody = {};
+  var httpMethod = "";
+  if (body.forms[0]['http:methodName']) {
+    var httpMethod = body.forms[0]['http:methodName'];
+  } else {
+    httpMethod = "POST";
+  }
+  reqTuple = {
+    "label": "ACTION: " + name + "THING: " + thing.name,
+    "url": body.forms[0].href,
+    "Method": httpMethod
   };
-  actionsRequest.push(reqTuple);
-};
+  if (httpMethod == "POST") {
+    if (body.input) {
+      for (var i in body.input.properties) {
+        var key = i;
+        var value = dataGenerator.generateData(body.input.properties[i]);
+        reqbody[key] = value;
+      }
+      reqTuple["body"] = reqbody;
+    } else {}
+  }
+  console.log("UHUHUHU: ", reqTuple);
+  return reqTuple;
+}

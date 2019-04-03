@@ -117,7 +117,10 @@
                     "minimum": 0,
                     "maximum": 100
                 },
-                "duration": {"type": "number"}
+                "duration": {
+                    "type": "number",
+                    "minimum": "0"
+                }
             },
             "required": ["to","duration"]
         },

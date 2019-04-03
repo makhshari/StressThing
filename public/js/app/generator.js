@@ -37,14 +37,16 @@ function generateData(postDataProperty) {
   }
 }
 function generateNumber(min, max) {
-  return Math.random() * (max - min) + min;
+  if (min == null) min = Number.MIN_SAFE_INTEGER;
+  if (max == null) max = Number.MAX_SAFE_INTEGER;
+  return (Math.random() * (max - min) + min).toString();
 }
 function generateInteger(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
+  return (Math.floor(Math.random() * (max - min)) + min).toString();
 }
 function generateString() {
   return Math.random().toString(36);
 }
 function generateBoolean() {
-  return Math.floor(Math.random() + 0.5);
+  return Math.floor(Math.random() + 0.5).toString();
 }
