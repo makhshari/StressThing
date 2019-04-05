@@ -1,0 +1,129 @@
+2019-04-05 11:59:38,125 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2019-04-05 11:59:38,163 INFO o.a.j.JMeter: Loading user properties from: /Users/apple/.bzt/jmeter-taurus/5.1.1/bin/user.properties
+2019-04-05 11:59:38,164 INFO o.a.j.JMeter: Loading system properties from: /Users/apple/.bzt/jmeter-taurus/5.1.1/bin/system.properties
+2019-04-05 11:59:38,165 INFO o.a.j.JMeter: Loading additional properties from: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-05_11-59-20.720417/jmeter-bzt.properties
+2019-04-05 11:59:38,167 INFO o.a.j.JMeter: Setting System properties from file: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-05_11-59-20.720417/system.properties
+2019-04-05 11:59:38,177 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2019-04-05 11:59:38,177 INFO o.a.j.JMeter: Version 5.1.1 r1855137
+2019-04-05 11:59:38,177 INFO o.a.j.JMeter: java.version=1.8.0_66
+2019-04-05 11:59:38,177 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2019-04-05 11:59:38,178 INFO o.a.j.JMeter: os.name=Mac OS X
+2019-04-05 11:59:38,178 INFO o.a.j.JMeter: os.arch=x86_64
+2019-04-05 11:59:38,178 INFO o.a.j.JMeter: os.version=10.13.4
+2019-04-05 11:59:38,178 INFO o.a.j.JMeter: file.encoding=UTF-8
+2019-04-05 11:59:38,178 INFO o.a.j.JMeter: java.awt.headless=true
+2019-04-05 11:59:38,178 INFO o.a.j.JMeter: Max memory     =954728448
+2019-04-05 11:59:38,178 INFO o.a.j.JMeter: Available Processors =4
+2019-04-05 11:59:38,183 INFO o.a.j.JMeter: Default Locale=English (United States)
+2019-04-05 11:59:38,184 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2019-04-05 11:59:38,184 INFO o.a.j.JMeter: JMeterHome=/Users/apple/.bzt/jmeter-taurus/5.1.1
+2019-04-05 11:59:38,184 INFO o.a.j.JMeter: user.dir  =/Users/apple/Desktop/bachelorProject/stressThing/StressThing
+2019-04-05 11:59:38,184 INFO o.a.j.JMeter: PWD       =/Users/apple/Desktop/bachelorProject/stressThing/StressThing
+2019-04-05 11:59:38,186 INFO o.a.j.JMeter: IP: 192.168.1.9 Name: amirhosein-mac.local FullName: 192.168.1.9
+2019-04-05 11:59:38,187 INFO o.a.j.JMeter: user.classpath=/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-05_11-59-20.720417:/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-05_11-59-20.720417
+2019-04-05 11:59:38,187 INFO o.a.j.JMeter: Adding to classpath and loader: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-05_11-59-20.720417
+2019-04-05 11:59:38,188 INFO o.a.j.JMeter: Adding to classpath and loader: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-05_11-59-20.720417
+2019-04-05 11:59:38,196 INFO o.a.j.s.FileServer: Default base='/Users/apple/Desktop/bachelorProject/stressThing/StressThing'
+2019-04-05 11:59:38,209 INFO o.a.j.s.FileServer: Set new base='/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-05_11-59-20.720417'
+2019-04-05 11:59:38,493 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-04-05 11:59:38,520 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-04-05 11:59:38,527 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2019-04-05 11:59:38,536 INFO o.a.j.s.SaveService: Loading file: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-05_11-59-20.720417/modified_requests.jmx
+2019-04-05 11:59:38,612 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2019-04-05 11:59:38,615 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2019-04-05 11:59:38,638 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-05 11:59:38,638 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-05 11:59:38,638 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-05 11:59:38,638 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-05 11:59:38,638 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-04-05 11:59:38,638 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-04-05 11:59:38,697 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-04-05 11:59:38,699 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-04-05 11:59:38,699 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-04-05 11:59:38,713 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2019-04-05 11:59:38,713 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2019-04-05 11:59:41,079 INFO o.a.j.JMeter: Running test (1554449381079)
+2019-04-05 11:59:41,175 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : UserScenario
+2019-04-05 11:59:41,175 INFO o.a.j.e.StandardJMeterEngine: Starting 20 threads for group UserScenario.
+2019-04-05 11:59:41,176 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-04-05 11:59:41,187 INFO c.b.j.t.c.ConcurrencyThreadStarter: Start supplying threads
+2019-04-05 11:59:41,192 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-04-05 11:59:41,457 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-1
+2019-04-05 11:59:41,458 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2019-04-05 11:59:41,458 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2019-04-05 11:59:41,458 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2019-04-05 11:59:41,458 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2019-04-05 11:59:41,472 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group UserScenario, made 0 samples/s for expected rps 0.286 samples/s, increase your number of threads
+2019-04-05 11:59:41,573 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = amirhosein-mac.local
+2019-04-05 11:59:41,591 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2019-04-05 11:59:42,362 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2019-04-05 11:59:42,379 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2019-04-05 11:59:42,379 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2019-04-05 11:59:42,463 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-2
+2019-04-05 11:59:42,464 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group UserScenario, made 1 samples/s for expected rps 2.2573999999999996 samples/s, increase your number of threads
+2019-04-05 11:59:42,468 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-3
+2019-04-05 11:59:42,778 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2019-04-05 11:59:42,788 INFO o.a.j.u.SSLManager: KeyStore created OK
+2019-04-05 11:59:42,788 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2019-04-05 11:59:43,471 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-4
+2019-04-05 11:59:43,472 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group UserScenario, made 2 samples/s for expected rps 4.2288 samples/s, increase your number of threads
+2019-04-05 11:59:43,473 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-5
+2019-04-05 11:59:44,033 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group UserScenario, made 2 samples/s for expected rps 6.200199999999999 samples/s, increase your number of threads
+2019-04-05 11:59:44,475 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-6
+2019-04-05 11:59:44,477 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-7
+2019-04-05 11:59:45,478 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-8
+2019-04-05 11:59:45,479 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-9
+2019-04-05 11:59:46,481 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-10
+2019-04-05 11:59:46,484 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-11
+2019-04-05 11:59:47,488 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-12
+2019-04-05 11:59:47,490 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-13
+2019-04-05 11:59:48,501 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-14
+2019-04-05 11:59:48,503 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-15
+2019-04-05 11:59:49,507 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-16
+2019-04-05 11:59:49,508 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-17
+2019-04-05 11:59:50,511 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-18
+2019-04-05 11:59:50,511 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-19
+2019-04-05 11:59:51,518 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-20
+2019-04-05 12:00:51,649 INFO c.b.j.t.c.ConcurrencyThreadStarter: Done supplying threads
+2019-04-05 12:01:20,760 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-11
+2019-04-05 12:01:20,772 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-11
+2019-04-05 12:01:20,891 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-17
+2019-04-05 12:01:20,892 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-17
+2019-04-05 12:01:20,947 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-9
+2019-04-05 12:01:20,947 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-9
+2019-04-05 12:01:20,967 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-2
+2019-04-05 12:01:20,967 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-2
+2019-04-05 12:01:21,112 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-12
+2019-04-05 12:01:21,112 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-12
+2019-04-05 12:01:21,196 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-10
+2019-04-05 12:01:21,196 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-10
+2019-04-05 12:01:21,300 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-4
+2019-04-05 12:01:21,300 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-4
+2019-04-05 12:01:21,303 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-13
+2019-04-05 12:01:21,303 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-13
+2019-04-05 12:01:21,409 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-6
+2019-04-05 12:01:21,409 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-6
+2019-04-05 12:01:21,529 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-18
+2019-04-05 12:01:21,530 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-18
+2019-04-05 12:01:21,563 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-5
+2019-04-05 12:01:21,563 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-5
+2019-04-05 12:01:21,698 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-16
+2019-04-05 12:01:21,698 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-16
+2019-04-05 12:01:21,841 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-7
+2019-04-05 12:01:21,841 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-7
+2019-04-05 12:01:21,964 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-1
+2019-04-05 12:01:21,964 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-1
+2019-04-05 12:01:21,970 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-20
+2019-04-05 12:01:21,970 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-20
+2019-04-05 12:01:21,983 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-14
+2019-04-05 12:01:21,983 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-14
+2019-04-05 12:01:21,985 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-8
+2019-04-05 12:01:21,985 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-8
+2019-04-05 12:01:22,101 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-19
+2019-04-05 12:01:22,101 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-19
+2019-04-05 12:01:22,190 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-15
+2019-04-05 12:01:22,190 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-15
+2019-04-05 12:01:22,195 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-3
+2019-04-05 12:01:22,195 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-3
+2019-04-05 12:01:22,197 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-04-05 12:01:22,212 INFO o.a.j.e.StandardJMeterEngine: Forced JVM shutdown requested at end of test

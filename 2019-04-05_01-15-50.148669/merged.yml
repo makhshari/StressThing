@@ -1,0 +1,33 @@
+---
+execution:
+- concurrency: '20'
+  hold-for: '60'
+  ramp-up: '10'
+  scenario: UserScenario
+  throughput: '20'
+- concurrency: '20'
+  hold-for: '60'
+  ramp-up: '10'
+  scenario: scenario1
+  throughput: '20'
+reporting:
+- module: console
+- module: blazemeter
+scenarios:
+  UserScenario:
+    requests:
+    - Method: GET
+      label: 'PROPERTY: statusTHING: MyLampThing'
+      url: http://apple.com
+    - Method: GET
+      label: 'ACTION: toggleTHING: MyLampThing'
+      url: http://google.com
+  scenario1:
+    requests:
+    - Method: GET
+      label: 'PROPERTY: statusTHING: MyLampThing'
+      url: http://apple.com
+    - Method: GET
+      label: 'ACTION: toggleTHING: MyLampThing'
+      url: http://google.com
+

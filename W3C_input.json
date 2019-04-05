@@ -10,7 +10,7 @@
             "description" : "Shows the current status of the lamp",
             "type": "string",
             "forms": [{
-                "href": "coaps://mylamp.example.com/status"
+                "href": "http://apple.com"
             }]
         }
     },
@@ -18,7 +18,7 @@
         "toggle": {
             "description" : "Turn on or off the lamp",
             "forms": [{
-                "href": "coaps://mylamp.example.com/toggle"
+                "href": "http://google.com"
             }]
         }
     },
@@ -27,7 +27,7 @@
             "description" : "Lamp reaches a critical temperature (overheating)",
             "type": "string",
             "forms": [{
-                "href": "coaps://mylamp.example.com/oh"
+                "href": "http://yahoo.com"
             }]
         }
     }
@@ -60,7 +60,7 @@
         "observable": false,
         "type": "boolean",
         "forms": [{
-          "href" : "http://mytemp.example.com:5683/temp",
+          "href" : "http://aut.ac.ir",
           "mediaType": "application/json",
           "http:methodName": "POST",
           "rel": "writeProperty",
@@ -92,7 +92,7 @@
         },
         "required": ["brightness","rgb"],
         "forms": [{
-          "href" : "http://mytemp.example.com:5683/temp",
+          "href" : "http://bing.com",
           "mediaType": "application/json",
           "http:methodName": "POST",
           "rel": "writeProperty",
@@ -126,7 +126,7 @@
         },
         "output": {"type": "string"},
         "forms": [{
-          "href" : "http://mytemp.example.com:5683/temp",
+          "href" : "http://samsung.com",
           "mediaType": "application/json",
           "http:methodName": "POST",
           "rel": "writeProperty",

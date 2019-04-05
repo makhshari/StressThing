@@ -1,0 +1,52 @@
+{
+"things": [
+{
+    "id": "@MyLampThing",
+    "name": "MyLampThing",
+    "description" : "MyLampThing is a RGB lamp for my room",
+    "security": [{"scheme": "psk"}],
+    "properties": {
+        "status": {
+            "description" : "Shows the current status of the lamp",
+            "type": "string",
+            "forms": [{
+                "href": "https://jsonplaceholder.typicode.com/posts/1"
+            }]
+        }
+    },
+    "actions": {
+        "toggle": {
+            "description" : "Turn on or off the lamp",
+            "input": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string"
+                },
+                "body": {
+                    "type": "string"
+                  },
+                "userID": {
+                    "type": "integer",
+                    "minimum": "0",
+                    "maximum": "10"
+                }
+            },
+            "required": ["title","body"]
+        },
+            "forms": [{
+                "href": "https://jsonplaceholder.typicode.com/posts"
+            }]
+        }
+    },
+    "events": {
+        "overheating": {
+            "description" : "Lamp reaches a critical temperature (overheating)",
+            "type": "string",
+            "forms": [{
+                "href": "http://yahoo.com"
+            }]
+        }
+    }
+}
+]}

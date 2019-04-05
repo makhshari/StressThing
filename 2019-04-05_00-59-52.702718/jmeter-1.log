@@ -1,0 +1,443 @@
+2019-04-05 01:00:15,968 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2019-04-05 01:00:16,122 INFO o.a.j.JMeter: Loading user properties from: /Users/apple/.bzt/jmeter-taurus/5.1.1/bin/user.properties
+2019-04-05 01:00:16,124 INFO o.a.j.JMeter: Loading system properties from: /Users/apple/.bzt/jmeter-taurus/5.1.1/bin/system.properties
+2019-04-05 01:00:16,128 INFO o.a.j.JMeter: Loading additional properties from: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-05_00-59-52.702718/jmeter-bzt-1.properties
+2019-04-05 01:00:16,132 INFO o.a.j.JMeter: Setting System properties from file: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-05_00-59-52.702718/system-1.properties
+2019-04-05 01:00:16,160 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2019-04-05 01:00:16,161 INFO o.a.j.JMeter: Version 5.1.1 r1855137
+2019-04-05 01:00:16,161 INFO o.a.j.JMeter: java.version=1.8.0_66
+2019-04-05 01:00:16,161 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2019-04-05 01:00:16,161 INFO o.a.j.JMeter: os.name=Mac OS X
+2019-04-05 01:00:16,161 INFO o.a.j.JMeter: os.arch=x86_64
+2019-04-05 01:00:16,162 INFO o.a.j.JMeter: os.version=10.13.4
+2019-04-05 01:00:16,162 INFO o.a.j.JMeter: file.encoding=UTF-8
+2019-04-05 01:00:16,162 INFO o.a.j.JMeter: java.awt.headless=true
+2019-04-05 01:00:16,162 INFO o.a.j.JMeter: Max memory     =954728448
+2019-04-05 01:00:16,162 INFO o.a.j.JMeter: Available Processors =4
+2019-04-05 01:00:16,175 INFO o.a.j.JMeter: Default Locale=English (United States)
+2019-04-05 01:00:16,176 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2019-04-05 01:00:16,176 INFO o.a.j.JMeter: JMeterHome=/Users/apple/.bzt/jmeter-taurus/5.1.1
+2019-04-05 01:00:16,176 INFO o.a.j.JMeter: user.dir  =/Users/apple/Desktop/bachelorProject/stressThing/StressThing
+2019-04-05 01:00:16,177 INFO o.a.j.JMeter: PWD       =/Users/apple/Desktop/bachelorProject/stressThing/StressThing
+2019-04-05 01:00:16,182 INFO o.a.j.JMeter: IP: 192.168.1.9 Name: amirhosein-mac.local FullName: 192.168.1.9
+2019-04-05 01:00:16,182 INFO o.a.j.JMeter: user.classpath=/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-05_00-59-52.702718:/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-05_00-59-52.702718
+2019-04-05 01:00:16,183 INFO o.a.j.JMeter: Adding to classpath and loader: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-05_00-59-52.702718
+2019-04-05 01:00:16,185 INFO o.a.j.JMeter: Adding to classpath and loader: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-05_00-59-52.702718
+2019-04-05 01:00:16,238 INFO o.a.j.s.FileServer: Default base='/Users/apple/Desktop/bachelorProject/stressThing/StressThing'
+2019-04-05 01:00:16,276 INFO o.a.j.s.FileServer: Set new base='/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-05_00-59-52.702718'
+2019-04-05 01:00:17,351 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-04-05 01:00:17,410 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-04-05 01:00:17,432 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2019-04-05 01:00:17,463 INFO o.a.j.s.SaveService: Loading file: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-05_00-59-52.702718/modified_requests-1.jmx
+2019-04-05 01:00:17,659 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2019-04-05 01:00:17,667 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2019-04-05 01:00:17,730 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-05 01:00:17,731 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-05 01:00:17,731 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-05 01:00:17,731 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-05 01:00:17,731 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-04-05 01:00:17,732 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-04-05 01:00:17,912 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-04-05 01:00:17,913 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-04-05 01:00:17,914 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-04-05 01:00:17,931 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2019-04-05 01:00:17,931 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2019-04-05 01:00:20,658 INFO o.a.j.JMeter: Running test (1554409820658)
+2019-04-05 01:00:20,801 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : scenario1
+2019-04-05 01:00:20,802 INFO o.a.j.e.StandardJMeterEngine: Starting 20 threads for group scenario1.
+2019-04-05 01:00:20,802 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-04-05 01:00:20,811 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-04-05 01:00:20,811 INFO c.b.j.t.c.ConcurrencyThreadStarter: Start supplying threads
+2019-04-05 01:00:21,081 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-1
+2019-04-05 01:00:21,083 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2019-04-05 01:00:21,083 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2019-04-05 01:00:21,083 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2019-04-05 01:00:21,083 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2019-04-05 01:00:21,111 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario1, made 0 samples/s for expected rps 0.286 samples/s, increase your number of threads
+2019-04-05 01:00:21,226 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = amirhosein-mac.local
+2019-04-05 01:00:21,266 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2019-04-05 01:00:22,091 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-2
+2019-04-05 01:00:22,092 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario1, made 1 samples/s for expected rps 2.2573999999999996 samples/s, increase your number of threads
+2019-04-05 01:00:22,095 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-3
+2019-04-05 01:00:23,101 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-4
+2019-04-05 01:00:23,102 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario1, made 2 samples/s for expected rps 4.2288 samples/s, increase your number of threads
+2019-04-05 01:00:23,102 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-5
+2019-04-05 01:00:23,229 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2019-04-05 01:00:23,243 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2019-04-05 01:00:23,244 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2019-04-05 01:00:23,546 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2019-04-05 01:00:23,553 INFO o.a.j.u.SSLManager: KeyStore created OK
+2019-04-05 01:00:23,553 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2019-04-05 01:00:24,107 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-6
+2019-04-05 01:00:24,108 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario1, made 2 samples/s for expected rps 6.200199999999999 samples/s, increase your number of threads
+2019-04-05 01:00:24,109 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-7
+2019-04-05 01:00:25,113 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-8
+2019-04-05 01:00:25,115 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario1, made 2 samples/s for expected rps 8.1716 samples/s, increase your number of threads
+2019-04-05 01:00:25,114 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-9
+2019-04-05 01:00:25,602 INFO o.a.j.p.h.p.BaseParser: Created org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-05 01:00:25,602 INFO o.a.j.p.h.p.BaseParser: Created org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-05 01:00:25,603 INFO o.a.j.p.h.p.BaseParser: Created org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-05 01:00:26,113 INFO o.a.j.p.h.s.ResourcesDownloader: Creating ResourcesDownloader with keepalive_inseconds : 60
+2019-04-05 01:00:26,116 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-10
+2019-04-05 01:00:26,117 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario1, made 2 samples/s for expected rps 10.142999999999999 samples/s, increase your number of threads
+2019-04-05 01:00:26,117 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-11
+2019-04-05 01:00:27,119 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-12
+2019-04-05 01:00:27,121 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario1, made 2 samples/s for expected rps 12.114399999999998 samples/s, increase your number of threads
+2019-04-05 01:00:27,120 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-13
+2019-04-05 01:00:28,124 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-14
+2019-04-05 01:00:28,125 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario1, made 2 samples/s for expected rps 14.085799999999999 samples/s, increase your number of threads
+2019-04-05 01:00:28,125 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-15
+2019-04-05 01:00:28,473 INFO o.a.j.p.h.p.BaseParser: Created org.apache.jmeter.protocol.http.parser.CssParser
+2019-04-05 01:00:29,127 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-16
+2019-04-05 01:00:29,853 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario1, made 2 samples/s for expected rps 16.057199999999998 samples/s, increase your number of threads
+2019-04-05 01:00:29,854 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-17
+2019-04-05 01:00:29,855 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-18
+2019-04-05 01:00:30,856 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-19
+2019-04-05 01:00:30,857 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario1, made 3 samples/s for expected rps 18.0286 samples/s, increase your number of threads
+2019-04-05 01:00:30,857 INFO o.a.j.t.JMeterThread: Thread started: scenario1 1-20
+2019-04-05 01:00:56,159 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario1, made 2 samples/s for expected rps 20.0 samples/s, increase your number of threads
+2019-04-05 01:01:00,146 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:174276] starting at token ' ' until [1:174277] to token ';' (based on com.helger.css.parser.ParseException: Encountered unexpected token: ";" ";"
+    at line 1, column 174277.
+
+Was expecting one of:
+
+    "+"
+    "-"
+    "["
+    "and"
+    "expression("
+    "from"
+    "inherit"
+    "not"
+    "only"
+    "or"
+    "to"
+    <ANGLE_DEG>
+    <ANGLE_GRAD>
+    <ANGLE_RAD>
+    <ANGLE_TURN>
+    <CH>
+    <DPCM>
+    <DPI>
+    <DPPX>
+    <EM>
+    <EX>
+    <FR>
+    <FREQ_HZ>
+    <FREQ_KHZ>
+    <FUNCTION>
+    <FUNCTION_CALC>
+    <HASH>
+    <IDENT>
+    <LENGTH_CM>
+    <LENGTH_IN>
+    <LENGTH_MM>
+    <LENGTH_PC>
+    <LENGTH_PT>
+    <LENGTH_Q>
+    <NUMBER>
+    <PERCENTAGE>
+    <PX>
+    <REM>
+    <S>
+    <STRING1>
+    <STRING2>
+    <TIME_MS>
+    <TIME_S>
+    <URANGE>
+    <URL>
+    <VH>
+    <VMAX>
+    <VMIN>
+    <VW>
+)
+2019-04-05 01:01:00,148 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:174450] starting at token ' ' until [1:174451] to token ';' (based on com.helger.css.parser.ParseException: Encountered unexpected token: ";" ";"
+    at line 1, column 174451.
+
+Was expecting one of:
+
+    "+"
+    "-"
+    "["
+    "and"
+    "expression("
+    "from"
+    "inherit"
+    "not"
+    "only"
+    "or"
+    "to"
+    <ANGLE_DEG>
+    <ANGLE_GRAD>
+    <ANGLE_RAD>
+    <ANGLE_TURN>
+    <CH>
+    <DPCM>
+    <DPI>
+    <DPPX>
+    <EM>
+    <EX>
+    <FR>
+    <FREQ_HZ>
+    <FREQ_KHZ>
+    <FUNCTION>
+    <FUNCTION_CALC>
+    <HASH>
+    <IDENT>
+    <LENGTH_CM>
+    <LENGTH_IN>
+    <LENGTH_MM>
+    <LENGTH_PC>
+    <LENGTH_PT>
+    <LENGTH_Q>
+    <NUMBER>
+    <PERCENTAGE>
+    <PX>
+    <REM>
+    <S>
+    <STRING1>
+    <STRING2>
+    <TIME_MS>
+    <TIME_S>
+    <URANGE>
+    <URL>
+    <VH>
+    <VMAX>
+    <VMIN>
+    <VW>
+)
+2019-04-05 01:01:00,150 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:174788] starting at token ' ' until [1:174789] to token ';' (based on com.helger.css.parser.ParseException: Encountered unexpected token: ";" ";"
+    at line 1, column 174789.
+
+Was expecting one of:
+
+    "+"
+    "-"
+    "["
+    "and"
+    "expression("
+    "from"
+    "inherit"
+    "not"
+    "only"
+    "or"
+    "to"
+    <ANGLE_DEG>
+    <ANGLE_GRAD>
+    <ANGLE_RAD>
+    <ANGLE_TURN>
+    <CH>
+    <DPCM>
+    <DPI>
+    <DPPX>
+    <EM>
+    <EX>
+    <FR>
+    <FREQ_HZ>
+    <FREQ_KHZ>
+    <FUNCTION>
+    <FUNCTION_CALC>
+    <HASH>
+    <IDENT>
+    <LENGTH_CM>
+    <LENGTH_IN>
+    <LENGTH_MM>
+    <LENGTH_PC>
+    <LENGTH_PT>
+    <LENGTH_Q>
+    <NUMBER>
+    <PERCENTAGE>
+    <PX>
+    <REM>
+    <S>
+    <STRING1>
+    <STRING2>
+    <TIME_MS>
+    <TIME_S>
+    <URANGE>
+    <URL>
+    <VH>
+    <VMAX>
+    <VMIN>
+    <VW>
+)
+2019-04-05 01:01:00,151 WARN c.h.c.r.e.LoggingCSSParseErrorHandler: Browser compliant mode skipped CSS from [1:174958] starting at token ' ' until [1:174959] to token ';' (based on com.helger.css.parser.ParseException: Encountered unexpected token: ";" ";"
+    at line 1, column 174959.
+
+Was expecting one of:
+
+    "+"
+    "-"
+    "["
+    "and"
+    "expression("
+    "from"
+    "inherit"
+    "not"
+    "only"
+    "or"
+    "to"
+    <ANGLE_DEG>
+    <ANGLE_GRAD>
+    <ANGLE_RAD>
+    <ANGLE_TURN>
+    <CH>
+    <DPCM>
+    <DPI>
+    <DPPX>
+    <EM>
+    <EX>
+    <FR>
+    <FREQ_HZ>
+    <FREQ_KHZ>
+    <FUNCTION>
+    <FUNCTION_CALC>
+    <HASH>
+    <IDENT>
+    <LENGTH_CM>
+    <LENGTH_IN>
+    <LENGTH_MM>
+    <LENGTH_PC>
+    <LENGTH_PT>
+    <LENGTH_Q>
+    <NUMBER>
+    <PERCENTAGE>
+    <PX>
+    <REM>
+    <S>
+    <STRING1>
+    <STRING2>
+    <TIME_MS>
+    <TIME_S>
+    <URANGE>
+    <URL>
+    <VH>
+    <VMAX>
+    <VMIN>
+    <VW>
+)
+2019-04-05 01:01:09,962 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario1, made 1 samples/s for expected rps 20.0 samples/s, increase your number of threads
+2019-04-05 01:01:31,032 INFO c.b.j.t.c.ConcurrencyThreadStarter: Done supplying threads
+2019-04-05 01:01:40,862 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-7
+2019-04-05 01:01:40,862 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-7
+2019-04-05 01:01:50,204 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-16
+2019-04-05 01:01:50,205 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-16
+2019-04-05 01:01:50,772 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-15
+2019-04-05 01:01:50,772 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-15
+2019-04-05 01:01:52,614 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-4
+2019-04-05 01:01:52,614 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-4
+2019-04-05 01:01:53,588 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-9
+2019-04-05 01:01:53,589 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-9
+2019-04-05 01:01:54,316 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-1
+2019-04-05 01:01:54,316 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-1
+2019-04-05 01:01:57,171 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-17
+2019-04-05 01:01:57,171 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-17
+2019-04-05 01:02:06,482 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-18
+2019-04-05 01:02:06,482 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-18
+2019-04-05 01:02:11,812 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-14
+2019-04-05 01:02:11,813 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-14
+2019-04-05 01:02:15,348 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-10
+2019-04-05 01:02:15,348 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-10
+2019-04-05 01:02:16,264 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-19
+2019-04-05 01:02:16,264 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-19
+2019-04-05 01:02:24,475 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-8
+2019-04-05 01:02:24,476 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-8
+2019-04-05 01:02:26,365 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-11
+2019-04-05 01:02:26,365 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-11
+2019-04-05 01:02:40,290 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-6
+2019-04-05 01:02:40,291 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-6
+2019-04-05 01:02:51,456 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-5
+2019-04-05 01:02:51,456 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-5
+2019-04-05 01:11:37,328 INFO o.a.j.JMeter: Command: Shutdown received from /127.0.0.1
+2019-04-05 01:11:37,347 WARN o.a.j.t.JMeterThread: Interrupting: scenario1 1-20 sampler: PROPERTY: statusTHING: MyLampThing
+2019-04-05 01:11:37,355 WARN o.a.j.t.JMeterThread: Interrupting: scenario1 1-3 sampler: PROPERTY: statusTHING: MyLampThing
+2019-04-05 01:11:37,356 WARN o.a.j.t.JMeterThread: No operation pending
+2019-04-05 01:11:37,356 WARN o.a.j.t.JMeterThread: Interrupting: scenario1 1-2 sampler: PROPERTY: statusTHING: MyLampThing
+2019-04-05 01:11:37,356 WARN o.a.j.t.JMeterThread: No operation pending
+2019-04-05 01:11:37,356 WARN o.a.j.t.JMeterThread: Interrupting: scenario1 1-13 sampler: PROPERTY: statusTHING: MyLampThing
+2019-04-05 01:11:37,366 WARN o.a.j.t.JMeterThread: Interrupting: scenario1 1-12 sampler: PROPERTY: statusTHING: MyLampThing
+2019-04-05 01:11:37,366 WARN o.a.j.t.JMeterThread: No operation pending
+2019-04-05 01:11:37,380 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-13
+2019-04-05 01:11:37,380 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-20
+2019-04-05 01:11:37,380 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-13
+2019-04-05 01:11:37,380 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-20
+2019-04-05 01:11:37,382 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-04-05 01:11:37,367 WARN o.a.j.p.h.s.HTTPSamplerBase: Interrupted fetching embedded resources
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014) ~[?:1.8.0_66]
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048) ~[?:1.8.0_66]
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442) ~[?:1.8.0_66]
+	at java.util.concurrent.ExecutorCompletionService.take(ExecutorCompletionService.java:193) ~[?:1.8.0_66]
+	at org.apache.jmeter.protocol.http.sampler.ResourcesDownloader.invokeAllAndAwaitTermination(ResourcesDownloader.java:187) ~[ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.downloadPageResources(HTTPSamplerBase.java:1385) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1693) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:556) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:660) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.followRedirects(HTTPSamplerBase.java:1578) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1672) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:556) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:660) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1231) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1220) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:622) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:546) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:486) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:253) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_66]
+2019-04-05 01:11:37,360 WARN o.a.j.p.h.s.HTTPSamplerBase: Interrupted fetching embedded resources
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014) ~[?:1.8.0_66]
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048) ~[?:1.8.0_66]
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442) ~[?:1.8.0_66]
+	at java.util.concurrent.ExecutorCompletionService.take(ExecutorCompletionService.java:193) ~[?:1.8.0_66]
+	at org.apache.jmeter.protocol.http.sampler.ResourcesDownloader.invokeAllAndAwaitTermination(ResourcesDownloader.java:187) ~[ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.downloadPageResources(HTTPSamplerBase.java:1385) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1693) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:556) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:660) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.followRedirects(HTTPSamplerBase.java:1578) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1672) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:556) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:660) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1231) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1220) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:622) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:546) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:486) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:253) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_66]
+2019-04-05 01:11:37,360 WARN o.a.j.p.h.s.HTTPSamplerBase: Interrupted fetching embedded resources
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014) ~[?:1.8.0_66]
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048) ~[?:1.8.0_66]
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442) ~[?:1.8.0_66]
+	at java.util.concurrent.ExecutorCompletionService.take(ExecutorCompletionService.java:193) ~[?:1.8.0_66]
+	at org.apache.jmeter.protocol.http.sampler.ResourcesDownloader.invokeAllAndAwaitTermination(ResourcesDownloader.java:187) ~[ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.downloadPageResources(HTTPSamplerBase.java:1385) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1693) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:556) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:660) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.followRedirects(HTTPSamplerBase.java:1578) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1672) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:556) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:660) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1231) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1220) [ApacheJMeter_http.jar:5.1.1 r1855137]
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:622) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:546) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:486) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:253) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_66]
+2019-04-05 01:11:37,386 INFO o.a.j.e.StandardJMeterEngine: Forced JVM shutdown requested at end of test
+2019-04-05 01:11:37,386 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-2
+2019-04-05 01:11:37,386 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-3
+2019-04-05 01:11:37,386 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-2
+2019-04-05 01:11:37,386 INFO o.a.j.t.JMeterThread: Thread is done: scenario1 1-12
+2019-04-05 01:11:37,386 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-12
+2019-04-05 01:11:37,387 INFO o.a.j.t.JMeterThread: Thread finished: scenario1 1-3

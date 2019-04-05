@@ -1,5 +1,9 @@
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.system_input = system_input;
 var extractor = require('./app/extractor');
 var myScenarios = require('./app/scenarios');
 var tarausConfigs = require('./app/tarausConfigs');
@@ -16,7 +20,6 @@ var executeInput = function executeInput(jsondata) {
   var allExecutions = myScenarios.getExecutions();
   FinalJSON["execution"] = allExecutions;
   for (var j in allExecutions) {
-    console.log(allExecutions[j].scenario);
     var x = {};
     x["requests"] = allRequestsArr;
     scenarios[allExecutions[j].scenario] = x;
@@ -36,19 +39,20 @@ function fileSaver(myJSON, filename) {
     console.log("JSON file has been saved.");
   });
 }
-var system_input = function system_input() {
+function system_input(filename) {
   console.log("\nLet Read the input JSON file");
   console.log("\n^________________^\n");
   var fs = require('fs');
-  var rawdata = fs.readFileSync('W3C_input.json');
+  var rawdata = fs.readFileSync(filename + '.json');
   var jsondata = JSON.parse(rawdata);
   return jsondata;
-};
+}
 
 (function main() {
   console.log("\nWelcome to StressThing *__*");
-  var inputJson = system_input();
-  executeInput(inputJson);
+  var inputThingsJson = system_input("small_W3C_input");
+  executeInput(inputThingsJson);
+  myScenarios.getUserExecution();
   //testingTools.toTarausJson
   //testingTools.runTaraus();
 })();

@@ -1,0 +1,10 @@
+{
+	"UserScenario": {
+      "concurrency": "20",
+      "ramp-up": "10",
+      "hold-for": "60",
+      "throughput": "20",
+      "scenario": "UserScenario"
+	}
+
+}

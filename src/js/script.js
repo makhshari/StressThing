@@ -15,7 +15,6 @@ var FinalJSON={};
     var allExecutions=myScenarios.getExecutions()
     FinalJSON["execution"]= allExecutions
     for(var j in allExecutions){
-      console.log(allExecutions[j].scenario)
       var x={}
       x["requests"]=allRequestsArr
       scenarios[allExecutions[j].scenario]=x
@@ -35,19 +34,20 @@ function fileSaver(myJSON,filename){
     console.log("JSON file has been saved.");
 }); 
 }
-const system_input = () => {
+export function system_input(filename){
   console.log("\nLet Read the input JSON file");
   console.log("\n^________________^\n")
   const fs = require('fs');
-  let rawdata = fs.readFileSync('W3C_input.json');  
+  let rawdata = fs.readFileSync(filename+'.json');  
   let jsondata = JSON.parse(rawdata); 
   return jsondata;
 }
 
 (function main() {
   console.log("\nWelcome to StressThing *__*")
-  var inputJson=system_input();
-  executeInput(inputJson);
+  var inputThingsJson=system_input("small_W3C_input");
+  executeInput(inputThingsJson);
+  myScenarios.getUserExecution();
   //testingTools.toTarausJson
   //testingTools.runTaraus();
 })();

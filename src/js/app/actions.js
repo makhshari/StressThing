@@ -12,7 +12,7 @@ export function extractActions(thing,name,body){
     httpMethod="POST"
   }
   reqTuple={
-    "label":"ACTION: "+name+"THING: "+thing.name,
+    "label":"ACTION: "+name+" THING: "+thing.name,
     "url":body.forms[0].href,
     "Method":httpMethod
   }
