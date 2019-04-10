@@ -1,0 +1,1405 @@
+[2019-04-08 12:44:47,408 INFO root] Taurus CLI Tool v1.13.4
+[2019-04-08 12:44:47,409 DEBUG root] Command-line options: {'log': '/var/folders/9w/fj8tc51n59dgtrxfgskpxd9h0000gn/T/bzt_t6srr7mg.log', 'option': None, 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': []}
+[2019-04-08 12:44:47,410 DEBUG root] Python: CPython 3.7.3
+[2019-04-08 12:44:47,410 DEBUG root] OS: uname_result(system='Darwin', node='amirhosein-mac.local', release='17.5.0', version='Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64', machine='x86_64', processor='i386')
+[2019-04-08 12:44:47,411 INFO root] Starting with configs: ['allRequests.json']
+[2019-04-08 12:44:47,411 DEBUG root] Using personal config: /Users/apple/.bzt-rc
+[2019-04-08 12:44:47,411 INFO Engine] Configuring...
+[2019-04-08 12:44:47,532 DEBUG Engine] Base configs list: ['/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/resources/10-base-config.yml']
+[2019-04-08 12:44:47,532 DEBUG Engine.Configuration] Configs: ['/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/resources/10-base-config.yml']
+[2019-04-08 12:44:47,533 DEBUG Engine.Configuration] Reading /usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/resources/10-base-config.yml as YAML
+[2019-04-08 12:44:47,725 DEBUG Engine] User configs list: ['/Users/apple/.bzt-rc', 'allRequests.json']
+[2019-04-08 12:44:47,726 DEBUG Engine.Configuration] Configs: ['/Users/apple/.bzt-rc', 'allRequests.json']
+[2019-04-08 12:44:47,733 DEBUG Engine.Configuration] Reading /Users/apple/.bzt-rc as YAML
+[2019-04-08 12:44:47,776 DEBUG Engine.Configuration] Reading allRequests.json as YAML
+[2019-04-08 12:44:47,792 DEBUG Engine.Configuration] Configs: ['/Users/apple/.bzt-rc', 'allRequests.json']
+[2019-04-08 12:44:47,794 DEBUG Engine.Configuration] Reading /Users/apple/.bzt-rc as YAML
+[2019-04-08 12:44:47,818 DEBUG Engine.Configuration] Reading allRequests.json as YAML
+[2019-04-08 12:44:47,838 DEBUG Engine] Requesting updates info: https://gettaurus.org/updates/?version=1.13.4&installID=macos-3c075440e027
+[2019-04-08 12:44:47,839 DEBUG HTTPClient] Making HTTP request GET https://gettaurus.org/updates/?version=1.13.4&installID=macos-3c075440e027
+[2019-04-08 12:44:47,843 INFO Engine] Artifacts dir: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330
+[2019-04-08 12:44:47,845 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/effective
+[2019-04-08 12:44:47,860 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): gettaurus.org:443
+[2019-04-08 12:44:47,861 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/effective.yml
+[2019-04-08 12:44:47,978 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/effective.json
+[2019-04-08 12:44:47,981 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/merged.yml
+[2019-04-08 12:44:47,982 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/merged.yml
+[2019-04-08 12:44:47,991 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/merged.json
+[2019-04-08 12:44:47,994 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/merged.json
+[2019-04-08 12:44:47,995 DEBUG Engine] Add existing artifact (move=False): allRequests.json
+[2019-04-08 12:44:47,996 DEBUG Engine] Copying allRequests.json to /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/allRequests.json
+[2019-04-08 12:44:48,000 DEBUG root] Closing log handler: /var/folders/9w/fj8tc51n59dgtrxfgskpxd9h0000gn/T/bzt_t6srr7mg.log
+[2019-04-08 12:44:48,001 DEBUG root] Switched writing logs to /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/bzt.log
+[2019-04-08 12:44:48,002 DEBUG root] Linting config
+[2019-04-08 12:44:48,026 INFO Engine] Preparing...
+[2019-04-08 12:44:48,028 DEBUG Engine] Module config: consolidator {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'}
+[2019-04-08 12:44:48,028 DEBUG root] Importing module: bzt.modules.aggregator
+[2019-04-08 12:44:48,619 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/aggregator.py'>
+[2019-04-08 12:44:48,620 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2019-04-08 12:44:48,620 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2019-04-08 12:44:48,620 DEBUG root] Importing module: bzt.modules.monitoring
+[2019-04-08 12:44:48,625 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/monitoring.py'>
+[2019-04-08 12:44:48,626 DEBUG Engine] Module config: local {'class': 'bzt.modules.provisioning.Local'}
+[2019-04-08 12:44:48,627 DEBUG root] Importing module: bzt.modules.provisioning
+[2019-04-08 12:44:48,627 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py'>
+[2019-04-08 12:44:48,627 DEBUG Engine] Module config: jmeter {'class': 'bzt.modules.jmeter.JMeterExecutor', 'protocol-handlers': {'http': 'bzt.jmx.http.HTTPProtocolHandler'}, 'plugins': ['jpgc-casutg', 'jpgc-dummy', 'jpgc-ffw', 'jpgc-fifo', 'jpgc-functions', 'jpgc-json', 'jpgc-perfmon', 'jpgc-prmctl', 'jpgc-tst'], 'properties': {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': ''}}
+[2019-04-08 12:44:48,628 DEBUG root] Importing module: bzt.modules.jmeter
+[2019-04-08 12:44:48,668 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/jmeter.py'>
+[2019-04-08 12:44:48,668 DEBUG Engine.local] Preparing executor: jmeter/4555311200
+[2019-04-08 12:44:48,669 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/jmeter.log
+[2019-04-08 12:44:48,669 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2019-04-08 12:44:48,671 DEBUG Engine.jmeter] Port 4445 is free
+[2019-04-08 12:44:48,672 DEBUG Engine.jmeter] Using port 4445 for management
+[2019-04-08 12:44:48,672 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/requests.jmx
+[2019-04-08 12:44:48,674 DEBUG root] Importing module: bzt.jmx.http
+[2019-04-08 12:44:48,676 DEBUG root] Loading class: 'HTTPProtocolHandler' from <module 'bzt.jmx.http' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/jmx/http.py'>
+[2019-04-08 12:44:48,681 DEBUG JMeterScenarioBuilder] Saving JMX to: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/requests.jmx
+[2019-04-08 12:44:48,682 DEBUG Engine.jmeter] Additional system properties {'sun.net.inetaddr.ttl': 0}
+[2019-04-08 12:44:48,683 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/system.properties
+[2019-04-08 12:44:48,684 DEBUG Engine.jmeter] Additional properties: {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': '', 'jmeterengine.nongui.port': 4445, 'jmeterengine.nongui.maxport': 4445, 'jmeter.save.saveservice.timestamp_format': 'ms', 'sampleresult.default.encoding': 'UTF-8', 'user.classpath': '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330:/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330'}
+[2019-04-08 12:44:48,684 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/jmeter-bzt.properties
+[2019-04-08 12:44:48,686 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2019-04-08 12:44:48,687 DEBUG root] Executing shell: ['java', '-version'] at .
+[2019-04-08 12:44:49,280 DEBUG Engine.jmeter.JavaVM] JavaVM output: 
+[2019-04-08 12:44:49,281 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2019-04-08 12:44:49,281 DEBUG Engine.jmeter.JMeter] Trying JMeter..
+[2019-04-08 12:44:49,283 DEBUG root] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.1.1/bin/jmeter.sh', '-j', '/var/folders/9w/fj8tc51n59dgtrxfgskpxd9h0000gn/T/jmeter_m3o12r2log', '--version'] at .
+[2019-04-08 12:45:06,207 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____     
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \   
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) | 
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <  
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 5.1.1 r1855137  
+
+Copyright (c) 1999-2019 The Apache Software Foundation
+
+ / 
+[2019-04-08 12:45:06,216 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=500, throughput=50.0, ramp_up=20.0, hold=10.0, iterations=0, duration=30.0, steps=None)
+[2019-04-08 12:45:06,240 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/kpi.jtl
+[2019-04-08 12:45:06,242 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/error.jtl
+[2019-04-08 12:45:06,254 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (UserScenario) to ConcurrencyThreadGroup and apply load parameters
+[2019-04-08 12:45:06,258 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/modified_requests.jmx
+[2019-04-08 12:45:06,259 DEBUG JMX] Saving JMX to: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/modified_requests.jmx
+[2019-04-08 12:45:06,262 DEBUG root] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.1.1/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/modified_requests.jmx'] at .
+[2019-04-08 12:45:07,021 DEBUG urllib3.connectionpool] https://gettaurus.org:443 "GET /updates/?version=1.13.4&installID=macos-3c075440e027 HTTP/1.1" 403 1587
+[2019-04-08 12:45:07,041 DEBUG Engine] Failed to check for updates: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/engine.py", line 697, in _check_updates
+    data = response.json()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2019-04-08 12:45:07,041 WARNING Engine] Failed to check for updates
+[2019-04-08 12:45:14,975 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/modified_requests.jmx
+2019-04-08 12:45:10,898 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
+2019-04-08 12:45:11,328 INFO o.j.r.JARSourceHTTP: Found cached repo
+2019-04-08 12:45:12,446 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.1, jpgc-casutg=2.8, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=1.3, jpgc-tst=2.5, jmeter-core=5.1.1, jmeter-ftp=5.1.1, jmeter-http=5.1.1, jmeter-jdbc=5.1.1, jmeter-jms=5.1.1, jmeter-junit=5.1.1, jmeter-java=5.1.1, jmeter-ldap=5.1.1, jmeter-mail=5.1.1, jmeter-mongodb=5.1.1, jmeter-native=5.1.1, jmeter-tcp=5.1.1, jmeter-components=5.1.1]
+2019-04-08 12:45:12,452 INFO o.j.r.PluginManagerCMD: Params line is: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/modified_requests.jmx
+2019-04-08 12:45:13,799 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-04-08 12:45:13,843 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-04-08 12:45:13,863 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2019-04-08 12:45:13,992 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2019-04-08 12:45:14,002 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2019-04-08 12:45:14,175 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 12:45:14,176 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 12:45:14,176 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 12:45:14,176 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 12:45:14,177 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-04-08 12:45:14,177 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-04-08 12:45:14,585 INFO o.j.r.PluginManager: Finishing without changes
+
+
+[2019-04-08 12:45:14,980 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/jmeter.out
+[2019-04-08 12:45:14,982 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/jmeter.err
+[2019-04-08 12:45:14,991 DEBUG Engine] Module config: final-stats {'class': 'bzt.modules.reporting.FinalStatus'}
+[2019-04-08 12:45:14,992 DEBUG root] Importing module: bzt.modules.reporting
+[2019-04-08 12:45:15,059 DEBUG easyprocess] version=0.2.5
+[2019-04-08 12:45:15,073 DEBUG pyvirtualdisplay] version=0.2.1
+[2019-04-08 12:45:15,087 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/reporting.py'>
+[2019-04-08 12:45:15,088 DEBUG Engine] Module config: console {'class': 'bzt.modules.console.ConsoleStatusReporter'}
+[2019-04-08 12:45:15,088 DEBUG root] Importing module: bzt.modules.console
+[2019-04-08 12:45:15,090 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/console.py'>
+[2019-04-08 12:45:15,093 WARNING Engine] Module 'console' can be only used once, will merge all new instances into single
+[2019-04-08 12:45:15,094 DEBUG Engine] Module config: blazemeter {'class': 'bzt.modules.blazemeter.BlazeMeterUploader'}
+[2019-04-08 12:45:15,094 DEBUG root] Importing module: bzt.modules.blazemeter
+[2019-04-08 12:45:15,095 DEBUG root] Loading class: 'BlazeMeterUploader' from <module 'bzt.modules.blazemeter' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py'>
+[2019-04-08 12:45:15,131 WARNING Engine.blazemeter] No BlazeMeter API key provided, will upload anonymously
+[2019-04-08 12:45:15,132 DEBUG Engine.blazemeter] Installing http client
+[2019-04-08 12:45:15,132 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/web/version None
+[2019-04-08 12:45:15,133 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/web/version
+[2019-04-08 12:45:15,145 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2019-04-08 12:45:16,371 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/web/version HTTP/1.1" 200 233
+[2019-04-08 12:45:16,376 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": "blazemeter-php7-backend-package 928 release/2019-04-02_126 137ce603d6f9e3814fbd1ecc2a17af16c5eee191 Thu Apr 4 18:27:30 2019 +0300 137ce603d6f9e3814fbd1ecc2a17af16c5eee191\n"
+}
+[2019-04-08 12:45:16,400 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/effective.yml
+[2019-04-08 12:45:16,723 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/effective.json
+[2019-04-08 12:45:16,733 INFO Engine] Starting...
+[2019-04-08 12:45:16,734 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x10de105f8>
+[2019-04-08 12:45:16,737 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10de10e48>
+[2019-04-08 12:45:16,739 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x10f829be0>
+[2019-04-08 12:45:16,743 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x10de1f0b8>
+[2019-04-08 12:45:16,743 INFO Engine.console] Waiting for results...
+[2019-04-08 12:45:16,744 DEBUG Engine] Startup <bzt.modules.blazemeter.BlazeMeterUploader object at 0x10f9651d0>
+[2019-04-08 12:45:16,745 INFO Engine.blazemeter] Initiating data feeding...
+[2019-04-08 12:45:16,745 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/sessions None
+[2019-04-08 12:45:16,746 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/sessions
+[2019-04-08 12:45:17,328 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/sessions HTTP/1.1" 201 2844
+[2019-04-08 12:45:17,330 DEBUG User] Response [201]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "session": {
+            "id": "r-ext-5cab0316869d1",
+            "name": "external",
+            "userId": 386483,
+            "publicToken": "2RtubRS5aByTFNabAFNfny10fcda4u8l5fyiPxLHxjQLl
+[2019-04-08 12:45:17,332 INFO Engine.blazemeter] Started data feeding: https://a.blazemeter.com/app/?public-token=2RtubRS5aByTFNabAFNfny10fcda4u8l5fyiPxLHxjQLlDNfXP#reports/r-ext-5cab0316869d1/summary
+[2019-04-08 12:45:17,981 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x10de25c88>
+[2019-04-08 12:45:17,987 DEBUG Engine.local] Delay setup for jmeter/UserScenario: 0(start-at) + 0(delay) = 0
+[2019-04-08 12:45:18,003 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/effective.yml
+[2019-04-08 12:45:18,135 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/effective.json
+[2019-04-08 12:45:18,145 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 12:45:18,146 DEBUG root] Leveled up log file verbosity
+[2019-04-08 12:45:18,149 DEBUG root] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.1.1/bin/jmeter.sh', '-t', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/modified_requests.jmx', '-j', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/jmeter.log', '-q', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/jmeter-bzt.properties', '-n', '-S', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/system.properties'] at /Users/apple/Desktop/bachelorProject/stressThing/StressThing
+[2019-04-08 12:45:18,182 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 12:45:18,550 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:45:19,245 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:45:49,622 WARNING Engine.blazemeter] Failed to send data, will retry in 30.0 sec...
+[2019-04-08 12:46:19,714 ERROR Engine.blazemeter] Fatal error sending data: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x1102521d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1102521d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1143, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1102521d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 125, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 510, in __send_monitoring
+    self._session.send_monitoring_data(engine_id, data)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 685, in send_monitoring_data
+    self.upload_file(file_name, to_json(data))
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 713, in upload_file
+    response = self._request(url, body.form_as_bytes(), headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1150, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://data.blazemeter.com/api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x110252e10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x110252e10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1143, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x110252e10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 131, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 510, in __send_monitoring
+    self._session.send_monitoring_data(engine_id, data)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 685, in send_monitoring_data
+    self.upload_file(file_name, to_json(data))
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 713, in upload_file
+    response = self._request(url, body.form_as_bytes(), headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1150, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://data.blazemeter.com/api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 failed
+
+[2019-04-08 12:46:21,191 WARNING Engine.blazemeter] Will skip failed data and continue running
+[2019-04-08 12:46:21,334 WARNING Engine.jmeter.JTLReader] No details for errors of PROPERTY: getstatus THING: falldetection, dropped info: [{'cnt': 1, 'msg': 'Non HTTP response message: Connect to 172.20.10.3:8000 [/172.20.10.3] failed: Operation timed out', 'tag': None, 'rc': 'HttpHostConnectException', 'type': 0, 'urls': Counter()}]
+[2019-04-08 12:46:21,334 WARNING Engine.jmeter.JTLReader] No details for errors of , dropped info: [{'cnt': 1, 'msg': 'Non HTTP response message: Connect to 172.20.10.3:8000 [/172.20.10.3] failed: Operation timed out', 'tag': None, 'rc': 'HttpHostConnectException', 'type': 0, 'urls': Counter()}]
+[2019-04-08 12:46:21,737 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 55s
+[2019-04-08 12:46:22,695 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:46:22,750 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:46:22,845 WARNING Engine.blazemeter] Failed to send data, will retry in 30.0 sec...
+[2019-04-08 12:46:52,913 ERROR Engine.blazemeter] Fatal error sending data: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x10fa1beb8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x10fa1beb8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1143, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x10fa1beb8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 125, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 510, in __send_monitoring
+    self._session.send_monitoring_data(engine_id, data)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 685, in send_monitoring_data
+    self.upload_file(file_name, to_json(data))
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 713, in upload_file
+    response = self._request(url, body.form_as_bytes(), headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1150, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://data.blazemeter.com/api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x1102a20f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1102a20f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1143, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1102a20f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 131, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 510, in __send_monitoring
+    self._session.send_monitoring_data(engine_id, data)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 685, in send_monitoring_data
+    self.upload_file(file_name, to_json(data))
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 713, in upload_file
+    response = self._request(url, body.form_as_bytes(), headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1150, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://data.blazemeter.com/api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 failed
+
+[2019-04-08 12:46:52,920 WARNING Engine.blazemeter] Will skip failed data and continue running
+[2019-04-08 12:46:53,027 WARNING Engine] Please wait for graceful shutdown...
+[2019-04-08 12:46:53,028 DEBUG root] Leveled up log file verbosity
+[2019-04-08 12:46:53,028 INFO Engine] Shutting down...
+[2019-04-08 12:46:53,028 DEBUG Engine] Current stop reason: None
+[2019-04-08 12:46:53,031 DEBUG Engine.local] Shutdown jmeter/UserScenario
+[2019-04-08 12:46:53,033 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2019-04-08 12:46:53,046 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/effective.yml
+[2019-04-08 12:46:53,231 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/effective.json
+[2019-04-08 12:46:53,243 INFO Engine] Post-processing...
+[2019-04-08 12:46:53,244 DEBUG Engine.local] Post-process jmeter/UserScenario
+[2019-04-08 12:46:53,244 DEBUG Engine] Add existing artifact (move=True): /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/modified_requests.jmx
+[2019-04-08 12:46:53,245 DEBUG Engine] No need to copy /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/modified_requests.jmx
+[2019-04-08 12:46:53,264 DEBUG Engine.jmeter.JTLReader] Buffer len: 8; Known errors count: 2
+[2019-04-08 12:46:53,265 DEBUG Engine.jmeter.JTLReader] Aggregating: 1554711332, 8 in buffer
+[2019-04-08 12:46:53,270 DEBUG Engine.jmeter.JTLErrorsReader] Got error info for 1554711332, labels: dict_keys(['PROPERTY: getstatus THING: falldetection', ''])
+[2019-04-08 12:46:53,274 DEBUG Engine.jmeter.JTLReader] Buffer len: 7; Known errors count: 2
+[2019-04-08 12:46:53,641 DEBUG Engine.jmeter.JTLReader] Aggregating: 1554711333, 7 in buffer
+[2019-04-08 12:46:53,645 DEBUG aggregator] Growing HDR from 28000.0 to 29000.0
+[2019-04-08 12:46:53,655 DEBUG aggregator] Growing HDR from 28000.0 to 29000.0
+[2019-04-08 12:46:53,656 DEBUG Engine.jmeter.JTLErrorsReader] Got error info for 1554711333, labels: dict_keys(['PROPERTY: getstatus THING: falldetection', ''])
+[2019-04-08 12:46:53,657 DEBUG aggregator] Growing HDR from 28000.0 to 29000.0
+[2019-04-08 12:46:53,658 DEBUG aggregator] Growing HDR from 28000.0 to 29000.0
+[2019-04-08 12:46:53,661 DEBUG Engine.jmeter.JTLReader] Buffer len: 6; Known errors count: 2
+[2019-04-08 12:46:54,204 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 58s
+[2019-04-08 12:46:54,205 DEBUG Engine.jmeter.JTLReader] Aggregating: 1554711334, 6 in buffer
+[2019-04-08 12:46:54,207 DEBUG Engine.jmeter.JTLErrorsReader] Got error info for 1554711334, labels: dict_keys(['PROPERTY: getstatus THING: falldetection', ''])
+[2019-04-08 12:46:54,211 DEBUG Engine.jmeter.JTLReader] Buffer len: 5; Known errors count: 2
+[2019-04-08 12:46:54,492 DEBUG Engine.jmeter.JTLReader] Aggregating: 1554711335, 5 in buffer
+[2019-04-08 12:46:54,497 DEBUG Engine.jmeter.JTLErrorsReader] Got error info for 1554711335, labels: dict_keys(['PROPERTY: getstatus THING: falldetection', ''])
+[2019-04-08 12:46:54,501 DEBUG Engine.jmeter.JTLReader] Buffer len: 4; Known errors count: 2
+[2019-04-08 12:46:54,974 DEBUG Engine.jmeter.JTLReader] Aggregating: 1554711337, 4 in buffer
+[2019-04-08 12:46:54,977 DEBUG Engine.jmeter.JTLErrorsReader] Got error info for 1554711337, labels: dict_keys(['PROPERTY: getstatus THING: falldetection', ''])
+[2019-04-08 12:46:54,980 DEBUG Engine.jmeter.JTLReader] Buffer len: 3; Known errors count: 2
+[2019-04-08 12:46:55,379 DEBUG Engine.jmeter.JTLReader] Aggregating: 1554711345, 3 in buffer
+[2019-04-08 12:46:55,381 DEBUG Engine.jmeter.JTLErrorsReader] Got error info for 1554711345, labels: dict_keys(['PROPERTY: getstatus THING: falldetection', ''])
+[2019-04-08 12:46:55,385 DEBUG Engine.jmeter.JTLReader] Buffer len: 2; Known errors count: 2
+[2019-04-08 12:46:55,703 DEBUG Engine.jmeter.JTLReader] Aggregating: 1554711347, 2 in buffer
+[2019-04-08 12:46:55,705 DEBUG Engine.jmeter.JTLErrorsReader] Got error info for 1554711347, labels: dict_keys(['PROPERTY: getstatus THING: falldetection', ''])
+[2019-04-08 12:46:55,716 DEBUG Engine.jmeter.JTLReader] Buffer len: 1; Known errors count: 2
+[2019-04-08 12:46:56,009 DEBUG Engine.jmeter.JTLReader] Aggregating: 1554711349, 1 in buffer
+[2019-04-08 12:46:56,011 DEBUG Engine.jmeter.JTLErrorsReader] Got error info for 1554711349, labels: dict_keys(['PROPERTY: getstatus THING: falldetection', ''])
+[2019-04-08 12:46:56,015 DEBUG Engine.jmeter.JTLReader] Buffer len: 0; Known errors count: 2
+[2019-04-08 12:46:56,015 DEBUG Engine.consolidator] Consolidator buffer[9]: dict_keys([1554711331, 1554711332, 1554711333, 1554711334, 1554711335, 1554711337, 1554711345, 1554711347, 1554711349])
+[2019-04-08 12:46:56,016 DEBUG Engine.consolidator] Merging into 1554711331
+[2019-04-08 12:46:56,016 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-04-08 12:46:56,457 DEBUG Engine.consolidator] Processed datapoint: 1554711331/ConsolidatingAggregator@4527820360
+[2019-04-08 12:46:56,458 DEBUG Engine.consolidator] Merging into 1554711332
+[2019-04-08 12:46:56,458 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-04-08 12:46:57,021 DEBUG Engine.consolidator] Processed datapoint: 1554711332/ConsolidatingAggregator@4527820360
+[2019-04-08 12:46:57,022 DEBUG Engine.consolidator] Merging into 1554711333
+[2019-04-08 12:46:57,022 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-04-08 12:46:57,023 DEBUG aggregator] Growing HDR from 28000.0 to 29000.0
+[2019-04-08 12:46:57,023 DEBUG aggregator] Growing HDR from 28000.0 to 29000.0
+[2019-04-08 12:46:57,426 DEBUG Engine.consolidator] Processed datapoint: 1554711333/ConsolidatingAggregator@4527820360
+[2019-04-08 12:46:57,426 DEBUG Engine.consolidator] Merging into 1554711334
+[2019-04-08 12:46:57,427 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-04-08 12:46:58,126 DEBUG Engine.consolidator] Processed datapoint: 1554711334/ConsolidatingAggregator@4527820360
+[2019-04-08 12:46:58,126 DEBUG Engine.consolidator] Merging into 1554711335
+[2019-04-08 12:46:58,126 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-04-08 12:46:58,883 DEBUG Engine.consolidator] Processed datapoint: 1554711335/ConsolidatingAggregator@4527820360
+[2019-04-08 12:46:58,883 DEBUG Engine.consolidator] Merging into 1554711337
+[2019-04-08 12:46:58,884 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-04-08 12:46:59,497 DEBUG Engine.consolidator] Processed datapoint: 1554711337/ConsolidatingAggregator@4527820360
+[2019-04-08 12:46:59,510 DEBUG Engine.consolidator] Merging into 1554711345
+[2019-04-08 12:46:59,510 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-04-08 12:47:00,149 DEBUG Engine.consolidator] Processed datapoint: 1554711345/ConsolidatingAggregator@4527820360
+[2019-04-08 12:47:00,149 DEBUG Engine.consolidator] Merging into 1554711347
+[2019-04-08 12:47:00,150 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-04-08 12:47:00,664 DEBUG Engine.consolidator] Processed datapoint: 1554711347/ConsolidatingAggregator@4527820360
+[2019-04-08 12:47:00,664 DEBUG Engine.consolidator] Merging into 1554711349
+[2019-04-08 12:47:00,664 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-04-08 12:47:01,079 DEBUG Engine.consolidator] Processed datapoint: 1554711349/ConsolidatingAggregator@4527820360
+[2019-04-08 12:47:01,079 INFO Engine.final-stats] Test duration: 0:01:37
+[2019-04-08 12:47:01,080 INFO Engine.final-stats] Samples count: 30, 100.00% failures
+[2019-04-08 12:47:01,080 INFO Engine.final-stats] Average times: total 25.692, latency 0.000, connect 25.691
+[2019-04-08 12:47:01,084 INFO Engine.final-stats] Percentiles:
+(0lqqqqqqqqqqqqqqqwqqqqqqqqqqqqqqqk(B
+(0x(B Percentile, % (0x(B Resp. Time, s (0x(B
+(0tqqqqqqqqqqqqqqqnqqqqqqqqqqqqqqqu(B
+(0x(B           0.0 (0x(B        12.936 (0x(B
+(0x(B          50.0 (0x(B         27.04 (0x(B
+(0x(B          90.0 (0x(B        27.936 (0x(B
+(0x(B          95.0 (0x(B        28.976 (0x(B
+(0x(B          99.0 (0x(B        28.976 (0x(B
+(0x(B          99.9 (0x(B        28.976 (0x(B
+(0x(B         100.0 (0x(B        28.976 (0x(B
+(0mqqqqqqqqqqqqqqqvqqqqqqqqqqqqqqqj(B
+[2019-04-08 12:47:01,099 INFO Engine.final-stats] Request label stats:
+(0lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqwqqqqqqqqwqqqqqqqwqqqqqqqqwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk(B
+(0x(B label                                    (0x(B status (0x(B  succ (0x(B avg_rt (0x(B error                                                                                             (0x(B
+(0tqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqnqqqqqqqqnqqqqqqqnqqqqqqqqnqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqu(B
+(0x(B PROPERTY: getstatus THING: falldetection (0x(B  FAIL  (0x(B 0.00% (0x(B 25.692 (0x(B Non HTTP response message: Socket closed                                                          (0x(B
+(0x(B                                          (0x(B        (0x(B       (0x(B        (0x(B Non HTTP response message: Connect to 172.20.10.3:8000 [/172.20.10.3] failed: Operation timed out (0x(B
+(0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqvqqqqqqqqvqqqqqqqvqqqqqqqqvqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj(B
+[2019-04-08 12:47:01,102 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2019-04-08 12:47:01,102 DEBUG Engine.blazemeter] KPI bulk buffer len in post-proc: 9
+[2019-04-08 12:47:01,102 INFO Engine.blazemeter] Sending remaining KPI data to server...
+[2019-04-08 12:47:04,351 DEBUG User] Request: POST https://data.blazemeter.com/submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1 b'{\n "labels": [\n  {\n   "n": 30,\n   "name": "ALL",\n   "interval": 1,\n   "intervals": [\n    {\n     "ec": 1,\n     "ts": 1554711331,\n     "na": 500,\n     "n": 1,\n     "failed": 1,\n     "rc": [\n      {\n       "n": 1,\n       "f": [\n        1\n       ],\n       "rc"'
+[2019-04-08 12:47:04,355 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1
+[2019-04-08 12:47:04,374 DEBUG urllib3.connectionpool] Starting new HTTPS connection (5): data.blazemeter.com:443
+[2019-04-08 12:47:04,382 DEBUG HTTPClient] Request resulted in exception: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x1104dce80>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104dce80>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1143, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104dce80>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+[2019-04-08 12:47:04,385 DEBUG Engine.blazemeter] Error sending data: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x1104dce80>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104dce80>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1143, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104dce80>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 125, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 490, in __send_data
+    self._session.send_kpi_data(serialized, do_check)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 670, in send_kpi_data
+    response = self._request(url, data, headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1150, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://data.blazemeter.com/submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1 failed
+
+[2019-04-08 12:47:04,385 WARNING Engine.blazemeter] Failed to send data, will retry in 30.0 sec...
+[2019-04-08 12:47:34,419 DEBUG User] Request: POST https://data.blazemeter.com/submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1 b'{\n "labels": [\n  {\n   "n": 30,\n   "name": "ALL",\n   "interval": 1,\n   "intervals": [\n    {\n     "ec": 1,\n     "ts": 1554711331,\n     "na": 500,\n     "n": 1,\n     "failed": 1,\n     "rc": [\n      {\n       "n": 1,\n       "f": [\n        1\n       ],\n       "rc"'
+[2019-04-08 12:47:34,423 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1
+[2019-04-08 12:47:34,450 DEBUG urllib3.connectionpool] Starting new HTTPS connection (6): data.blazemeter.com:443
+[2019-04-08 12:47:34,470 DEBUG HTTPClient] Request resulted in exception: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x1104dce80>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104dce80>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1143, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104dce80>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 125, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 490, in __send_data
+    self._session.send_kpi_data(serialized, do_check)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 670, in send_kpi_data
+    response = self._request(url, data, headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1150, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://data.blazemeter.com/submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1 failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x1104ce2e8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104ce2e8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1143, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104ce2e8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+[2019-04-08 12:47:34,479 ERROR Engine.blazemeter] Fatal error sending data: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x1104dce80>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104dce80>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1143, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104dce80>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 125, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 490, in __send_data
+    self._session.send_kpi_data(serialized, do_check)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 670, in send_kpi_data
+    response = self._request(url, data, headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1150, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://data.blazemeter.com/submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1 failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x1104ce2e8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104ce2e8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1143, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104ce2e8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 131, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 490, in __send_data
+    self._session.send_kpi_data(serialized, do_check)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 670, in send_kpi_data
+    response = self._request(url, data, headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1150, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://data.blazemeter.com/submit.php?session_id=r-ext-5cab0316869d1&signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&test_id=6753555&user_id=386483&pq=0&target=labels_bulk&update=1 failed
+
+[2019-04-08 12:47:34,556 WARNING Engine.blazemeter] Will skip failed data and continue running
+[2019-04-08 12:47:34,562 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 b'--===============5469180772772202068==\r\nContent-Disposition: file; name="file"; filename="r-ext-5cab0316869d1-0-c.monitoring.json"\r\nContent-Type: application/json\r\n\r\n{\n "reportInfo": {\n  "sessionId": "r-ext-5cab0316869d1",\n  "timestamp": 1554711454.559787,'
+[2019-04-08 12:47:34,562 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147
+[2019-04-08 12:47:34,566 DEBUG urllib3.connectionpool] Starting new HTTPS connection (7): data.blazemeter.com:443
+[2019-04-08 12:47:34,570 DEBUG HTTPClient] Request resulted in exception: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x1104dc6a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104dc6a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1143, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104dc6a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+[2019-04-08 12:47:34,572 DEBUG Engine.blazemeter] Error sending data: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x1104dc6a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104dc6a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1143, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104dc6a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 125, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 510, in __send_monitoring
+    self._session.send_monitoring_data(engine_id, data)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 685, in send_monitoring_data
+    self.upload_file(file_name, to_json(data))
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 713, in upload_file
+    response = self._request(url, body.form_as_bytes(), headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1150, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://data.blazemeter.com/api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 failed
+
+[2019-04-08 12:47:34,572 WARNING Engine.blazemeter] Failed to send data, will retry in 30.0 sec...
+[2019-04-08 12:48:04,593 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 b'--===============0323275849488347916==\r\nContent-Disposition: file; name="file"; filename="r-ext-5cab0316869d1-0-c.monitoring.json"\r\nContent-Type: application/json\r\n\r\n{\n "reportInfo": {\n  "sessionId": "r-ext-5cab0316869d1",\n  "timestamp": 1554711484.584942,'
+[2019-04-08 12:48:04,597 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147
+[2019-04-08 12:48:04,619 DEBUG urllib3.connectionpool] Starting new HTTPS connection (8): data.blazemeter.com:443
+[2019-04-08 12:48:04,630 DEBUG HTTPClient] Request resulted in exception: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x1104dc6a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104dc6a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1143, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104dc6a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 125, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 510, in __send_monitoring
+    self._session.send_monitoring_data(engine_id, data)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 685, in send_monitoring_data
+    self.upload_file(file_name, to_json(data))
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 713, in upload_file
+    response = self._request(url, body.form_as_bytes(), headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1150, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://data.blazemeter.com/api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x1104ce0f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104ce0f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1143, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104ce0f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+[2019-04-08 12:48:04,633 ERROR Engine.blazemeter] Fatal error sending data: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x1104dc6a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104dc6a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1143, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104dc6a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 125, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 510, in __send_monitoring
+    self._session.send_monitoring_data(engine_id, data)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 685, in send_monitoring_data
+    self.upload_file(file_name, to_json(data))
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 713, in upload_file
+    response = self._request(url, body.form_as_bytes(), headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1150, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://data.blazemeter.com/api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x1104ce0f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104ce0f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1143, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='data.blazemeter.com', port=443): Max retries exceeded with url: /api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1104ce0f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 131, in _impl
+    method(self, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 510, in __send_monitoring
+    self._session.send_monitoring_data(engine_id, data)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 685, in send_monitoring_data
+    self.upload_file(file_name, to_json(data))
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 713, in upload_file
+    response = self._request(url, body.form_as_bytes(), headers=hdr)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1150, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://data.blazemeter.com/api/v4/image/r-ext-5cab0316869d1/files?signature=ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk&masterId=19303147 failed
+
+[2019-04-08 12:48:04,640 WARNING Engine.blazemeter] Will skip failed data and continue running
+[2019-04-08 12:48:04,641 DEBUG Engine.blazemeter] Set last check time to: 1554711315.095534
+[2019-04-08 12:48:04,642 INFO Engine.blazemeter] Ending data feeding...
+[2019-04-08 12:48:04,642 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/sessions/r-ext-5cab0316869d1/terminate-external {
+ "signature": "ci1leHQtNWNhYjAzMTY4NjlkMToxNTU1OTIwOTE4Ojg0YjYzNjQ3MTgzOGJjODI2ZjM1MGY3MGRlYTAyMDgzZTMwNTYwMmY0ZTNmMmJjN2NlMmQ3ZjdmMTg4YjI0ODllYTFiMWQwYWEzYTUxZTk1MjVjYjk5NzE4OWY0NGJkYmZmMGM2YzU1ZjcwZmU3YTIxNDYyNTU4OGUxZmRmZWRk",
+ "testId": 6753555,
+ "se
+[2019-04-08 12:48:04,643 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/sessions/r-ext-5cab0316869d1/terminate-external
+[2019-04-08 12:48:34,682 DEBUG HTTPClient] Request resulted in exception: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1321, in getresponse
+    response.begin()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 367, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 306, in _raise_timeout
+    raise ReadTimeoutError(self, url, "Read timed out. (read timeout=%s)" % timeout_value)
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='a.blazemeter.com', port=443): Read timed out. (read timeout=30.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1143, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='a.blazemeter.com', port=443): Read timed out. (read timeout=30.0)
+
+[2019-04-08 12:48:34,685 DEBUG Engine.blazemeter] Failed to finish online: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1321, in getresponse
+    response.begin()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/util/retry.py", line 367, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/urllib3/connectionpool.py", line 306, in _raise_timeout
+    raise ReadTimeoutError(self, url, "Read timed out. (read timeout=%s)" % timeout_value)
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='a.blazemeter.com', port=443): Read timed out. (read timeout=30.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1143, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='a.blazemeter.com', port=443): Read timed out. (read timeout=30.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 422, in _postproc_phase3
+    self.end_online()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py", line 448, in end_online
+    self._session.stop_anonymous()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 655, in stop_anonymous
+    self._request(url, data)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/bza.py", line 91, in _request
+    response = self.http_request(method=log_method, url=url, data=data, headers=headers, timeout=self.timeout)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/utils.py", line 1150, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://a.blazemeter.com/api/v4/sessions/r-ext-5cab0316869d1/terminate-external failed
+
+[2019-04-08 12:48:34,685 WARNING Engine.blazemeter] Failed to finish online: Request to https://a.blazemeter.com/api/v4/sessions/r-ext-5cab0316869d1/terminate-external failed
+[2019-04-08 12:48:34,688 INFO Engine.blazemeter] Online report link: https://a.blazemeter.com/app/?public-token=2RtubRS5aByTFNabAFNfny10fcda4u8l5fyiPxLHxjQLlDNfXP#reports/r-ext-5cab0316869d1/summary
+[2019-04-08 12:48:34,696 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/effective.yml
+[2019-04-08 12:48:34,751 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/effective.json
+[2019-04-08 12:48:34,754 INFO root] Artifacts dir: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330
+[2019-04-08 12:48:34,754 INFO root] Done performing with code: 0
+[2019-04-08 12:48:34,754 DEBUG root] Closing log handler: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-44-47.840330/bzt.log

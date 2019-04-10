@@ -1,0 +1,14 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,bytes,grpThreads,allThreads,Latency,Hostname,Connect
+1554729021172,1409,PROPERTY: getHomepage THING: falldetection,200,OK,UserScenario 1-1,true,295442,1,1,954,amirhosein-mac.local,902
+1554729023918,231,PROPERTY: getFall THING: falldetection,200,OK,UserScenario 1-1,true,164,1,1,230,amirhosein-mac.local,187
+1554729024151,36,ACTION: sendFallFeedback THING: falldetection,200,OK,UserScenario 1-1,true,164,1,1,35,amirhosein-mac.local,15
+1554729026531,1241,PROPERTY: getHomepage THING: falldetection,200,OK,UserScenario 1-1,true,295442,1,1,389,amirhosein-mac.local,362
+1554729027774,94,PROPERTY: getFall THING: falldetection,200,OK,UserScenario 1-1,true,164,1,1,93,amirhosein-mac.local,8
+1554729029268,80,ACTION: sendFallFeedback THING: falldetection,200,OK,UserScenario 1-1,true,164,1,1,80,amirhosein-mac.local,63
+1554729030459,575,PROPERTY: getHomepage THING: falldetection,200,OK,UserScenario 1-1,true,295442,1,1,162,amirhosein-mac.local,111
+1554729031036,25,PROPERTY: getFall THING: falldetection,200,OK,UserScenario 1-1,true,164,1,1,24,amirhosein-mac.local,16
+1554729032064,360,ACTION: sendFallFeedback THING: falldetection,200,OK,UserScenario 1-1,true,164,1,1,360,amirhosein-mac.local,347
+1554729033431,723,PROPERTY: getHomepage THING: falldetection,200,OK,UserScenario 1-1,true,295442,1,1,249,amirhosein-mac.local,178
+1554729034156,43,PROPERTY: getFall THING: falldetection,200,OK,UserScenario 1-1,true,164,1,1,43,amirhosein-mac.local,9
+1554729035204,278,ACTION: sendFallFeedback THING: falldetection,200,OK,UserScenario 1-1,true,164,1,1,277,amirhosein-mac.local,258
+1554729036490,407,PROPERTY: getHomepage THING: falldetection,200,OK,UserScenario 1-1,true,295442,1,1,210,amirhosein-mac.local,201

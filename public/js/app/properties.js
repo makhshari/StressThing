@@ -18,7 +18,7 @@ function extractProperties(thing, name, body) {
     httpMethod = "GET";
   }
   reqTuple = {
-    "label": "PROPERTY: " + name + "THING: " + thing.name,
+    "label": "PROPERTY: " + name + " THING: " + thing.name,
     "url": body.forms[0].href,
     "Method": httpMethod
   };

@@ -40,8 +40,8 @@ function fileSaver(myJSON, filename) {
   });
 }
 function system_input(filename) {
-  console.log("\nLet Read the input JSON file");
-  console.log("\n^________________^\n");
+  console.log("\nLet Read JSON file:", filename);
+  console.log("^________________^\n");
   var fs = require('fs');
   var rawdata = fs.readFileSync(filename + '.json');
   var jsondata = JSON.parse(rawdata);
@@ -50,7 +50,7 @@ function system_input(filename) {
 
 (function main() {
   console.log("\nWelcome to StressThing *__*");
-  var inputThingsJson = system_input("small_W3C_input");
+  var inputThingsJson = system_input("FallDetection");
   executeInput(inputThingsJson);
   myScenarios.getUserExecution();
   //testingTools.toTarausJson

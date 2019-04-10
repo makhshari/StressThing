@@ -1,16 +1,16 @@
-2019-04-05 11:59:26,674 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
-2019-04-05 11:59:26,826 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=mac_os_x-6ea89ae77c774e4d2ddbb3feca9aea6c-nongui
-2019-04-05 11:59:31,294 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.1, jpgc-casutg=2.8, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=1.3, jpgc-tst=2.5, jmeter-core=5.1.1, jmeter-ftp=5.1.1, jmeter-http=5.1.1, jmeter-jdbc=5.1.1, jmeter-jms=5.1.1, jmeter-junit=5.1.1, jmeter-java=5.1.1, jmeter-ldap=5.1.1, jmeter-mail=5.1.1, jmeter-mongodb=5.1.1, jmeter-native=5.1.1, jmeter-tcp=5.1.1, jmeter-components=5.1.1]
-2019-04-05 11:59:31,303 INFO o.j.r.PluginManagerCMD: Params line is: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-05_11-59-20.720417/modified_requests.jmx
-2019-04-05 11:59:31,910 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
-2019-04-05 11:59:31,944 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
-2019-04-05 11:59:31,954 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
-2019-04-05 11:59:32,049 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
-2019-04-05 11:59:32,057 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
-2019-04-05 11:59:32,184 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2019-04-05 11:59:32,184 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2019-04-05 11:59:32,190 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2019-04-05 11:59:32,190 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2019-04-05 11:59:32,190 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
-2019-04-05 11:59:32,191 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
-2019-04-05 11:59:32,299 INFO o.j.r.PluginManager: Finishing without changes
+2019-04-08 17:39:59,275 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
+2019-04-08 17:39:59,469 INFO o.j.r.JARSourceHTTP: Found cached repo
+2019-04-08 17:40:00,096 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.1, jpgc-casutg=2.8, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=1.3, jpgc-tst=2.5, jmeter-core=5.1.1, jmeter-ftp=5.1.1, jmeter-http=5.1.1, jmeter-jdbc=5.1.1, jmeter-jms=5.1.1, jmeter-junit=5.1.1, jmeter-java=5.1.1, jmeter-ldap=5.1.1, jmeter-mail=5.1.1, jmeter-mongodb=5.1.1, jmeter-native=5.1.1, jmeter-tcp=5.1.1, jmeter-components=5.1.1]
+2019-04-08 17:40:00,101 INFO o.j.r.PluginManagerCMD: Params line is: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-39-20.417407/modified_requests-3.jmx
+2019-04-08 17:40:00,965 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-04-08 17:40:00,992 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-04-08 17:40:01,005 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2019-04-08 17:40:01,089 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2019-04-08 17:40:01,094 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2019-04-08 17:40:01,179 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:40:01,180 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:40:01,180 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:40:01,180 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:40:01,180 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-04-08 17:40:01,181 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-04-08 17:40:01,400 INFO o.j.r.PluginManager: Finishing without changes

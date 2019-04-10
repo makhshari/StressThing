@@ -1,10 +1,24 @@
 {
-	"UserScenario": {
-      "concurrency": "20",
+  "scenarios":[
+	{
+     "concurrency": "1",
       "ramp-up": "10",
-      "hold-for": "60",
-      "throughput": "20",
+      "hold-for": "10",
+      "throughput": "1",
       "scenario": "UserScenario"
+	},
+	{
+     "concurrency": "1",
+      "ramp-up": "10",
+      "hold-for": "10",
+      "throughput": "11",
+      "scenario": "secondScenario"
 	}
-
+  ],
+  "scenarioConfigs":{
+  	"maxUser":"400",
+	"maxThroughput":"400",
+	"rampUp":"30",
+	"holdFor":"20"
+  }
 }

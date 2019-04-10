@@ -1,0 +1,1431 @@
+[2019-04-08 17:34:59,525 INFO root] Taurus CLI Tool v1.13.4
+[2019-04-08 17:34:59,525 DEBUG root] Command-line options: {'log': '/var/folders/9w/fj8tc51n59dgtrxfgskpxd9h0000gn/T/bzt_06je_j49.log', 'option': None, 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': []}
+[2019-04-08 17:34:59,525 DEBUG root] Python: CPython 3.7.3
+[2019-04-08 17:34:59,526 DEBUG root] OS: uname_result(system='Darwin', node='amirhosein-mac.local', release='17.5.0', version='Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64', machine='x86_64', processor='i386')
+[2019-04-08 17:34:59,526 INFO root] Starting with configs: ['allRequests.json']
+[2019-04-08 17:34:59,527 DEBUG root] Using personal config: /Users/apple/.bzt-rc
+[2019-04-08 17:34:59,527 INFO Engine] Configuring...
+[2019-04-08 17:34:59,590 DEBUG Engine] Base configs list: ['/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/resources/10-base-config.yml']
+[2019-04-08 17:34:59,590 DEBUG Engine.Configuration] Configs: ['/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/resources/10-base-config.yml']
+[2019-04-08 17:34:59,592 DEBUG Engine.Configuration] Reading /usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/resources/10-base-config.yml as YAML
+[2019-04-08 17:34:59,667 DEBUG Engine] User configs list: ['/Users/apple/.bzt-rc', 'allRequests.json']
+[2019-04-08 17:34:59,667 DEBUG Engine.Configuration] Configs: ['/Users/apple/.bzt-rc', 'allRequests.json']
+[2019-04-08 17:34:59,669 DEBUG Engine.Configuration] Reading /Users/apple/.bzt-rc as YAML
+[2019-04-08 17:34:59,680 DEBUG Engine.Configuration] Reading allRequests.json as YAML
+[2019-04-08 17:34:59,708 DEBUG Engine.Configuration] Configs: ['/Users/apple/.bzt-rc', 'allRequests.json']
+[2019-04-08 17:34:59,709 DEBUG Engine.Configuration] Reading /Users/apple/.bzt-rc as YAML
+[2019-04-08 17:34:59,722 DEBUG Engine.Configuration] Reading allRequests.json as YAML
+[2019-04-08 17:34:59,774 DEBUG Engine] Requesting updates info: https://gettaurus.org/updates/?version=1.13.4&installID=macos-3c075440e027
+[2019-04-08 17:34:59,774 DEBUG HTTPClient] Making HTTP request GET https://gettaurus.org/updates/?version=1.13.4&installID=macos-3c075440e027
+[2019-04-08 17:34:59,774 INFO Engine] Artifacts dir: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310
+[2019-04-08 17:34:59,776 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/effective
+[2019-04-08 17:34:59,784 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/effective.yml
+[2019-04-08 17:34:59,824 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): gettaurus.org:443
+[2019-04-08 17:34:59,874 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/effective.json
+[2019-04-08 17:34:59,877 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/merged.yml
+[2019-04-08 17:34:59,880 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/merged.yml
+[2019-04-08 17:34:59,909 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/merged.json
+[2019-04-08 17:34:59,911 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/merged.json
+[2019-04-08 17:34:59,912 DEBUG Engine] Add existing artifact (move=False): allRequests.json
+[2019-04-08 17:34:59,913 DEBUG Engine] Copying allRequests.json to /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/allRequests.json
+[2019-04-08 17:34:59,918 DEBUG root] Closing log handler: /var/folders/9w/fj8tc51n59dgtrxfgskpxd9h0000gn/T/bzt_06je_j49.log
+[2019-04-08 17:34:59,920 DEBUG root] Switched writing logs to /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/bzt.log
+[2019-04-08 17:34:59,920 DEBUG root] Linting config
+[2019-04-08 17:34:59,930 INFO Engine] Preparing...
+[2019-04-08 17:34:59,931 DEBUG Engine] Module config: consolidator {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'}
+[2019-04-08 17:34:59,932 DEBUG root] Importing module: bzt.modules.aggregator
+[2019-04-08 17:35:00,369 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/aggregator.py'>
+[2019-04-08 17:35:00,370 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2019-04-08 17:35:00,370 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2019-04-08 17:35:00,370 DEBUG root] Importing module: bzt.modules.monitoring
+[2019-04-08 17:35:00,373 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/monitoring.py'>
+[2019-04-08 17:35:00,373 DEBUG Engine] Module config: local {'class': 'bzt.modules.provisioning.Local', 'sequential': 'true'}
+[2019-04-08 17:35:00,373 DEBUG root] Importing module: bzt.modules.provisioning
+[2019-04-08 17:35:00,374 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py'>
+[2019-04-08 17:35:00,374 DEBUG Engine] Module config: jmeter {'class': 'bzt.modules.jmeter.JMeterExecutor', 'protocol-handlers': {'http': 'bzt.jmx.http.HTTPProtocolHandler'}, 'plugins': ['jpgc-casutg', 'jpgc-dummy', 'jpgc-ffw', 'jpgc-fifo', 'jpgc-functions', 'jpgc-json', 'jpgc-perfmon', 'jpgc-prmctl', 'jpgc-tst'], 'properties': {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': ''}}
+[2019-04-08 17:35:00,374 DEBUG root] Importing module: bzt.modules.jmeter
+[2019-04-08 17:35:00,413 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/jmeter.py'>
+[2019-04-08 17:35:00,415 DEBUG Engine.local] Preparing executor: jmeter/4546610848
+[2019-04-08 17:35:00,415 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter.log
+[2019-04-08 17:35:00,415 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2019-04-08 17:35:00,417 DEBUG urllib3.connectionpool] https://gettaurus.org:443 "GET /updates/?version=1.13.4&installID=macos-3c075440e027 HTTP/1.1" 403 1587
+[2019-04-08 17:35:00,426 DEBUG Engine.jmeter] Port 4445 is free
+[2019-04-08 17:35:00,426 DEBUG Engine.jmeter] Using port 4445 for management
+[2019-04-08 17:35:00,428 DEBUG Engine] Failed to check for updates: Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/engine.py", line 697, in _check_updates
+    data = response.json()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2019-04-08 17:35:00,428 WARNING Engine] Failed to check for updates
+[2019-04-08 17:35:00,429 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/requests.jmx
+[2019-04-08 17:35:00,432 DEBUG root] Importing module: bzt.jmx.http
+[2019-04-08 17:35:00,433 DEBUG root] Loading class: 'HTTPProtocolHandler' from <module 'bzt.jmx.http' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/jmx/http.py'>
+[2019-04-08 17:35:00,439 DEBUG JMeterScenarioBuilder] Saving JMX to: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/requests.jmx
+[2019-04-08 17:35:00,440 DEBUG Engine.jmeter] Additional system properties {'sun.net.inetaddr.ttl': 0}
+[2019-04-08 17:35:00,440 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/system.properties
+[2019-04-08 17:35:00,441 DEBUG Engine.jmeter] Additional properties: {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': '', 'jmeterengine.nongui.port': 4445, 'jmeterengine.nongui.maxport': 4445, 'jmeter.save.saveservice.timestamp_format': 'ms', 'sampleresult.default.encoding': 'UTF-8', 'user.classpath': '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310:/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310'}
+[2019-04-08 17:35:00,442 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter-bzt.properties
+[2019-04-08 17:35:00,444 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2019-04-08 17:35:00,455 DEBUG root] Executing shell: ['java', '-version'] at .
+[2019-04-08 17:35:01,025 DEBUG Engine.jmeter.JavaVM] JavaVM output: 
+[2019-04-08 17:35:01,026 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2019-04-08 17:35:01,026 DEBUG Engine.jmeter.JMeter] Trying JMeter..
+[2019-04-08 17:35:01,027 DEBUG root] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.1.1/bin/jmeter.sh', '-j', '/var/folders/9w/fj8tc51n59dgtrxfgskpxd9h0000gn/T/jmeterbitbnyjqlog', '--version'] at .
+[2019-04-08 17:35:04,363 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____     
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \   
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) | 
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <  
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 5.1.1 r1855137  
+
+Copyright (c) 1999-2019 The Apache Software Foundation
+
+ / 
+[2019-04-08 17:35:04,364 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=1, throughput=1.0, ramp_up=10.0, hold=10.0, iterations=0, duration=20.0, steps=None)
+[2019-04-08 17:35:04,368 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/kpi.jtl
+[2019-04-08 17:35:04,369 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/error.jtl
+[2019-04-08 17:35:04,374 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (UserScenario) to ConcurrencyThreadGroup and apply load parameters
+[2019-04-08 17:35:04,375 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests.jmx
+[2019-04-08 17:35:04,375 DEBUG JMX] Saving JMX to: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests.jmx
+[2019-04-08 17:35:04,377 DEBUG root] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.1.1/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests.jmx'] at .
+[2019-04-08 17:35:09,629 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests.jmx
+2019-04-08 17:35:06,738 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
+2019-04-08 17:35:06,947 INFO o.j.r.JARSourceHTTP: Found cached repo
+2019-04-08 17:35:07,639 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.1, jpgc-casutg=2.8, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=1.3, jpgc-tst=2.5, jmeter-core=5.1.1, jmeter-ftp=5.1.1, jmeter-http=5.1.1, jmeter-jdbc=5.1.1, jmeter-jms=5.1.1, jmeter-junit=5.1.1, jmeter-java=5.1.1, jmeter-ldap=5.1.1, jmeter-mail=5.1.1, jmeter-mongodb=5.1.1, jmeter-native=5.1.1, jmeter-tcp=5.1.1, jmeter-components=5.1.1]
+2019-04-08 17:35:07,659 INFO o.j.r.PluginManagerCMD: Params line is: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests.jmx
+2019-04-08 17:35:08,702 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-04-08 17:35:08,744 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-04-08 17:35:08,756 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2019-04-08 17:35:08,874 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2019-04-08 17:35:08,882 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2019-04-08 17:35:09,009 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:35:09,009 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:35:09,010 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:35:09,010 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:35:09,010 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-04-08 17:35:09,011 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-04-08 17:35:09,245 INFO o.j.r.PluginManager: Finishing without changes
+
+
+[2019-04-08 17:35:09,630 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter.out
+[2019-04-08 17:35:09,631 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter.err
+[2019-04-08 17:35:09,633 DEBUG Engine.local] Preparing executor: jmeter/4547088456
+[2019-04-08 17:35:09,634 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter-1.log
+[2019-04-08 17:35:09,634 DEBUG Engine.jmeter] Checking if port 4446 is free
+[2019-04-08 17:35:09,635 DEBUG Engine.jmeter] Port 4446 is free
+[2019-04-08 17:35:09,636 DEBUG Engine.jmeter] Using port 4446 for management
+[2019-04-08 17:35:09,636 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/requests-1.jmx
+[2019-04-08 17:35:09,638 DEBUG root] Importing module: bzt.jmx.http
+[2019-04-08 17:35:09,639 DEBUG root] Loading class: 'HTTPProtocolHandler' from <module 'bzt.jmx.http' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/jmx/http.py'>
+[2019-04-08 17:35:09,645 DEBUG JMeterScenarioBuilder] Saving JMX to: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/requests-1.jmx
+[2019-04-08 17:35:09,646 DEBUG Engine.jmeter] Additional system properties {'sun.net.inetaddr.ttl': 0}
+[2019-04-08 17:35:09,646 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/system-1.properties
+[2019-04-08 17:35:09,648 DEBUG Engine.jmeter] Additional properties: {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': '', 'jmeterengine.nongui.port': 4446, 'jmeterengine.nongui.maxport': 4446, 'jmeter.save.saveservice.timestamp_format': 'ms', 'sampleresult.default.encoding': 'UTF-8', 'user.classpath': '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310:/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310'}
+[2019-04-08 17:35:09,648 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter-bzt-1.properties
+[2019-04-08 17:35:09,649 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2019-04-08 17:35:09,650 DEBUG root] Executing shell: ['java', '-version'] at .
+[2019-04-08 17:35:09,959 DEBUG Engine.jmeter.JavaVM] JavaVM output: 
+[2019-04-08 17:35:09,960 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2019-04-08 17:35:09,960 DEBUG Engine.jmeter.JMeter] Trying JMeter..
+[2019-04-08 17:35:09,962 DEBUG root] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.1.1/bin/jmeter.sh', '-j', '/var/folders/9w/fj8tc51n59dgtrxfgskpxd9h0000gn/T/jmeterf5ffrek8log', '--version'] at .
+[2019-04-08 17:35:13,234 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____     
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \   
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) | 
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <  
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 5.1.1 r1855137  
+
+Copyright (c) 1999-2019 The Apache Software Foundation
+
+ / 
+[2019-04-08 17:35:13,238 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=1, throughput=1.0, ramp_up=30.0, hold=15.0, iterations=0, duration=45.0, steps=None)
+[2019-04-08 17:35:13,243 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/kpi-1.jtl
+[2019-04-08 17:35:13,245 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/error-1.jtl
+[2019-04-08 17:35:13,251 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (scenario1) to ConcurrencyThreadGroup and apply load parameters
+[2019-04-08 17:35:13,254 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-1.jmx
+[2019-04-08 17:35:13,254 DEBUG JMX] Saving JMX to: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-1.jmx
+[2019-04-08 17:35:13,256 DEBUG root] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.1.1/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-1.jmx'] at .
+[2019-04-08 17:35:18,548 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-1.jmx
+2019-04-08 17:35:15,606 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
+2019-04-08 17:35:15,796 INFO o.j.r.JARSourceHTTP: Found cached repo
+2019-04-08 17:35:16,509 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.1, jpgc-casutg=2.8, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=1.3, jpgc-tst=2.5, jmeter-core=5.1.1, jmeter-ftp=5.1.1, jmeter-http=5.1.1, jmeter-jdbc=5.1.1, jmeter-jms=5.1.1, jmeter-junit=5.1.1, jmeter-java=5.1.1, jmeter-ldap=5.1.1, jmeter-mail=5.1.1, jmeter-mongodb=5.1.1, jmeter-native=5.1.1, jmeter-tcp=5.1.1, jmeter-components=5.1.1]
+2019-04-08 17:35:16,515 INFO o.j.r.PluginManagerCMD: Params line is: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-1.jmx
+2019-04-08 17:35:17,504 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-04-08 17:35:17,555 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-04-08 17:35:17,575 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2019-04-08 17:35:17,696 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2019-04-08 17:35:17,707 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2019-04-08 17:35:17,832 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:35:17,832 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:35:17,832 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:35:17,833 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:35:17,833 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-04-08 17:35:17,833 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-04-08 17:35:18,137 INFO o.j.r.PluginManager: Finishing without changes
+
+
+[2019-04-08 17:35:18,549 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter-1.out
+[2019-04-08 17:35:18,551 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter-1.err
+[2019-04-08 17:35:18,554 DEBUG Engine.local] Preparing executor: jmeter/4547088568
+[2019-04-08 17:35:18,554 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter-2.log
+[2019-04-08 17:35:18,555 DEBUG Engine.jmeter] Checking if port 4447 is free
+[2019-04-08 17:35:18,557 DEBUG Engine.jmeter] Port 4447 is free
+[2019-04-08 17:35:18,557 DEBUG Engine.jmeter] Using port 4447 for management
+[2019-04-08 17:35:18,558 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/requests-2.jmx
+[2019-04-08 17:35:18,560 DEBUG root] Importing module: bzt.jmx.http
+[2019-04-08 17:35:18,560 DEBUG root] Loading class: 'HTTPProtocolHandler' from <module 'bzt.jmx.http' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/jmx/http.py'>
+[2019-04-08 17:35:18,568 DEBUG JMeterScenarioBuilder] Saving JMX to: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/requests-2.jmx
+[2019-04-08 17:35:18,569 DEBUG Engine.jmeter] Additional system properties {'sun.net.inetaddr.ttl': 0}
+[2019-04-08 17:35:18,569 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/system-2.properties
+[2019-04-08 17:35:18,570 DEBUG Engine.jmeter] Additional properties: {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': '', 'jmeterengine.nongui.port': 4447, 'jmeterengine.nongui.maxport': 4447, 'jmeter.save.saveservice.timestamp_format': 'ms', 'sampleresult.default.encoding': 'UTF-8', 'user.classpath': '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310:/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310'}
+[2019-04-08 17:35:18,571 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter-bzt-2.properties
+[2019-04-08 17:35:18,572 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2019-04-08 17:35:18,573 DEBUG root] Executing shell: ['java', '-version'] at .
+[2019-04-08 17:35:18,873 DEBUG Engine.jmeter.JavaVM] JavaVM output: 
+[2019-04-08 17:35:18,874 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2019-04-08 17:35:18,874 DEBUG Engine.jmeter.JMeter] Trying JMeter..
+[2019-04-08 17:35:18,877 DEBUG root] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.1.1/bin/jmeter.sh', '-j', '/var/folders/9w/fj8tc51n59dgtrxfgskpxd9h0000gn/T/jmeteripy2m9bolog', '--version'] at .
+[2019-04-08 17:35:22,176 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____     
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \   
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) | 
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <  
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 5.1.1 r1855137  
+
+Copyright (c) 1999-2019 The Apache Software Foundation
+
+ / 
+[2019-04-08 17:35:22,177 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=500, throughput=1.0, ramp_up=30.0, hold=15.0, iterations=0, duration=45.0, steps=None)
+[2019-04-08 17:35:22,181 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/kpi-2.jtl
+[2019-04-08 17:35:22,183 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/error-2.jtl
+[2019-04-08 17:35:22,189 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (scenario2) to ConcurrencyThreadGroup and apply load parameters
+[2019-04-08 17:35:22,191 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-2.jmx
+[2019-04-08 17:35:22,191 DEBUG JMX] Saving JMX to: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-2.jmx
+[2019-04-08 17:35:22,193 DEBUG root] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.1.1/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-2.jmx'] at .
+[2019-04-08 17:35:27,756 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-2.jmx
+2019-04-08 17:35:24,940 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
+2019-04-08 17:35:25,097 INFO o.j.r.JARSourceHTTP: Found cached repo
+2019-04-08 17:35:25,733 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.1, jpgc-casutg=2.8, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=1.3, jpgc-tst=2.5, jmeter-core=5.1.1, jmeter-ftp=5.1.1, jmeter-http=5.1.1, jmeter-jdbc=5.1.1, jmeter-jms=5.1.1, jmeter-junit=5.1.1, jmeter-java=5.1.1, jmeter-ldap=5.1.1, jmeter-mail=5.1.1, jmeter-mongodb=5.1.1, jmeter-native=5.1.1, jmeter-tcp=5.1.1, jmeter-components=5.1.1]
+2019-04-08 17:35:25,741 INFO o.j.r.PluginManagerCMD: Params line is: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-2.jmx
+2019-04-08 17:35:26,875 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-04-08 17:35:26,907 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-04-08 17:35:26,920 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2019-04-08 17:35:27,002 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2019-04-08 17:35:27,009 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2019-04-08 17:35:27,097 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:35:27,098 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:35:27,098 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:35:27,098 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:35:27,098 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-04-08 17:35:27,099 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-04-08 17:35:27,318 INFO o.j.r.PluginManager: Finishing without changes
+
+
+[2019-04-08 17:35:27,761 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter-2.out
+[2019-04-08 17:35:27,762 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter-2.err
+[2019-04-08 17:35:27,766 DEBUG Engine.local] Preparing executor: jmeter/4547088680
+[2019-04-08 17:35:27,766 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter-3.log
+[2019-04-08 17:35:27,767 DEBUG Engine.jmeter] Checking if port 4448 is free
+[2019-04-08 17:35:27,768 DEBUG Engine.jmeter] Port 4448 is free
+[2019-04-08 17:35:27,768 DEBUG Engine.jmeter] Using port 4448 for management
+[2019-04-08 17:35:27,770 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/requests-3.jmx
+[2019-04-08 17:35:27,773 DEBUG root] Importing module: bzt.jmx.http
+[2019-04-08 17:35:27,774 DEBUG root] Loading class: 'HTTPProtocolHandler' from <module 'bzt.jmx.http' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/jmx/http.py'>
+[2019-04-08 17:35:27,781 DEBUG JMeterScenarioBuilder] Saving JMX to: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/requests-3.jmx
+[2019-04-08 17:35:27,783 DEBUG Engine.jmeter] Additional system properties {'sun.net.inetaddr.ttl': 0}
+[2019-04-08 17:35:27,783 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/system-3.properties
+[2019-04-08 17:35:27,785 DEBUG Engine.jmeter] Additional properties: {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': '', 'jmeterengine.nongui.port': 4448, 'jmeterengine.nongui.maxport': 4448, 'jmeter.save.saveservice.timestamp_format': 'ms', 'sampleresult.default.encoding': 'UTF-8', 'user.classpath': '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310:/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310'}
+[2019-04-08 17:35:27,785 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter-bzt-3.properties
+[2019-04-08 17:35:27,787 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2019-04-08 17:35:27,788 DEBUG root] Executing shell: ['java', '-version'] at .
+[2019-04-08 17:35:28,082 DEBUG Engine.jmeter.JavaVM] JavaVM output: 
+[2019-04-08 17:35:28,082 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2019-04-08 17:35:28,083 DEBUG Engine.jmeter.JMeter] Trying JMeter..
+[2019-04-08 17:35:28,085 DEBUG root] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.1.1/bin/jmeter.sh', '-j', '/var/folders/9w/fj8tc51n59dgtrxfgskpxd9h0000gn/T/jmeterd7l2oe9ulog', '--version'] at .
+[2019-04-08 17:35:31,246 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____     
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \   
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) | 
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <  
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 5.1.1 r1855137  
+
+Copyright (c) 1999-2019 The Apache Software Foundation
+
+ / 
+[2019-04-08 17:35:31,247 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=1, throughput=500.0, ramp_up=30.0, hold=15.0, iterations=0, duration=45.0, steps=None)
+[2019-04-08 17:35:31,251 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/kpi-3.jtl
+[2019-04-08 17:35:31,252 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/error-3.jtl
+[2019-04-08 17:35:31,258 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (scenario3) to ConcurrencyThreadGroup and apply load parameters
+[2019-04-08 17:35:31,259 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-3.jmx
+[2019-04-08 17:35:31,259 DEBUG JMX] Saving JMX to: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-3.jmx
+[2019-04-08 17:35:31,261 DEBUG root] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.1.1/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-3.jmx'] at .
+[2019-04-08 17:35:36,590 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-3.jmx
+2019-04-08 17:35:33,663 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
+2019-04-08 17:35:33,871 INFO o.j.r.JARSourceHTTP: Found cached repo
+2019-04-08 17:35:34,474 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.1, jpgc-casutg=2.8, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=1.3, jpgc-tst=2.5, jmeter-core=5.1.1, jmeter-ftp=5.1.1, jmeter-http=5.1.1, jmeter-jdbc=5.1.1, jmeter-jms=5.1.1, jmeter-junit=5.1.1, jmeter-java=5.1.1, jmeter-ldap=5.1.1, jmeter-mail=5.1.1, jmeter-mongodb=5.1.1, jmeter-native=5.1.1, jmeter-tcp=5.1.1, jmeter-components=5.1.1]
+2019-04-08 17:35:34,480 INFO o.j.r.PluginManagerCMD: Params line is: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-3.jmx
+2019-04-08 17:35:35,646 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-04-08 17:35:35,679 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-04-08 17:35:35,704 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2019-04-08 17:35:35,789 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2019-04-08 17:35:35,802 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2019-04-08 17:35:35,912 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:35:35,912 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:35:35,912 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:35:35,913 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:35:35,913 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-04-08 17:35:35,913 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-04-08 17:35:36,206 INFO o.j.r.PluginManager: Finishing without changes
+
+
+[2019-04-08 17:35:36,595 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter-3.out
+[2019-04-08 17:35:36,597 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter-3.err
+[2019-04-08 17:35:36,603 DEBUG Engine] Module config: final-stats {'class': 'bzt.modules.reporting.FinalStatus'}
+[2019-04-08 17:35:36,604 DEBUG root] Importing module: bzt.modules.reporting
+[2019-04-08 17:35:36,656 DEBUG easyprocess] version=0.2.5
+[2019-04-08 17:35:36,660 DEBUG pyvirtualdisplay] version=0.2.1
+[2019-04-08 17:35:36,665 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/reporting.py'>
+[2019-04-08 17:35:36,666 DEBUG Engine] Module config: console {'class': 'bzt.modules.console.ConsoleStatusReporter'}
+[2019-04-08 17:35:36,666 DEBUG root] Importing module: bzt.modules.console
+[2019-04-08 17:35:36,666 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/console.py'>
+[2019-04-08 17:35:36,667 WARNING Engine] Module 'console' can be only used once, will merge all new instances into single
+[2019-04-08 17:35:36,668 DEBUG Engine] Module config: blazemeter {'class': 'bzt.modules.blazemeter.BlazeMeterUploader'}
+[2019-04-08 17:35:36,668 DEBUG root] Importing module: bzt.modules.blazemeter
+[2019-04-08 17:35:36,668 DEBUG root] Loading class: 'BlazeMeterUploader' from <module 'bzt.modules.blazemeter' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py'>
+[2019-04-08 17:35:36,699 WARNING Engine.blazemeter] No BlazeMeter API key provided, will upload anonymously
+[2019-04-08 17:35:36,700 DEBUG Engine.blazemeter] Installing http client
+[2019-04-08 17:35:36,700 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/web/version None
+[2019-04-08 17:35:36,700 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/web/version
+[2019-04-08 17:35:36,710 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2019-04-08 17:35:38,191 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/web/version HTTP/1.1" 200 233
+[2019-04-08 17:35:38,195 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": "blazemeter-php7-backend-package 928 release/2019-04-02_126 137ce603d6f9e3814fbd1ecc2a17af16c5eee191 Thu Apr 4 18:27:30 2019 +0300 137ce603d6f9e3814fbd1ecc2a17af16c5eee191\n"
+}
+[2019-04-08 17:35:38,204 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/effective.yml
+[2019-04-08 17:35:38,292 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/effective.json
+[2019-04-08 17:35:38,295 INFO Engine] Starting...
+[2019-04-08 17:35:38,296 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x10d594898>
+[2019-04-08 17:35:38,297 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10d5947f0>
+[2019-04-08 17:35:38,297 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x10f0dc240>
+[2019-04-08 17:35:38,298 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x10f0dc630>
+[2019-04-08 17:35:38,298 INFO Engine.console] Waiting for results...
+[2019-04-08 17:35:38,298 DEBUG Engine] Startup <bzt.modules.blazemeter.BlazeMeterUploader object at 0x10f10ee10>
+[2019-04-08 17:35:38,299 INFO Engine.blazemeter] Initiating data feeding...
+[2019-04-08 17:35:38,299 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/sessions None
+[2019-04-08 17:35:38,299 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/sessions
+[2019-04-08 17:35:38,772 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/sessions HTTP/1.1" 201 2844
+[2019-04-08 17:35:38,774 DEBUG User] Response [201]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "session": {
+            "id": "r-ext-5cab472272c1e",
+            "name": "external",
+            "userId": 386483,
+            "publicToken": "OThjXx2nq5z63xHYBhvecO3diajZ063ACb4ws47c5yiHi
+[2019-04-08 17:35:38,775 INFO Engine.blazemeter] Started data feeding: https://a.blazemeter.com/app/?public-token=OThjXx2nq5z63xHYBhvecO3diajZ063ACb4ws47c5yiHigHRIz#reports/r-ext-5cab472272c1e/summary
+[2019-04-08 17:35:39,124 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x10d594a20>
+[2019-04-08 17:35:39,135 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/effective.yml
+[2019-04-08 17:35:39,272 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/effective.json
+[2019-04-08 17:35:39,275 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:39,276 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:39,276 INFO Engine.local] Starting next sequential execution: jmeter/UserScenario
+[2019-04-08 17:35:39,279 DEBUG root] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.1.1/bin/jmeter.sh', '-t', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests.jmx', '-j', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter.log', '-q', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter-bzt.properties', '-n', '-S', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/system.properties'] at /Users/apple/Desktop/bachelorProject/stressThing/StressThing
+[2019-04-08 17:35:39,304 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:39,305 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:39,306 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:39,306 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:39,306 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:39,306 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:39,306 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:39,618 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:39,913 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:41,640 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:41,640 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:41,640 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:41,640 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:41,641 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:41,641 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:41,696 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:41,761 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:42,640 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:42,641 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:42,641 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:42,641 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:42,641 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:42,642 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:42,684 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:42,747 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:43,645 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:43,645 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:43,645 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:43,645 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:43,646 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:43,646 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:43,687 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:43,781 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:44,645 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:44,645 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:44,646 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:44,646 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:44,646 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:44,646 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:44,706 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:44,765 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:45,648 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:45,649 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:45,649 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:45,649 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:45,650 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:45,650 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:45,692 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:45,756 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:46,649 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:46,650 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:46,650 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:46,650 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:46,650 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:46,651 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:46,695 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:46,759 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:47,655 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:47,657 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:47,658 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:47,658 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:47,658 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:47,658 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:47,708 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:47,768 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:48,654 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:48,656 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:48,657 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:48,657 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:48,658 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:48,658 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:48,665 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:48,745 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:49,656 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:49,656 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:49,657 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:49,657 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:49,657 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:49,657 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:49,704 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:49,778 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:50,658 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:50,659 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:50,660 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:50,660 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:50,660 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:50,660 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:50,725 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:50,801 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:51,660 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:51,660 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:51,660 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:51,661 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:51,661 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:51,661 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:51,713 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:51,773 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:52,660 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:52,660 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:52,661 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:52,661 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:52,661 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:52,661 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:52,769 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:53,400 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:53,661 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:53,661 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:53,662 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:53,662 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:53,662 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:53,663 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:53,667 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:53,708 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:54,663 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:54,663 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:54,663 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:54,663 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:54,664 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:54,664 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:54,688 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:54,710 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:55,667 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:55,668 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:55,668 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:55,668 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:55,668 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:55,668 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:55,703 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:55,747 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:56,668 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:56,668 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:56,669 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:56,669 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:56,669 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:56,669 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:56,707 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:56,752 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:57,670 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:57,670 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:57,670 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:57,671 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:57,671 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:57,671 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:57,719 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:57,764 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:58,674 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:58,675 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:58,675 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:58,675 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:58,675 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:58,676 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:58,711 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:58,759 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:35:59,675 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:59,675 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:59,675 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:59,676 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:59,676 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:35:59,676 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:35:59,714 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:35:59,760 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:00,675 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:00,676 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:00,676 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:00,676 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:00,676 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:00,676 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:00,714 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:00,760 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:01,677 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:01,677 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:01,677 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:01,677 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:01,677 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:01,677 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:01,697 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:01,723 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:02,682 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:02,683 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:02,683 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:02,683 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:02,683 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:02,683 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:02,713 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:02,756 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:03,682 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:03,682 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:03,683 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:03,683 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:03,683 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:03,683 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:03,687 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:03,723 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:04,682 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:04,682 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:04,683 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:04,683 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:04,683 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:04,683 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:04,710 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:04,737 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:05,684 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:05,684 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:05,685 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:05,685 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:05,685 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:05,685 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:05,733 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:05,792 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:06,685 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:06,685 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:06,685 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:06,686 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:06,686 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:06,686 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:06,713 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:06,748 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:07,688 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:07,693 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:07,696 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:07,697 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:07,697 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:07,697 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:07,730 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:07,769 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:08,690 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:08,690 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:08,691 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:08,691 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:08,691 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:08,691 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:08,694 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:08,729 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:09,689 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:09,689 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:09,689 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:09,689 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:09,689 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:09,689 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:09,720 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:09,763 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:10,693 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:10,694 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:10,694 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:10,694 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:10,694 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:10,694 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:10,731 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:10,781 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:11,693 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:11,694 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:11,694 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:11,694 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:11,694 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:11,695 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:11,732 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:11,777 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:12,695 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:12,695 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:12,696 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:12,696 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:12,696 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:12,696 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:12,718 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:12,747 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:13,696 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:13,696 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:13,696 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:13,697 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:13,697 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:13,697 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:13,731 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:13,781 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:14,695 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:14,696 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:14,696 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:14,696 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:14,696 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:14,697 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:14,731 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:14,907 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:15,700 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:15,700 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:15,701 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:15,701 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:15,701 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:15,701 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:15,736 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:15,792 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:16,704 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:16,704 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:16,704 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:16,704 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:16,705 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:16,705 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:16,732 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:16,773 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:17,707 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:17,708 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:17,708 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:17,708 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:17,708 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:17,708 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:17,739 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:17,781 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:18,719 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:18,721 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:18,721 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:18,721 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:18,721 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:18,721 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:18,752 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:18,786 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:19,710 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:19,710 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:19,711 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:19,711 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:19,711 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:19,711 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:19,715 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:19,749 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:20,710 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:20,711 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:20,711 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:20,711 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:20,711 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:20,711 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:20,744 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:20,796 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:21,714 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:21,715 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:21,715 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:21,715 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:21,715 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:21,715 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:21,742 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:21,781 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:22,714 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:22,714 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:22,714 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:22,715 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:22,715 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:22,715 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:22,718 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:22,759 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:23,716 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:23,716 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:23,716 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:23,716 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:23,716 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:23,717 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:23,745 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:23,786 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:24,717 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:24,718 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:24,718 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:24,718 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:24,718 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:24,719 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:24,741 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:24,766 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:25,719 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:25,720 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:25,720 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:25,720 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:25,720 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:25,720 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:25,745 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:25,775 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:26,719 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:26,720 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:26,720 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:26,720 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:26,720 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:26,720 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:26,754 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:26,796 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:27,720 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:27,720 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:27,720 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:27,720 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:27,721 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:27,721 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:27,760 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:27,803 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:28,724 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:28,724 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:28,724 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:28,725 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:28,725 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:28,725 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:28,759 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:28,802 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:29,726 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:29,726 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:29,727 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:29,727 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:29,727 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:29,728 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:29,835 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:29,881 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:30,727 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:30,728 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:30,729 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:30,729 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:30,730 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:30,730 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:30,734 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:30,780 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:31,728 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:31,728 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:31,729 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:31,729 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:31,729 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:31,729 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:31,773 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:31,815 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:32,728 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:32,729 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:32,729 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:32,729 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:32,729 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:32,730 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:32,792 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:32,836 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:33,734 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:33,734 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:33,734 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:33,735 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:33,735 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:33,735 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:33,755 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:33,777 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:34,736 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:34,737 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:34,737 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:34,737 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:34,737 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:34,738 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:34,758 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:34,777 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:35,737 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:35,737 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:35,738 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:35,738 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:35,738 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:35,738 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:35,740 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:35,760 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:36,738 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:36,739 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:36,739 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:36,739 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:36,739 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:36,739 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:36,756 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:36,870 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:37,742 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:37,744 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:37,744 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:37,745 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:37,745 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:37,745 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:37,766 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:37,785 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:38,743 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:38,743 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:38,743 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:38,743 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:38,744 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:38,744 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:38,747 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:38,765 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:39,747 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:39,747 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:39,747 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:39,747 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:39,747 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:39,748 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:39,765 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:39,787 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:40,747 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:40,747 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:40,747 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:40,748 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:40,748 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:40,748 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:40,770 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:40,805 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:42,143 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:42,143 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:42,143 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:42,144 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:42,144 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:42,144 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:42,164 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:42,186 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:43,143 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:43,144 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:43,144 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:43,144 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:43,144 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:43,144 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:43,147 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:43,173 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:44,147 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:44,147 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:44,147 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:44,147 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:44,148 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:44,148 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:44,171 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:44,190 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:45,150 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:45,151 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:45,155 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:45,156 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:45,166 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:45,169 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:45,662 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:45,701 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:46,153 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:46,153 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:46,153 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:46,153 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:46,154 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:46,154 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:46,158 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:46,281 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:47,153 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:47,153 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:47,153 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:47,154 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:47,154 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:47,154 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:47,188 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:47,231 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:48,154 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:48,155 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:48,155 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:48,155 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:48,156 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:48,156 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:48,193 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:48,237 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:49,159 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:49,160 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:49,160 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:49,161 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:49,161 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:49,161 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:49,193 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:49,227 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:50,162 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:50,163 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:50,163 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:50,163 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:50,163 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:50,163 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:50,181 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:50,213 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:51,162 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:51,163 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:51,163 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:51,164 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:51,164 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:51,164 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:51,189 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:51,228 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:52,167 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:52,168 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:52,168 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:52,168 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:52,168 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:52,168 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:52,189 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:52,216 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:53,168 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:53,168 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:53,168 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:53,168 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:53,168 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:53,168 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:53,190 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:53,214 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:54,169 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:54,170 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:54,170 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:54,170 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:54,170 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:54,170 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:54,195 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:54,233 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:55,169 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:55,169 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:55,170 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:55,170 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:55,170 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:55,170 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:55,174 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:55,203 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:56,175 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:56,175 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:56,175 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:56,176 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:56,176 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:56,176 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:56,198 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:56,221 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:57,180 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:57,180 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:57,180 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:57,181 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:57,181 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:57,181 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:57,201 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:57,220 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:58,180 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:58,180 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:58,180 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:58,180 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:58,180 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:58,181 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:58,184 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:58,213 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:36:59,180 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:59,181 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:59,181 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:59,181 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:59,181 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:36:59,181 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:36:59,201 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:36:59,318 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:00,181 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:00,182 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:00,182 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:00,182 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:00,182 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:00,182 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:00,213 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:00,292 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:01,187 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:01,187 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:01,187 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:01,187 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:01,187 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:01,188 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:01,218 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:01,259 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:02,187 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:02,188 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:02,188 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:02,188 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:02,188 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:02,188 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:02,224 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:02,265 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:03,190 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:03,190 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:03,190 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:03,191 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:03,191 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:03,191 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:03,222 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:03,266 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:04,191 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:04,191 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:04,191 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:04,191 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:04,191 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:04,192 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:04,225 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:04,267 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:05,191 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:05,191 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:05,192 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:05,192 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:05,192 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:05,192 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:05,217 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:05,257 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:06,192 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:06,192 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:06,192 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:06,193 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:06,193 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:06,193 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:06,222 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:06,262 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:07,192 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:07,192 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:07,192 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:07,193 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:07,193 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:07,193 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:07,196 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:07,236 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:08,192 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:08,193 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:08,193 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:08,193 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:08,193 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:08,193 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:08,233 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:08,292 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:09,196 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:09,197 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:09,197 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:09,197 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:09,197 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:09,198 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:09,234 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:09,287 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:10,197 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:10,197 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:10,197 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:10,198 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:10,198 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:10,198 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:10,236 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:10,285 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:11,198 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:11,199 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:11,200 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:11,200 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:11,200 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:11,200 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:11,239 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:11,302 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:13,327 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:13,327 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:13,328 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:13,328 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:13,328 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:13,328 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:13,370 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:13,417 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:14,328 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:14,329 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:14,329 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:14,329 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:14,330 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:14,330 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:14,383 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:14,427 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:15,331 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:15,332 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:15,332 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:15,332 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:15,332 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:15,333 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:15,337 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:15,422 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:16,332 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:16,332 INFO Engine.local] Starting next sequential execution: jmeter/scenario1
+[2019-04-08 17:37:16,334 DEBUG root] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.1.1/bin/jmeter.sh', '-t', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-1.jmx', '-j', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter-1.log', '-q', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter-bzt-1.properties', '-n', '-S', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/system-1.properties'] at /Users/apple/Desktop/bachelorProject/stressThing/StressThing
+[2019-04-08 17:37:16,351 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:16,352 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:16,353 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:16,353 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:16,353 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:16,383 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:16,433 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:17,332 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:17,333 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:17,333 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:17,333 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:17,337 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:17,382 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:18,334 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:18,335 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:18,335 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:18,335 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:18,374 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:18,440 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:19,335 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:19,336 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:19,336 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:19,336 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:19,371 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:19,420 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:20,336 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:20,336 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:20,336 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:20,337 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:20,370 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:20,429 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:21,336 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:21,337 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:21,337 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:21,338 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:21,375 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:21,440 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:22,337 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:22,337 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:22,337 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:22,337 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:22,341 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:22,667 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:23,337 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:23,338 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:23,338 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:23,338 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:23,377 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:23,444 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:24,338 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:24,338 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:24,339 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:24,339 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:24,376 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:24,426 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:25,339 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:25,340 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:25,340 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:25,340 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:25,375 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:25,420 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:26,340 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:26,341 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:26,341 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:26,341 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:26,377 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:26,425 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:27,343 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:27,343 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:27,344 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:27,344 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:27,390 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:27,439 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:28,347 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:28,348 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:28,348 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:28,348 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:28,352 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:28,391 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:29,346 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:29,347 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:29,347 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:29,347 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:29,386 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:29,433 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:30,347 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:30,348 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:30,348 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:30,348 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:30,387 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:30,432 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:31,348 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:31,349 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:31,349 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:31,350 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 17:37:31,395 INFO Engine.console] Waiting for finish...
+[2019-04-08 17:37:31,438 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 17:37:31,981 WARNING Engine] Please wait for graceful shutdown...
+[2019-04-08 17:37:31,981 DEBUG root] Leveled up log file verbosity
+[2019-04-08 17:37:31,981 INFO Engine] Shutting down...
+[2019-04-08 17:37:31,982 DEBUG Engine] Current stop reason: 
+[2019-04-08 17:37:31,984 DEBUG Engine.local] Shutdown jmeter/UserScenario
+[2019-04-08 17:37:31,985 DEBUG Engine.local] Shutdown jmeter/scenario1
+[2019-04-08 17:37:32,787 DEBUG Engine.local] Exception in shutdown of JMeterExecutor:  Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py", line 143, in shutdown
+    executor.shutdown()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/jmeter.py", line 402, in shutdown
+    if self._process_stopped(1):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/jmeter.py", line 444, in _process_stopped
+    time.sleep(self.engine.check_interval)
+KeyboardInterrupt
+
+[2019-04-08 17:37:32,789 DEBUG Engine] :
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/engine.py", line 305, in _shutdown
+    module.shutdown()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py", line 152, in shutdown
+    reraise(exc_info, exc_value)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/six/py3.py", line 86, in reraise
+    raise exc
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py", line 143, in shutdown
+    executor.shutdown()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/jmeter.py", line 402, in shutdown
+    if self._process_stopped(1):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/jmeter.py", line 444, in _process_stopped
+    time.sleep(self.engine.check_interval)
+KeyboardInterrupt
+
+[2019-04-08 17:37:32,789 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2019-04-08 17:37:32,799 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/effective.yml
+[2019-04-08 17:37:32,903 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/effective.json
+[2019-04-08 17:37:32,908 DEBUG Engine] :
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/engine.py", line 249, in run
+    self._shutdown()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/engine.py", line 316, in _shutdown
+    reraise(exc_info, exc_value)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/six/py3.py", line 86, in reraise
+    raise exc
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/engine.py", line 305, in _shutdown
+    module.shutdown()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py", line 152, in shutdown
+    reraise(exc_info, exc_value)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/six/py3.py", line 86, in reraise
+    raise exc
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py", line 143, in shutdown
+    executor.shutdown()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/jmeter.py", line 402, in shutdown
+    if self._process_stopped(1):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/jmeter.py", line 444, in _process_stopped
+    time.sleep(self.engine.check_interval)
+KeyboardInterrupt
+
+[2019-04-08 17:37:32,909 WARNING root] Keyboard interrupt
+[2019-04-08 17:37:32,909 DEBUG root] KeyboardInterrupt: 
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/cli.py", line 258, in perform
+    self.engine.run()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/engine.py", line 259, in run
+    reraise(exc_info, exc_value)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/six/py3.py", line 86, in reraise
+    raise exc
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/engine.py", line 238, in run
+    self._wait()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/engine.py", line 287, in _wait
+    time.sleep(delay)
+[2019-04-08 17:37:32,910 INFO Engine] Post-processing...
+[2019-04-08 17:37:32,910 DEBUG Engine.local] Post-process jmeter/UserScenario
+[2019-04-08 17:37:32,911 DEBUG Engine] Add existing artifact (move=True): /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests.jmx
+[2019-04-08 17:37:32,911 DEBUG Engine] No need to copy /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests.jmx
+[2019-04-08 17:37:32,912 DEBUG Engine.local] Post-process jmeter/scenario1
+[2019-04-08 17:37:32,912 DEBUG Engine] Add existing artifact (move=True): /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-1.jmx
+[2019-04-08 17:37:32,912 DEBUG Engine] No need to copy /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-1.jmx
+[2019-04-08 17:37:32,915 DEBUG Engine.local] Exception in post_process of JMeterExecutor: Empty results, most likely scenario1 (JMeterExecutor) failed. Actual reason for this can be found in logs under /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310 Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py", line 171, in post_process
+    raise ToolError(message, diagnostics)
+bzt.ToolError: Empty results, most likely scenario1 (JMeterExecutor) failed. Actual reason for this can be found in logs under /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310
+
+[2019-04-08 17:37:32,916 DEBUG Engine.local] Post-process jmeter/scenario2
+[2019-04-08 17:37:32,916 DEBUG Engine] Add existing artifact (move=True): /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-2.jmx
+[2019-04-08 17:37:32,916 DEBUG Engine] No need to copy /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-2.jmx
+[2019-04-08 17:37:32,916 DEBUG Engine.local] Post-process jmeter/scenario3
+[2019-04-08 17:37:32,917 DEBUG Engine] Add existing artifact (move=True): /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-3.jmx
+[2019-04-08 17:37:32,917 DEBUG Engine] No need to copy /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-3.jmx
+[2019-04-08 17:37:32,918 DEBUG Engine] post_process: Empty results, most likely scenario1 (JMeterExecutor) failed. Actual reason for this can be found in logs under /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/engine.py", line 330, in post_process
+    module.post_process()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py", line 180, in post_process
+    reraise(exc_info, exc_value)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/six/py3.py", line 86, in reraise
+    raise exc
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py", line 171, in post_process
+    raise ToolError(message, diagnostics)
+bzt.ToolError: Empty results, most likely scenario1 (JMeterExecutor) failed. Actual reason for this can be found in logs under /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310
+
+[2019-04-08 17:37:32,920 DEBUG Engine.jmeter.JTLReader] Buffer len: 1; Known errors count: 1
+[2019-04-08 17:37:32,920 DEBUG Engine.jmeter.JTLReader] Aggregating: 1554728758, 1 in buffer
+[2019-04-08 17:37:32,932 DEBUG aggregator] Growing HDR from 5000.0 to 76000.0
+[2019-04-08 17:37:32,943 DEBUG aggregator] Growing HDR from 5000.0 to 76000.0
+[2019-04-08 17:37:32,954 WARNING Engine.jmeter.JTLReader] No details for errors of PROPERTY: getHomepage THING: falldetection, dropped info: [{'cnt': 1, 'msg': 'Non HTTP response message: Connect to 172.20.10.3:8000 [/172.20.10.3] failed: Operation timed out', 'tag': None, 'rc': 'HttpHostConnectException', 'type': 0, 'urls': Counter()}]
+[2019-04-08 17:37:32,954 WARNING Engine.jmeter.JTLReader] No details for errors of , dropped info: [{'cnt': 1, 'msg': 'Non HTTP response message: Connect to 172.20.10.3:8000 [/172.20.10.3] failed: Operation timed out', 'tag': None, 'rc': 'HttpHostConnectException', 'type': 0, 'urls': Counter()}]
+[2019-04-08 17:37:32,960 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] File is empty: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/error-1.jtl
+[2019-04-08 17:37:32,961 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] File is empty: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/error-1.jtl
+[2019-04-08 17:37:32,961 DEBUG Engine.jmeter.JTLReader] Buffer len: 0; Known errors count: 1
+[2019-04-08 17:37:32,961 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] File not appeared yet: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/error-2.jtl
+[2019-04-08 17:37:32,961 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] File not appeared yet: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/error-2.jtl
+[2019-04-08 17:37:32,962 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader.FileReader] File not appeared yet: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/kpi-2.jtl
+[2019-04-08 17:37:32,962 DEBUG Engine.jmeter.JTLReader] Buffer len: 0; Known errors count: 1
+[2019-04-08 17:37:32,962 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] File not appeared yet: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/error-3.jtl
+[2019-04-08 17:37:32,963 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] File not appeared yet: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/error-3.jtl
+[2019-04-08 17:37:32,963 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader.FileReader] File not appeared yet: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/kpi-3.jtl
+[2019-04-08 17:37:32,963 DEBUG Engine.jmeter.JTLReader] Buffer len: 0; Known errors count: 1
+[2019-04-08 17:37:32,964 DEBUG Engine.jmeter.JTLReader] Buffer len: 0; Known errors count: 1
+[2019-04-08 17:37:32,964 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] File is empty: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/error-1.jtl
+[2019-04-08 17:37:32,964 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] File is empty: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/error-1.jtl
+[2019-04-08 17:37:32,964 DEBUG Engine.jmeter.JTLReader] Buffer len: 0; Known errors count: 1
+[2019-04-08 17:37:32,964 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] File not appeared yet: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/error-2.jtl
+[2019-04-08 17:37:32,965 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] File not appeared yet: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/error-2.jtl
+[2019-04-08 17:37:32,965 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader.FileReader] File not appeared yet: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/kpi-2.jtl
+[2019-04-08 17:37:32,965 DEBUG Engine.jmeter.JTLReader] Buffer len: 0; Known errors count: 1
+[2019-04-08 17:37:32,965 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] File not appeared yet: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/error-3.jtl
+[2019-04-08 17:37:32,965 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] File not appeared yet: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/error-3.jtl
+[2019-04-08 17:37:32,965 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader.FileReader] File not appeared yet: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/kpi-3.jtl
+[2019-04-08 17:37:32,966 DEBUG Engine.jmeter.JTLReader] Buffer len: 0; Known errors count: 1
+[2019-04-08 17:37:32,966 DEBUG Engine.consolidator] Consolidator buffer[1]: dict_keys([1554728758])
+[2019-04-08 17:37:32,966 DEBUG Engine.consolidator] Merging into 1554728758
+[2019-04-08 17:37:32,966 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-04-08 17:37:33,482 DEBUG Engine.consolidator] Processed datapoint: 1554728758/ConsolidatingAggregator@4518922224
+[2019-04-08 17:37:33,482 INFO Engine.final-stats] Test duration: 0:01:54
+[2019-04-08 17:37:33,483 INFO Engine.final-stats] Samples count: 1, 100.00% failures
+[2019-04-08 17:37:33,483 INFO Engine.final-stats] Average times: total 75.781, latency 0.000, connect 75.775
+[2019-04-08 17:37:33,492 INFO Engine.final-stats] Percentiles:
+(0lqqqqqqqqqqqqqqqwqqqqqqqqqqqqqqqk(B
+(0x(B Percentile, % (0x(B Resp. Time, s (0x(B
+(0tqqqqqqqqqqqqqqqnqqqqqqqqqqqqqqqu(B
+(0x(B           0.0 (0x(B        75.776 (0x(B
+(0x(B          50.0 (0x(B        75.776 (0x(B
+(0x(B          90.0 (0x(B        75.776 (0x(B
+(0x(B          95.0 (0x(B        75.776 (0x(B
+(0x(B          99.0 (0x(B        75.776 (0x(B
+(0x(B          99.9 (0x(B        75.776 (0x(B
+(0x(B         100.0 (0x(B        75.776 (0x(B
+(0mqqqqqqqqqqqqqqqvqqqqqqqqqqqqqqqj(B
+[2019-04-08 17:37:33,500 INFO Engine.final-stats] Request label stats:
+(0lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqwqqqqqqqqwqqqqqqqwqqqqqqqqwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk(B
+(0x(B label                                      (0x(B status (0x(B  succ (0x(B avg_rt (0x(B error                                                                                             (0x(B
+(0tqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqnqqqqqqqqnqqqqqqqnqqqqqqqqnqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqu(B
+(0x(B PROPERTY: getHomepage THING: falldetection (0x(B  FAIL  (0x(B 0.00% (0x(B 75.781 (0x(B Non HTTP response message: Connect to 172.20.10.3:8000 [/172.20.10.3] failed: Operation timed out (0x(B
+(0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqvqqqqqqqqvqqqqqqqvqqqqqqqqvqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj(B
+[2019-04-08 17:37:33,500 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2019-04-08 17:37:33,500 DEBUG Engine.blazemeter] KPI bulk buffer len in post-proc: 1
+[2019-04-08 17:37:33,501 INFO Engine.blazemeter] Sending remaining KPI data to server...
+[2019-04-08 17:37:33,582 DEBUG Engine.blazemeter] Set last check time to: 1554728736.6689842
+[2019-04-08 17:37:33,582 INFO Engine.blazemeter] Ending data feeding...
+[2019-04-08 17:37:33,600 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/sessions/r-ext-5cab472272c1e/terminate-external {
+ "signature": "ci1leHQtNWNhYjQ3MjI3MmMxZToxNTU1OTM4MzM4OmE5NzlmMTk3ZjI5NDA4MGYzOWNiMTExOThhZDNlMTc0M2MxZWJjZTg3ZWM1ZjEyNzVlMDAzMjAwYzBkYmQ2NGYxY2E0N2MyZjkxOGYyYmZlZDhiODJkMjU3MDg5YjNjNmYyOTU3ZWI4MzFmNWFjNmMxYzdmMmQwMzQ2ODM0Yzk0",
+ "testId": 6754237,
+ "se
+[2019-04-08 17:37:33,600 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/sessions/r-ext-5cab472272c1e/terminate-external
+[2019-04-08 17:37:34,618 DEBUG Engine] post_process: 
+[2019-04-08 17:37:34,635 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/effective.yml
+[2019-04-08 17:37:34,740 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/effective.json
+[2019-04-08 17:37:34,744 DEBUG root] Child Process Error: Empty results, most likely scenario1 (JMeterExecutor) failed. Actual reason for this can be found in logs under /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310
+[2019-04-08 17:37:34,744 DEBUG root] JMeter STDOUT:
+Created the tree successfully using /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-1.jmx
+Starting the test @ Mon Apr 08 17:37:24 IRDT 2019 (1554728844534)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4446
+[2019-04-08 17:37:34,744 DEBUG root] JMeter log:
+2019-04-08 17:37:22,319 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2019-04-08 17:37:22,374 INFO o.a.j.JMeter: Loading user properties from: /Users/apple/.bzt/jmeter-taurus/5.1.1/bin/user.properties
+2019-04-08 17:37:22,385 INFO o.a.j.JMeter: Loading system properties from: /Users/apple/.bzt/jmeter-taurus/5.1.1/bin/system.properties
+2019-04-08 17:37:22,389 INFO o.a.j.JMeter: Loading additional properties from: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/jmeter-bzt-1.properties
+2019-04-08 17:37:22,404 INFO o.a.j.JMeter: Setting System properties from file: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/system-1.properties
+2019-04-08 17:37:22,502 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2019-04-08 17:37:22,502 INFO o.a.j.JMeter: Version 5.1.1 r1855137
+2019-04-08 17:37:22,503 INFO o.a.j.JMeter: java.version=1.8.0_66
+2019-04-08 17:37:22,503 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2019-04-08 17:37:22,503 INFO o.a.j.JMeter: os.name=Mac OS X
+2019-04-08 17:37:22,503 INFO o.a.j.JMeter: os.arch=x86_64
+2019-04-08 17:37:22,503 INFO o.a.j.JMeter: os.version=10.13.4
+2019-04-08 17:37:22,503 INFO o.a.j.JMeter: file.encoding=UTF-8
+2019-04-08 17:37:22,504 INFO o.a.j.JMeter: java.awt.headless=true
+2019-04-08 17:37:22,504 INFO o.a.j.JMeter: Max memory     =954728448
+2019-04-08 17:37:22,504 INFO o.a.j.JMeter: Available Processors =4
+2019-04-08 17:37:22,526 INFO o.a.j.JMeter: Default Locale=English (United States)
+2019-04-08 17:37:22,527 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2019-04-08 17:37:22,527 INFO o.a.j.JMeter: JMeterHome=/Users/apple/.bzt/jmeter-taurus/5.1.1
+2019-04-08 17:37:22,528 INFO o.a.j.JMeter: user.dir  =/Users/apple/Desktop/bachelorProject/stressThing/StressThing
+2019-04-08 17:37:22,528 INFO o.a.j.JMeter: PWD       =/Users/apple/Desktop/bachelorProject/stressThing/StressThing
+2019-04-08 17:37:22,535 INFO o.a.j.JMeter: IP: 172.20.10.5 Name: amirhosein-mac.local FullName: 172.20.10.5
+2019-04-08 17:37:22,536 INFO o.a.j.JMeter: user.classpath=/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310:/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310
+2019-04-08 17:37:22,536 INFO o.a.j.JMeter: Adding to classpath and loader: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310
+2019-04-08 17:37:22,538 INFO o.a.j.JMeter: Adding to classpath and loader: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310
+2019-04-08 17:37:22,590 INFO o.a.j.s.FileServer: Default base='/Users/apple/Desktop/bachelorProject/stressThing/StressThing'
+2019-04-08 17:37:22,610 INFO o.a.j.s.FileServer: Set new base='/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310'
+2019-04-08 17:37:23,732 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-04-08 17:37:23,794 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-04-08 17:37:23,808 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2019-04-08 17:37:23,827 INFO o.a.j.s.SaveService: Loading file: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/modified_requests-1.jmx
+2019-04-08 17:37:24,103 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2019-04-08 17:37:24,118 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2019-04-08 17:37:24,204 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:37:24,205 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:37:24,205 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:37:24,205 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:37:24,206 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-04-08 17:37:24,206 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-04-08 17:37:24,540 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-04-08 17:37:24,556 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-04-08 17:37:24,556 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-04-08 17:37:24,573 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2019-04-08 17:37:24,573 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2019-04-08 17:37:26,845 INFO o.a.j.JMeter: Running test (1554728846845)
+2019-04-08 17:37:26,988 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : scenario1
+2019-04-08 17:37:26,989 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group scenario1.
+2019-04-08 17:37:26,989 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-04-08 17:37:27,001 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-04-08 17:37:27,001 INFO c.b.j.t.c.ConcurrencyThreadStarter: Start supplying threads
+[2019-04-08 17:37:34,745 DEBUG root] ToolError: Empty results, most likely scenario1 (JMeterExecutor) failed. Actual reason for this can be found in logs under /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/cli.py", line 265, in perform
+    self.engine.post_process()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/engine.py", line 344, in post_process
+    reraise(exc_info, exc_value)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/six/py3.py", line 86, in reraise
+    raise exc
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/engine.py", line 330, in post_process
+    module.post_process()
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py", line 180, in post_process
+    reraise(exc_info, exc_value)
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/six/py3.py", line 86, in reraise
+    raise exc
+  File "/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py", line 171, in post_process
+    raise ToolError(message, diagnostics)
+[2019-04-08 17:37:34,745 INFO root] Artifacts dir: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310
+[2019-04-08 17:37:34,746 WARNING root] Done performing with code: 1
+[2019-04-08 17:37:34,746 DEBUG root] Closing log handler: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-34-59.774310/bzt.log

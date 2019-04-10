@@ -1,50 +1,148 @@
 {
 "things": [
 {
-    "id": "@MyLampThing",
-    "name": "MyLampThing",
-    "description" : "MyLampThing is a RGB lamp for my room",
-    "security": [{"scheme": "psk"}],
+    "id": "@redLight507",
+    "name": "redLight507",
+    "description" : "redLight507 is a red light for the 507 street",
     "properties": {
-        "status": {
-            "description" : "Shows the current status of the lamp",
+        "getTrafficStatus": {
+            "description" : "Shows the current status of the traffic in front of red light",
             "type": "string",
             "forms": [{
-                "href": "https://jsonplaceholder.typicode.com/posts/1"
+                "href": "https://6fb72f98-04cb-4010-b8ba-051062303e55.mock.pstmn.io/redLights/redLight507/getTrafficStatus",
+                "http:methodName": "GET"
             }]
         }
     },
     "actions": {
-        "toggle": {
-            "description" : "Turn on or off the lamp",
+        "putTrafficStatus": {
+            "description" : "update Traffic Status",
             "input": {
             "type": "object",
             "properties": {
-                "title": {
-                    "type": "string"
+                "density": {
+                    "type": "integer",
+                    "minimum": "1",
+                    "maximum": "30"
                 },
-                "body": {
-                    "type": "string"
+                "volume": {
+                    "type": "integer",
+                    "minimum": "1",
+                    "maximum": "500"
                   },
-                "userID": {
+                "trafficLevel": {
                     "type": "integer",
                     "minimum": "0",
                     "maximum": "10"
                 }
             },
-            "required": ["title","body"]
+            "required": ["density","volume"]
         },
             "forms": [{
-                "href": "https://jsonplaceholder.typicode.com/posts"
+                "href": "https://6fb72f98-04cb-4010-b8ba-051062303e55.mock.pstmn.io/redLights/redLight507/putTrafficStatus",
+                "http:methodName": "PUT"
+            }]
+        }
+    }
+},
+{
+    "id": "@bridge307",
+    "name": "bridge307",
+    "description" : "bridge307 is a bridge in the city",
+    "properties": {
+        "getCapacity": {
+            "description" : "Shows the current capacity of the bridge",
+            "type": "string",
+            "forms": [{
+                "href": "https://6fb72f98-04cb-4010-b8ba-051062303e55.mock.pstmn.io/bridges/bridge307/getCapacity",
+                "http:methodName": "GET"
             }]
         }
     },
-    "events": {
-        "overheating": {
-            "description" : "Lamp reaches a critical temperature (overheating)",
+    "actions": {
+        "sendAlert": {
+            "description" : "send a message to bridge",
+            "input": {
+            "type": "object",
+            "properties": {
+                "distance": {
+                    "type": "integer",
+                    "minimum": "1",
+                    "maximum": "10"
+                },
+                "time": {
+                    "type": "integer",
+                    "minimum": "1",
+                    "maximum": "30"
+                  },
+                "typeOfCar": {
+                    "type": "string"
+                }
+            },
+            "required": ["distance","time"]
+        },
+            "forms": [{
+                "href": "https://6fb72f98-04cb-4010-b8ba-051062303e55.mock.pstmn.io/bridges/bridge307/sendAlert",
+                "http:methodName": "POST"
+            }]
+        }
+    }
+},
+{
+    "id": "@parkingPlace107",
+    "name": "parkingPlace107",
+    "description" : "parkingPlace107 is the place number 107 in the parking of the city",
+    "properties": {
+        "getStatus": {
+            "description" : "get the current status of the place 107",
             "type": "string",
             "forms": [{
-                "href": "http://yahoo.com"
+                "href": "https://6fb72f98-04cb-4010-b8ba-051062303e55.mock.pstmn.io/parking/place407/getStatus",
+                "http:methodName": "GET"
+            }]
+        }
+    },
+    "actions": {
+        "setReservation": {
+            "description" : "send a reservation message to the parking place",
+            "input": {
+            "type": "object",
+            "properties": {
+                "distance": {
+                    "type": "integer",
+                    "minimum": "1",
+                    "maximum": "10"
+                },
+                "time": {
+                    "type": "integer",
+                    "minimum": "1",
+                    "maximum": "30"
+                  },
+                "typeOfCar": {
+                    "type": "string"
+                }
+            },
+            "required": ["distance","time"]
+        },
+            "forms": [{
+                "href": "https://6fb72f98-04cb-4010-b8ba-051062303e55.mock.pstmn.io/parking/place407/setReservation",
+                "http:methodName": "POST"
+            }]
+        },
+        "deletePlace": {
+            "description" : "delete a parking place",
+            "input": {
+            "type": "object",
+            "properties": {
+                "crashReason": {
+                    "type": "string"
+                }
+            },
+            "required": ["crashReason"]
+        },
+            "forms": [{
+                "href": "https://6fb72f98-04cb-4010-b8ba-051062303e55.mock.pstmn.io/parking/place407/deletePlace",
+                "http:methodName": "Delete"
             }]
         }
     }

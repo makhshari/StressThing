@@ -1,0 +1,63 @@
+2019-04-08 14:26:43,661 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2019-04-08 14:26:43,866 INFO o.a.j.JMeter: Loading user properties from: /Users/apple/.bzt/jmeter-taurus/5.1.1/bin/user.properties
+2019-04-08 14:26:43,877 INFO o.a.j.JMeter: Loading system properties from: /Users/apple/.bzt/jmeter-taurus/5.1.1/bin/system.properties
+2019-04-08 14:26:43,880 INFO o.a.j.JMeter: Loading additional properties from: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_14-26-19.304386/jmeter-bzt.properties
+2019-04-08 14:26:43,884 INFO o.a.j.JMeter: Setting System properties from file: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_14-26-19.304386/system.properties
+2019-04-08 14:26:43,932 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2019-04-08 14:26:43,932 INFO o.a.j.JMeter: Version 5.1.1 r1855137
+2019-04-08 14:26:43,932 INFO o.a.j.JMeter: java.version=1.8.0_66
+2019-04-08 14:26:43,932 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2019-04-08 14:26:43,936 INFO o.a.j.JMeter: os.name=Mac OS X
+2019-04-08 14:26:43,960 INFO o.a.j.JMeter: os.arch=x86_64
+2019-04-08 14:26:43,998 INFO o.a.j.JMeter: os.version=10.13.4
+2019-04-08 14:26:43,998 INFO o.a.j.JMeter: file.encoding=UTF-8
+2019-04-08 14:26:43,998 INFO o.a.j.JMeter: java.awt.headless=true
+2019-04-08 14:26:43,998 INFO o.a.j.JMeter: Max memory     =954728448
+2019-04-08 14:26:43,999 INFO o.a.j.JMeter: Available Processors =4
+2019-04-08 14:26:44,017 INFO o.a.j.JMeter: Default Locale=English (United States)
+2019-04-08 14:26:44,018 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2019-04-08 14:26:44,019 INFO o.a.j.JMeter: JMeterHome=/Users/apple/.bzt/jmeter-taurus/5.1.1
+2019-04-08 14:26:44,020 INFO o.a.j.JMeter: user.dir  =/Users/apple/Desktop/bachelorProject/stressThing/StressThing
+2019-04-08 14:26:44,021 INFO o.a.j.JMeter: PWD       =/Users/apple/Desktop/bachelorProject/stressThing/StressThing
+2019-04-08 14:26:44,026 INFO o.a.j.JMeter: IP: 172.20.10.5 Name: amirhosein-mac.local FullName: 172.20.10.5
+2019-04-08 14:26:44,026 INFO o.a.j.JMeter: user.classpath=/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_14-26-19.304386:/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_14-26-19.304386
+2019-04-08 14:26:44,027 INFO o.a.j.JMeter: Adding to classpath and loader: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_14-26-19.304386
+2019-04-08 14:26:44,029 INFO o.a.j.JMeter: Adding to classpath and loader: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_14-26-19.304386
+2019-04-08 14:26:44,250 INFO o.a.j.s.FileServer: Default base='/Users/apple/Desktop/bachelorProject/stressThing/StressThing'
+2019-04-08 14:26:44,273 INFO o.a.j.s.FileServer: Set new base='/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_14-26-19.304386'
+2019-04-08 14:26:45,043 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-04-08 14:26:45,212 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-04-08 14:26:45,247 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2019-04-08 14:26:45,294 INFO o.a.j.s.SaveService: Loading file: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_14-26-19.304386/modified_requests.jmx
+2019-04-08 14:26:45,542 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2019-04-08 14:26:45,553 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2019-04-08 14:26:45,634 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 14:26:45,635 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 14:26:45,635 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 14:26:45,635 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 14:26:45,635 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-04-08 14:26:45,636 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-04-08 14:26:45,911 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-04-08 14:26:45,915 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-04-08 14:26:45,915 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-04-08 14:26:45,936 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2019-04-08 14:26:45,936 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2019-04-08 14:26:48,678 INFO o.a.j.JMeter: Running test (1554717408678)
+2019-04-08 14:26:48,819 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : UserScenario
+2019-04-08 14:26:48,825 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group UserScenario.
+2019-04-08 14:26:48,826 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-04-08 14:26:48,841 INFO c.b.j.t.c.ConcurrencyThreadStarter: Start supplying threads
+2019-04-08 14:26:48,842 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-04-08 14:26:58,906 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2019-04-08 14:26:58,909 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2019-04-08 14:26:58,909 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2019-04-08 14:26:58,910 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2019-04-08 14:26:58,906 INFO o.a.j.t.JMeterThread: Thread started: UserScenario 1-1
+2019-04-08 14:26:58,938 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group UserScenario, made 0 samples/s for expected rps 0.02 samples/s, increase your number of threads
+2019-04-08 14:26:59,076 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = amirhosein-mac.local
+2019-04-08 14:26:59,113 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2019-04-08 14:27:39,008 INFO c.b.j.t.c.ConcurrencyThreadStarter: Done supplying threads
+2019-04-08 14:28:14,950 INFO o.a.j.t.JMeterThread: Thread is done: UserScenario 1-1
+2019-04-08 14:28:14,952 INFO o.a.j.t.JMeterThread: Thread finished: UserScenario 1-1
+2019-04-08 14:28:14,955 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-04-08 14:28:14,959 INFO o.a.j.e.StandardJMeterEngine: Forced JVM shutdown requested at end of test

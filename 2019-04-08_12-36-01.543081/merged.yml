@@ -1,0 +1,22 @@
+---
+execution:
+- concurrency: '10'
+  hold-for: '10'
+  ramp-up: '20'
+  scenario: UserScenario
+  throughput: '10'
+reporting:
+- module: console
+- module: blazemeter
+scenarios:
+  UserScenario:
+    requests:
+    - label: 'PROPERTY: getTrafficStatus THING: falldetection'
+      method: GET
+      url: http://172.20.10.3:8000/blog/ajax/get_status
+    - body:
+        feedback: '1'
+      label: 'ACTION: putTrafficStatus THING: falldetection'
+      method: POST
+      url: http://172.20.10.3:8000/blog/ajax/feedback
+

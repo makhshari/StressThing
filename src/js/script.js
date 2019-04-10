@@ -35,8 +35,8 @@ function fileSaver(myJSON,filename){
 }); 
 }
 export function system_input(filename){
-  console.log("\nLet Read the input JSON file");
-  console.log("\n^________________^\n")
+  console.log("\nLet Read JSON file:",filename);
+  console.log("^________________^\n")
   const fs = require('fs');
   let rawdata = fs.readFileSync(filename+'.json');  
   let jsondata = JSON.parse(rawdata); 
@@ -45,7 +45,7 @@ export function system_input(filename){
 
 (function main() {
   console.log("\nWelcome to StressThing *__*")
-  var inputThingsJson=system_input("small_W3C_input");
+  var inputThingsJson=system_input("FallDetection");
   executeInput(inputThingsJson);
   myScenarios.getUserExecution();
   //testingTools.toTarausJson

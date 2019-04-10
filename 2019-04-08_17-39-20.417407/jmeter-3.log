@@ -1,0 +1,96 @@
+2019-04-08 17:46:20,008 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2019-04-08 17:46:20,070 INFO o.a.j.JMeter: Loading user properties from: /Users/apple/.bzt/jmeter-taurus/5.1.1/bin/user.properties
+2019-04-08 17:46:20,073 INFO o.a.j.JMeter: Loading system properties from: /Users/apple/.bzt/jmeter-taurus/5.1.1/bin/system.properties
+2019-04-08 17:46:20,074 INFO o.a.j.JMeter: Loading additional properties from: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-39-20.417407/jmeter-bzt-3.properties
+2019-04-08 17:46:20,075 INFO o.a.j.JMeter: Setting System properties from file: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-39-20.417407/system-3.properties
+2019-04-08 17:46:20,088 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2019-04-08 17:46:20,089 INFO o.a.j.JMeter: Version 5.1.1 r1855137
+2019-04-08 17:46:20,089 INFO o.a.j.JMeter: java.version=1.8.0_66
+2019-04-08 17:46:20,089 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2019-04-08 17:46:20,089 INFO o.a.j.JMeter: os.name=Mac OS X
+2019-04-08 17:46:20,089 INFO o.a.j.JMeter: os.arch=x86_64
+2019-04-08 17:46:20,089 INFO o.a.j.JMeter: os.version=10.13.4
+2019-04-08 17:46:20,090 INFO o.a.j.JMeter: file.encoding=UTF-8
+2019-04-08 17:46:20,090 INFO o.a.j.JMeter: java.awt.headless=true
+2019-04-08 17:46:20,090 INFO o.a.j.JMeter: Max memory     =954728448
+2019-04-08 17:46:20,090 INFO o.a.j.JMeter: Available Processors =4
+2019-04-08 17:46:20,098 INFO o.a.j.JMeter: Default Locale=English (United States)
+2019-04-08 17:46:20,098 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2019-04-08 17:46:20,098 INFO o.a.j.JMeter: JMeterHome=/Users/apple/.bzt/jmeter-taurus/5.1.1
+2019-04-08 17:46:20,098 INFO o.a.j.JMeter: user.dir  =/Users/apple/Desktop/bachelorProject/stressThing/StressThing
+2019-04-08 17:46:20,099 INFO o.a.j.JMeter: PWD       =/Users/apple/Desktop/bachelorProject/stressThing/StressThing
+2019-04-08 17:46:20,103 INFO o.a.j.JMeter: IP: 172.20.10.5 Name: amirhosein-mac.local FullName: 172.20.10.5
+2019-04-08 17:46:20,103 INFO o.a.j.JMeter: user.classpath=/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-39-20.417407:/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-39-20.417407
+2019-04-08 17:46:20,104 INFO o.a.j.JMeter: Adding to classpath and loader: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-39-20.417407
+2019-04-08 17:46:20,106 INFO o.a.j.JMeter: Adding to classpath and loader: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-39-20.417407
+2019-04-08 17:46:20,115 INFO o.a.j.s.FileServer: Default base='/Users/apple/Desktop/bachelorProject/stressThing/StressThing'
+2019-04-08 17:46:20,125 INFO o.a.j.s.FileServer: Set new base='/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-39-20.417407'
+2019-04-08 17:46:20,480 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-04-08 17:46:20,523 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-04-08 17:46:20,534 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2019-04-08 17:46:20,548 INFO o.a.j.s.SaveService: Loading file: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_17-39-20.417407/modified_requests-3.jmx
+2019-04-08 17:46:20,660 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2019-04-08 17:46:20,664 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2019-04-08 17:46:20,705 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:46:20,706 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:46:20,706 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:46:20,706 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:46:20,706 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-04-08 17:46:20,707 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-04-08 17:46:20,793 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-04-08 17:46:20,796 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-04-08 17:46:20,796 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-04-08 17:46:20,810 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2019-04-08 17:46:20,811 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2019-04-08 17:46:22,092 INFO o.a.j.JMeter: Running test (1554729382092)
+2019-04-08 17:46:22,194 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : scenario3
+2019-04-08 17:46:22,195 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group scenario3.
+2019-04-08 17:46:22,195 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-04-08 17:46:22,201 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-04-08 17:46:22,201 INFO c.b.j.t.c.ConcurrencyThreadStarter: Start supplying threads
+2019-04-08 17:46:37,255 INFO o.a.j.t.JMeterThread: Thread started: scenario3 1-1
+2019-04-08 17:46:37,264 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2019-04-08 17:46:37,265 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2019-04-08 17:46:37,265 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2019-04-08 17:46:37,265 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2019-04-08 17:46:37,286 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 0 samples/s for expected rps 11.111 samples/s, increase your number of threads
+2019-04-08 17:46:37,333 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = amirhosein-mac.local
+2019-04-08 17:46:37,356 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2019-04-08 17:46:38,277 INFO o.a.j.p.h.p.BaseParser: Created org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 17:46:38,356 INFO o.a.j.p.h.s.ResourcesDownloader: Creating ResourcesDownloader with keepalive_inseconds : 60
+2019-04-08 17:46:38,505 INFO o.a.j.p.h.p.BaseParser: Created org.apache.jmeter.protocol.http.parser.CssParser
+2019-04-08 17:46:40,429 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 1 samples/s for expected rps 59.9999 samples/s, increase your number of threads
+2019-04-08 17:46:40,478 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2019-04-08 17:46:40,478 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2019-04-08 17:46:41,193 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 6 samples/s for expected rps 76.2962 samples/s, increase your number of threads
+2019-04-08 17:46:42,088 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 6 samples/s for expected rps 92.59250000000002 samples/s, increase your number of threads
+2019-04-08 17:46:43,205 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 6 samples/s for expected rps 108.8888 samples/s, increase your number of threads
+2019-04-08 17:46:44,371 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 9 samples/s for expected rps 125.1851 samples/s, increase your number of threads
+2019-04-08 17:46:45,132 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 6 samples/s for expected rps 141.48139999999998 samples/s, increase your number of threads
+2019-04-08 17:46:46,244 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 7 samples/s for expected rps 157.7777 samples/s, increase your number of threads
+2019-04-08 17:46:47,060 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 5 samples/s for expected rps 174.074 samples/s, increase your number of threads
+2019-04-08 17:46:48,051 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 4 samples/s for expected rps 190.37030000000001 samples/s, increase your number of threads
+2019-04-08 17:46:49,089 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 8 samples/s for expected rps 206.6666 samples/s, increase your number of threads
+2019-04-08 17:46:50,062 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 6 samples/s for expected rps 222.9629 samples/s, increase your number of threads
+2019-04-08 17:46:51,024 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 10 samples/s for expected rps 239.2592 samples/s, increase your number of threads
+2019-04-08 17:46:52,337 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 11 samples/s for expected rps 255.5555 samples/s, increase your number of threads
+2019-04-08 17:46:53,069 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 6 samples/s for expected rps 271.85179999999997 samples/s, increase your number of threads
+2019-04-08 17:46:54,167 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 9 samples/s for expected rps 288.14809999999994 samples/s, increase your number of threads
+2019-04-08 17:46:55,101 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 7 samples/s for expected rps 304.44440000000003 samples/s, increase your number of threads
+2019-04-08 17:46:56,012 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 5 samples/s for expected rps 320.7407 samples/s, increase your number of threads
+2019-04-08 17:46:57,129 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 9 samples/s for expected rps 337.03700000000003 samples/s, increase your number of threads
+2019-04-08 17:46:58,179 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 9 samples/s for expected rps 353.3333 samples/s, increase your number of threads
+2019-04-08 17:46:59,151 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 12 samples/s for expected rps 369.62960000000004 samples/s, increase your number of threads
+2019-04-08 17:47:00,428 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 12 samples/s for expected rps 385.9259 samples/s, increase your number of threads
+2019-04-08 17:47:01,028 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 6 samples/s for expected rps 402.2222 samples/s, increase your number of threads
+2019-04-08 17:47:02,037 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 9 samples/s for expected rps 418.5185 samples/s, increase your number of threads
+2019-04-08 17:47:03,178 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 12 samples/s for expected rps 434.8148 samples/s, increase your number of threads
+2019-04-08 17:47:04,110 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 12 samples/s for expected rps 451.1111 samples/s, increase your number of threads
+2019-04-08 17:47:05,069 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 12 samples/s for expected rps 467.4074 samples/s, increase your number of threads
+2019-04-08 17:47:06,022 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 9 samples/s for expected rps 483.7037 samples/s, increase your number of threads
+2019-04-08 17:47:07,247 WARN k.a.j.t.VariableThroughputTimer: No free threads available in current Thread Group scenario3, made 6 samples/s for expected rps 500.0 samples/s, increase your number of threads
+2019-04-08 17:47:07,328 INFO c.b.j.t.c.ConcurrencyThreadStarter: Done supplying threads
+2019-04-08 17:47:07,348 INFO o.a.j.t.JMeterThread: Thread is done: scenario3 1-1
+2019-04-08 17:47:07,348 INFO o.a.j.t.JMeterThread: Thread finished: scenario3 1-1
+2019-04-08 17:47:07,349 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-04-08 17:47:07,353 INFO o.a.j.e.StandardJMeterEngine: Forced JVM shutdown requested at end of test

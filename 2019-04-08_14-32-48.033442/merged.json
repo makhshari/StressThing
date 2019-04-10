@@ -1,0 +1,38 @@
+{
+ "execution": [
+  {
+   "concurrency": "100",
+   "ramp-up": "20",
+   "hold-for": "30",
+   "throughput": "100",
+   "scenario": "UserScenario"
+  }
+ ],
+ "scenarios": {
+  "UserScenario": {
+   "requests": [
+    {
+     "label": "PROPERTY: getstatus THING: falldetection",
+     "url": "http://172.20.10.3:8000/blog/ajax/get_status",
+     "method": "GET"
+    },
+    {
+     "label": "ACTION: feedback THING: falldetection",
+     "url": "http://172.20.10.3:8000/blog/ajax/feedback",
+     "method": "POST",
+     "body": {
+      "feedback": "1"
+     }
+    }
+   ]
+  }
+ },
+ "reporting": [
+  {
+   "module": "console"
+  },
+  {
+   "module": "blazemeter"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+"things": [
+{
+    "id": "@falldetection",
+    "name": "falldetection",
+    "description" : "falldetection is a falldetection",
+    "properties": {
+    "getHomepage": {
+            "description" : "Shows the homepage of patient",
+            "type": "string",
+            "forms": [{
+                "href": "http://172.20.10.3:8000/blog",
+                "http:methodName": "GET"
+            }]
+        },
+        "getFall": {
+            "description" : "Shows the fall detection",
+            "type": "string",
+            "forms": [{
+                "href": "http://172.20.10.3:8000/blog/ajax/get_status",
+                "http:methodName": "GET"
+            }]
+        }
+    },
+    "actions": {
+        "sendFallFeedback": {
+            "description" : "send the feedback of falling",
+            "input": {
+            "type": "object",
+            "properties": {
+                "feedback": {
+                    "type": "boolean"
+                }
+            },
+            "required": ["feedback"]
+        },
+            "forms": [{
+                "href": "http://172.20.10.3:8000/blog/ajax/feedback",
+                "http:methodName": "POST"
+            }]
+        }
+    }
+}
+]}

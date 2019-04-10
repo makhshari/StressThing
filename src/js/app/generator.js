@@ -33,16 +33,16 @@ return this.generateData(postDataProperty.properties)
 }
 export function generateNumber(min,max){
   if(min==null)
-    min=0
+    min=Number.MIN_SAFE_INTEGER
   if(max==null)
-    max=10000
+    max=Number.MAX_SAFE_INTEGER
   return ((Math.random() * (max - min) ) + min).toString();
 }
 export function generateInteger(min,max){
   if(min==null)
-    min=0
+    min=Number.MIN_SAFE_INTEGER
   if(max==null)
-    max=10000
+    max=Number.MAX_SAFE_INTEGER
   return (Math.floor(Math.random() * (max - min) ) + min).toString();
 }
 export function generateString(){

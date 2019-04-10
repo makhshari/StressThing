@@ -1,0 +1,376 @@
+[2019-04-08 12:39:51,489 INFO root] Taurus CLI Tool v1.13.4
+[2019-04-08 12:39:51,490 DEBUG root] Command-line options: {'log': '/var/folders/9w/fj8tc51n59dgtrxfgskpxd9h0000gn/T/bzt_lsv23knd.log', 'option': None, 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': []}
+[2019-04-08 12:39:51,491 DEBUG root] Python: CPython 3.7.3
+[2019-04-08 12:39:51,491 DEBUG root] OS: uname_result(system='Darwin', node='amirhosein-mac.local', release='17.5.0', version='Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64', machine='x86_64', processor='i386')
+[2019-04-08 12:39:51,491 INFO root] Starting with configs: ['allRequests.json']
+[2019-04-08 12:39:51,492 DEBUG root] Using personal config: /Users/apple/.bzt-rc
+[2019-04-08 12:39:51,492 INFO Engine] Configuring...
+[2019-04-08 12:39:51,594 DEBUG Engine] Base configs list: ['/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/resources/10-base-config.yml']
+[2019-04-08 12:39:51,594 DEBUG Engine.Configuration] Configs: ['/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/resources/10-base-config.yml']
+[2019-04-08 12:39:51,594 DEBUG Engine.Configuration] Reading /usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/resources/10-base-config.yml as YAML
+[2019-04-08 12:39:51,695 DEBUG Engine] User configs list: ['/Users/apple/.bzt-rc', 'allRequests.json']
+[2019-04-08 12:39:51,696 DEBUG Engine.Configuration] Configs: ['/Users/apple/.bzt-rc', 'allRequests.json']
+[2019-04-08 12:39:51,698 DEBUG Engine.Configuration] Reading /Users/apple/.bzt-rc as YAML
+[2019-04-08 12:39:51,713 DEBUG Engine.Configuration] Reading allRequests.json as YAML
+[2019-04-08 12:39:51,730 DEBUG Engine.Configuration] Configs: ['/Users/apple/.bzt-rc', 'allRequests.json']
+[2019-04-08 12:39:51,731 DEBUG Engine.Configuration] Reading /Users/apple/.bzt-rc as YAML
+[2019-04-08 12:39:51,744 DEBUG Engine.Configuration] Reading allRequests.json as YAML
+[2019-04-08 12:39:51,755 DEBUG Engine] Requesting updates info: https://gettaurus.org/updates/?version=1.13.4&installID=macos-3c075440e027
+[2019-04-08 12:39:51,756 DEBUG HTTPClient] Making HTTP request GET https://gettaurus.org/updates/?version=1.13.4&installID=macos-3c075440e027
+[2019-04-08 12:39:51,757 INFO Engine] Artifacts dir: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129
+[2019-04-08 12:39:51,760 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/effective
+[2019-04-08 12:39:51,768 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/effective.yml
+[2019-04-08 12:39:51,776 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): gettaurus.org:443
+[2019-04-08 12:39:51,850 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/effective.json
+[2019-04-08 12:39:51,853 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/merged.yml
+[2019-04-08 12:39:51,854 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/merged.yml
+[2019-04-08 12:39:51,862 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/merged.json
+[2019-04-08 12:39:51,863 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/merged.json
+[2019-04-08 12:39:51,864 DEBUG Engine] Add existing artifact (move=False): allRequests.json
+[2019-04-08 12:39:51,864 DEBUG Engine] Copying allRequests.json to /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/allRequests.json
+[2019-04-08 12:39:51,870 DEBUG root] Closing log handler: /var/folders/9w/fj8tc51n59dgtrxfgskpxd9h0000gn/T/bzt_lsv23knd.log
+[2019-04-08 12:39:51,875 DEBUG root] Switched writing logs to /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/bzt.log
+[2019-04-08 12:39:51,875 DEBUG root] Linting config
+[2019-04-08 12:39:51,884 INFO Engine] Preparing...
+[2019-04-08 12:39:51,887 DEBUG Engine] Module config: consolidator {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'}
+[2019-04-08 12:39:51,887 DEBUG root] Importing module: bzt.modules.aggregator
+[2019-04-08 12:39:52,400 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/aggregator.py'>
+[2019-04-08 12:39:52,401 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2019-04-08 12:39:52,401 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2019-04-08 12:39:52,401 DEBUG root] Importing module: bzt.modules.monitoring
+[2019-04-08 12:39:52,408 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/monitoring.py'>
+[2019-04-08 12:39:52,409 DEBUG Engine] Module config: local {'class': 'bzt.modules.provisioning.Local'}
+[2019-04-08 12:39:52,409 DEBUG root] Importing module: bzt.modules.provisioning
+[2019-04-08 12:39:52,409 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py'>
+[2019-04-08 12:39:52,410 DEBUG Engine] Module config: jmeter {'class': 'bzt.modules.jmeter.JMeterExecutor', 'protocol-handlers': {'http': 'bzt.jmx.http.HTTPProtocolHandler'}, 'plugins': ['jpgc-casutg', 'jpgc-dummy', 'jpgc-ffw', 'jpgc-fifo', 'jpgc-functions', 'jpgc-json', 'jpgc-perfmon', 'jpgc-prmctl', 'jpgc-tst'], 'properties': {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': ''}}
+[2019-04-08 12:39:52,410 DEBUG root] Importing module: bzt.modules.jmeter
+[2019-04-08 12:39:52,445 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/jmeter.py'>
+[2019-04-08 12:39:52,446 DEBUG Engine.local] Preparing executor: jmeter/4430834096
+[2019-04-08 12:39:52,447 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/jmeter.log
+[2019-04-08 12:39:52,447 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2019-04-08 12:39:52,486 DEBUG Engine.jmeter] Port 4445 is free
+[2019-04-08 12:39:52,486 DEBUG Engine.jmeter] Using port 4445 for management
+[2019-04-08 12:39:52,486 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/requests.jmx
+[2019-04-08 12:39:52,489 DEBUG root] Importing module: bzt.jmx.http
+[2019-04-08 12:39:52,490 DEBUG root] Loading class: 'HTTPProtocolHandler' from <module 'bzt.jmx.http' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/jmx/http.py'>
+[2019-04-08 12:39:52,498 DEBUG JMeterScenarioBuilder] Saving JMX to: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/requests.jmx
+[2019-04-08 12:39:52,500 DEBUG Engine.jmeter] Additional system properties {'sun.net.inetaddr.ttl': 0}
+[2019-04-08 12:39:52,501 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/system.properties
+[2019-04-08 12:39:52,502 DEBUG Engine.jmeter] Additional properties: {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': '', 'jmeterengine.nongui.port': 4445, 'jmeterengine.nongui.maxport': 4445, 'jmeter.save.saveservice.timestamp_format': 'ms', 'sampleresult.default.encoding': 'UTF-8', 'user.classpath': '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129:/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129'}
+[2019-04-08 12:39:52,503 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/jmeter-bzt.properties
+[2019-04-08 12:39:52,504 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2019-04-08 12:39:52,504 DEBUG root] Executing shell: ['java', '-version'] at .
+[2019-04-08 12:39:53,110 DEBUG Engine.jmeter.JavaVM] JavaVM output: 
+[2019-04-08 12:39:53,110 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2019-04-08 12:39:53,111 DEBUG Engine.jmeter.JMeter] Trying JMeter..
+[2019-04-08 12:39:53,113 DEBUG root] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.1.1/bin/jmeter.sh', '-j', '/var/folders/9w/fj8tc51n59dgtrxfgskpxd9h0000gn/T/jmeterb8ebrvd8log', '--version'] at .
+[2019-04-08 12:39:54,171 DEBUG urllib3.connectionpool] https://gettaurus.org:443 "GET /updates/?version=1.13.4&installID=macos-3c075440e027 HTTP/1.1" 200 40
+[2019-04-08 12:39:54,175 DEBUG Engine] Taurus updates info: {'latest': '1.13.4', 'needsUpgrade': False}
+[2019-04-08 12:39:54,176 DEBUG Engine] Installation is up-to-date
+[2019-04-08 12:39:56,968 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____     
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \   
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) | 
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <  
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 5.1.1 r1855137  
+
+Copyright (c) 1999-2019 The Apache Software Foundation
+
+ / 
+[2019-04-08 12:39:56,969 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=500, throughput=50.0, ramp_up=20.0, hold=10.0, iterations=0, duration=30.0, steps=None)
+[2019-04-08 12:39:56,975 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/kpi.jtl
+[2019-04-08 12:39:56,976 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/error.jtl
+[2019-04-08 12:39:56,982 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (UserScenario) to ConcurrencyThreadGroup and apply load parameters
+[2019-04-08 12:39:56,983 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/modified_requests.jmx
+[2019-04-08 12:39:56,984 DEBUG JMX] Saving JMX to: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/modified_requests.jmx
+[2019-04-08 12:39:56,985 DEBUG root] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.1.1/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/modified_requests.jmx'] at .
+[2019-04-08 12:40:02,053 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/modified_requests.jmx
+2019-04-08 12:39:59,159 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
+2019-04-08 12:39:59,323 INFO o.j.r.JARSourceHTTP: Found cached repo
+2019-04-08 12:39:59,895 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.1, jpgc-casutg=2.8, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=1.3, jpgc-tst=2.5, jmeter-core=5.1.1, jmeter-ftp=5.1.1, jmeter-http=5.1.1, jmeter-jdbc=5.1.1, jmeter-jms=5.1.1, jmeter-junit=5.1.1, jmeter-java=5.1.1, jmeter-ldap=5.1.1, jmeter-mail=5.1.1, jmeter-mongodb=5.1.1, jmeter-native=5.1.1, jmeter-tcp=5.1.1, jmeter-components=5.1.1]
+2019-04-08 12:39:59,910 INFO o.j.r.PluginManagerCMD: Params line is: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/modified_requests.jmx
+2019-04-08 12:40:01,040 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-04-08 12:40:01,079 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-04-08 12:40:01,091 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2019-04-08 12:40:01,227 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2019-04-08 12:40:01,237 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2019-04-08 12:40:01,398 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 12:40:01,399 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 12:40:01,399 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 12:40:01,399 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-08 12:40:01,400 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-04-08 12:40:01,400 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-04-08 12:40:01,664 INFO o.j.r.PluginManager: Finishing without changes
+
+
+[2019-04-08 12:40:02,057 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/jmeter.out
+[2019-04-08 12:40:02,059 DEBUG Engine] New artifact filename: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/jmeter.err
+[2019-04-08 12:40:02,064 DEBUG Engine] Module config: final-stats {'class': 'bzt.modules.reporting.FinalStatus'}
+[2019-04-08 12:40:02,064 DEBUG root] Importing module: bzt.modules.reporting
+[2019-04-08 12:40:02,104 DEBUG easyprocess] version=0.2.5
+[2019-04-08 12:40:02,108 DEBUG pyvirtualdisplay] version=0.2.1
+[2019-04-08 12:40:02,116 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/reporting.py'>
+[2019-04-08 12:40:02,117 DEBUG Engine] Module config: console {'class': 'bzt.modules.console.ConsoleStatusReporter'}
+[2019-04-08 12:40:02,117 DEBUG root] Importing module: bzt.modules.console
+[2019-04-08 12:40:02,118 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/console.py'>
+[2019-04-08 12:40:02,118 WARNING Engine] Module 'console' can be only used once, will merge all new instances into single
+[2019-04-08 12:40:02,119 DEBUG Engine] Module config: blazemeter {'class': 'bzt.modules.blazemeter.BlazeMeterUploader'}
+[2019-04-08 12:40:02,120 DEBUG root] Importing module: bzt.modules.blazemeter
+[2019-04-08 12:40:02,120 DEBUG root] Loading class: 'BlazeMeterUploader' from <module 'bzt.modules.blazemeter' from '/usr/local/Cellar/bzt/1.13.4/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py'>
+[2019-04-08 12:40:02,137 WARNING Engine.blazemeter] No BlazeMeter API key provided, will upload anonymously
+[2019-04-08 12:40:02,138 DEBUG Engine.blazemeter] Installing http client
+[2019-04-08 12:40:02,138 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/web/version None
+[2019-04-08 12:40:02,138 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/web/version
+[2019-04-08 12:40:02,144 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2019-04-08 12:40:04,005 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/web/version HTTP/1.1" 200 233
+[2019-04-08 12:40:04,007 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": "blazemeter-php7-backend-package 928 release/2019-04-02_126 137ce603d6f9e3814fbd1ecc2a17af16c5eee191 Thu Apr 4 18:27:30 2019 +0300 137ce603d6f9e3814fbd1ecc2a17af16c5eee191\n"
+}
+[2019-04-08 12:40:04,012 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/effective.yml
+[2019-04-08 12:40:04,044 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/effective.json
+[2019-04-08 12:40:04,045 INFO Engine] Starting...
+[2019-04-08 12:40:04,046 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x10675bcf8>
+[2019-04-08 12:40:04,046 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10675b2e8>
+[2019-04-08 12:40:04,046 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x10430d5f8>
+[2019-04-08 12:40:04,047 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x108206ac8>
+[2019-04-08 12:40:04,047 INFO Engine.console] Waiting for results...
+[2019-04-08 12:40:04,047 DEBUG Engine] Startup <bzt.modules.blazemeter.BlazeMeterUploader object at 0x1082686d8>
+[2019-04-08 12:40:04,047 INFO Engine.blazemeter] Initiating data feeding...
+[2019-04-08 12:40:04,047 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/sessions None
+[2019-04-08 12:40:04,048 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/sessions
+[2019-04-08 12:40:04,529 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/sessions HTTP/1.1" 201 2844
+[2019-04-08 12:40:04,531 DEBUG User] Response [201]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "session": {
+            "id": "r-ext-5cab01ddba850",
+            "name": "external",
+            "userId": 386483,
+            "publicToken": "8eal1lSaHyk14XVw2dCmUXeCbmGqf0DChDbnpVC5hsEmu
+[2019-04-08 12:40:04,532 INFO Engine.blazemeter] Started data feeding: https://a.blazemeter.com/app/?public-token=8eal1lSaHyk14XVw2dCmUXeCbmGqf0DChDbnpVC5hsEmup1RIF#reports/r-ext-5cab01ddba850/summary
+[2019-04-08 12:40:04,756 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x107c25588>
+[2019-04-08 12:40:04,757 DEBUG Engine.local] Delay setup for jmeter/UserScenario: 0(start-at) + 0(delay) = 0
+[2019-04-08 12:40:04,764 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/effective.yml
+[2019-04-08 12:40:04,856 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/effective.json
+[2019-04-08 12:40:04,859 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 12:40:04,859 DEBUG root] Leveled up log file verbosity
+[2019-04-08 12:40:04,861 DEBUG root] Executing shell: ['/Users/apple/.bzt/jmeter-taurus/5.1.1/bin/jmeter.sh', '-t', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/modified_requests.jmx', '-j', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/jmeter.log', '-q', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/jmeter-bzt.properties', '-n', '-S', '/Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/system.properties'] at /Users/apple/Desktop/bachelorProject/stressThing/StressThing
+[2019-04-08 12:40:04,910 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-04-08 12:40:05,218 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:05,538 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:07,753 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:07,817 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:08,756 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:08,816 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:09,755 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:09,807 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:10,780 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:10,855 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:11,755 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:11,803 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:12,754 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:12,799 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:13,756 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:13,795 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:14,760 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:14,802 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:15,767 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:15,800 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:16,733 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:16,759 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:17,769 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:17,790 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:18,771 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:18,788 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:19,854 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:19,893 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:20,883 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:21,030 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:21,746 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:21,786 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:22,858 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:22,890 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:23,783 WARNING Engine.jmeter.JTLReader] No details for errors of PROPERTY: getTrafficStatus THING: falldetection, dropped info: [{'cnt': 3, 'msg': 'Non HTTP response message: Connection reset', 'tag': None, 'rc': 'SocketException', 'type': 0, 'urls': Counter()}]
+[2019-04-08 12:40:23,784 WARNING Engine.jmeter.JTLReader] No details for errors of , dropped info: [{'cnt': 3, 'msg': 'Non HTTP response message: Connection reset', 'tag': None, 'rc': 'SocketException', 'type': 0, 'urls': Counter()}]
+[2019-04-08 12:40:23,908 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:24,075 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:24,768 WARNING Engine.jmeter.JTLReader] No details for errors of ACTION: putTrafficStatus THING: falldetection, dropped info: [{'cnt': 4, 'msg': 'Non HTTP response message: Connection reset', 'tag': None, 'rc': 'SocketException', 'type': 0, 'urls': Counter()}]
+[2019-04-08 12:40:24,848 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:24,887 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:25,874 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:25,908 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:26,776 WARNING Engine.jmeter.JTLReader] No details for errors of ACTION: putTrafficStatus THING: falldetection, dropped info: [{'cnt': 2, 'msg': 'Non HTTP response message: Connection reset', 'tag': None, 'rc': 'SocketException', 'type': 0, 'urls': Counter()}]
+[2019-04-08 12:40:26,831 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:26,854 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:27,862 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:27,891 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:28,883 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:28,915 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:29,972 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:30,026 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:30,884 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:30,912 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:31,833 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:31,861 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:32,873 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:32,898 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:33,827 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:33,847 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:34,879 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:34,916 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:35,895 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:35,922 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:37,509 WARNING Engine.jmeter.JTLReader] No details for errors of PROPERTY: getTrafficStatus THING: falldetection, dropped info: [{'cnt': 4, 'msg': 'Non HTTP response message: Connection reset', 'tag': None, 'rc': 'SocketException', 'type': 0, 'urls': Counter()}]
+[2019-04-08 12:40:37,511 WARNING Engine.jmeter.JTLReader] No details for errors of ACTION: putTrafficStatus THING: falldetection, dropped info: [{'cnt': 4, 'msg': 'Non HTTP response message: Connection reset', 'tag': None, 'rc': 'SocketException', 'type': 0, 'urls': Counter()}]
+[2019-04-08 12:40:37,512 WARNING Engine.jmeter.JTLReader] No details for errors of , dropped info: [{'cnt': 8, 'msg': 'Non HTTP response message: Connection reset', 'tag': None, 'rc': 'SocketException', 'type': 0, 'urls': Counter()}]
+[2019-04-08 12:40:37,820 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:37,865 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:38,486 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:38,536 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:39,497 WARNING Engine.jmeter.JTLReader] No details for errors of PROPERTY: getTrafficStatus THING: falldetection, dropped info: [{'cnt': 15, 'msg': 'Non HTTP response message: Connection reset', 'tag': None, 'rc': 'SocketException', 'type': 0, 'urls': Counter()}]
+[2019-04-08 12:40:39,932 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:39,961 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:40,762 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:40,788 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:41,722 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:41,746 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:42,717 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:42,742 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:43,619 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 4s
+[2019-04-08 12:40:43,793 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:43,836 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:44,516 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:44,558 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:45,543 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:45,677 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:46,488 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:46,512 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:47,497 INFO Engine.console] Waiting for finish...
+[2019-04-08 12:40:47,524 ERROR Engine.console] Console screen failure: ord() expected string of length 1, but int found
+[2019-04-08 12:40:47,568 WARNING Engine] Please wait for graceful shutdown...
+[2019-04-08 12:40:47,568 DEBUG root] Leveled up log file verbosity
+[2019-04-08 12:40:47,568 INFO Engine] Shutting down...
+[2019-04-08 12:40:47,569 DEBUG Engine] Current stop reason: None
+[2019-04-08 12:40:47,569 DEBUG Engine.local] Shutdown jmeter/UserScenario
+[2019-04-08 12:40:47,569 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2019-04-08 12:40:47,573 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/effective.yml
+[2019-04-08 12:40:47,611 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/effective.json
+[2019-04-08 12:40:47,613 INFO Engine] Post-processing...
+[2019-04-08 12:40:47,613 DEBUG Engine.local] Post-process jmeter/UserScenario
+[2019-04-08 12:40:47,614 DEBUG Engine] Add existing artifact (move=True): /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/modified_requests.jmx
+[2019-04-08 12:40:47,614 DEBUG Engine] No need to copy /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/modified_requests.jmx
+[2019-04-08 12:40:47,615 DEBUG Engine.jmeter.JTLReader] Buffer len: 4; Known errors count: 4
+[2019-04-08 12:40:47,615 DEBUG Engine.jmeter.JTLReader] Aggregating: 1554711042, 4 in buffer
+[2019-04-08 12:40:47,617 DEBUG aggregator] Growing HDR from 5000.0 to 7000.0
+[2019-04-08 12:40:47,617 DEBUG aggregator] Growing HDR from 8000.0 to 9000.0
+[2019-04-08 12:40:47,623 DEBUG aggregator] Growing HDR from 9000.0 to 10000.0
+[2019-04-08 12:40:47,625 DEBUG aggregator] Growing HDR from 8000.0 to 10000.0
+[2019-04-08 12:40:47,630 DEBUG Engine.jmeter.JTLErrorsReader] Got error info for 1554711042, labels: dict_keys(['ACTION: putTrafficStatus THING: falldetection', '', 'PROPERTY: getTrafficStatus THING: falldetection'])
+[2019-04-08 12:40:47,631 DEBUG aggregator] Growing HDR from 5000.0 to 7000.0
+[2019-04-08 12:40:47,631 DEBUG aggregator] Growing HDR from 8000.0 to 10000.0
+[2019-04-08 12:40:47,636 DEBUG aggregator] Growing HDR from 8000.0 to 10000.0
+[2019-04-08 12:40:47,645 DEBUG Engine.jmeter.JTLReader] Buffer len: 3; Known errors count: 4
+[2019-04-08 12:40:47,752 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 6s
+[2019-04-08 12:40:47,752 DEBUG Engine.jmeter.JTLReader] Aggregating: 1554711043, 3 in buffer
+[2019-04-08 12:40:47,760 DEBUG Engine.jmeter.JTLErrorsReader] Got error info for 1554711043, labels: dict_keys(['PROPERTY: getTrafficStatus THING: falldetection', '', 'ACTION: putTrafficStatus THING: falldetection'])
+[2019-04-08 12:40:47,763 DEBUG Engine.jmeter.JTLReader] Buffer len: 2; Known errors count: 4
+[2019-04-08 12:40:47,838 DEBUG Engine.jmeter.JTLReader] Aggregating: 1554711044, 2 in buffer
+[2019-04-08 12:40:47,844 DEBUG Engine.jmeter.JTLErrorsReader] Got error info for 1554711044, labels: dict_keys(['ACTION: putTrafficStatus THING: falldetection', '', 'PROPERTY: getTrafficStatus THING: falldetection'])
+[2019-04-08 12:40:47,847 DEBUG Engine.jmeter.JTLReader] Buffer len: 1; Known errors count: 4
+[2019-04-08 12:40:47,930 DEBUG Engine.jmeter.JTLReader] Aggregating: 1554711045, 1 in buffer
+[2019-04-08 12:40:47,941 DEBUG Engine.jmeter.JTLErrorsReader] Got error info for 1554711045, labels: dict_keys(['PROPERTY: getTrafficStatus THING: falldetection', '', 'ACTION: putTrafficStatus THING: falldetection'])
+[2019-04-08 12:40:47,946 DEBUG Engine.jmeter.JTLReader] Buffer len: 0; Known errors count: 4
+[2019-04-08 12:40:47,946 DEBUG Engine.consolidator] Consolidator buffer[6]: dict_keys([1554711040, 1554711041, 1554711042, 1554711043, 1554711044, 1554711045])
+[2019-04-08 12:40:47,946 DEBUG Engine.consolidator] Merging into 1554711040
+[2019-04-08 12:40:47,946 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-04-08 12:40:48,111 DEBUG Engine.consolidator] Processed datapoint: 1554711040/ConsolidatingAggregator@4403344104
+[2019-04-08 12:40:48,111 DEBUG Engine.consolidator] Merging into 1554711041
+[2019-04-08 12:40:48,111 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-04-08 12:40:48,112 DEBUG aggregator] Growing HDR from 5000.0 to 8000.0
+[2019-04-08 12:40:48,113 DEBUG aggregator] Growing HDR from 5000.0 to 8000.0
+[2019-04-08 12:40:48,272 DEBUG Engine.consolidator] Processed datapoint: 1554711041/ConsolidatingAggregator@4403344104
+[2019-04-08 12:40:48,272 DEBUG Engine.consolidator] Merging into 1554711042
+[2019-04-08 12:40:48,272 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-04-08 12:40:48,272 DEBUG aggregator] Growing HDR from 5000.0 to 7000.0
+[2019-04-08 12:40:48,273 DEBUG aggregator] Growing HDR from 8000.0 to 10000.0
+[2019-04-08 12:40:48,278 DEBUG aggregator] Growing HDR from 8000.0 to 10000.0
+[2019-04-08 12:40:48,485 DEBUG Engine.consolidator] Processed datapoint: 1554711042/ConsolidatingAggregator@4403344104
+[2019-04-08 12:40:48,486 DEBUG Engine.consolidator] Merging into 1554711043
+[2019-04-08 12:40:48,486 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-04-08 12:40:48,697 DEBUG Engine.consolidator] Processed datapoint: 1554711043/ConsolidatingAggregator@4403344104
+[2019-04-08 12:40:48,698 DEBUG Engine.consolidator] Merging into 1554711044
+[2019-04-08 12:40:48,698 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-04-08 12:40:48,833 DEBUG Engine.consolidator] Processed datapoint: 1554711044/ConsolidatingAggregator@4403344104
+[2019-04-08 12:40:48,833 DEBUG Engine.consolidator] Merging into 1554711045
+[2019-04-08 12:40:48,833 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-04-08 12:40:49,026 DEBUG Engine.consolidator] Processed datapoint: 1554711045/ConsolidatingAggregator@4403344104
+[2019-04-08 12:40:49,027 INFO Engine.final-stats] Test duration: 0:00:43
+[2019-04-08 12:40:49,027 INFO Engine.final-stats] Samples count: 745, 57.18% failures
+[2019-04-08 12:40:49,028 INFO Engine.final-stats] Average times: total 0.582, latency 0.256, connect 0.350
+[2019-04-08 12:40:49,030 INFO Engine.final-stats] Percentiles:
+(0lqqqqqqqqqqqqqqqwqqqqqqqqqqqqqqqk(B
+(0x(B Percentile, % (0x(B Resp. Time, s (0x(B
+(0tqqqqqqqqqqqqqqqnqqqqqqqqqqqqqqqu(B
+(0x(B           0.0 (0x(B          0.01 (0x(B
+(0x(B          50.0 (0x(B         0.256 (0x(B
+(0x(B          90.0 (0x(B         1.252 (0x(B
+(0x(B          95.0 (0x(B          2.92 (0x(B
+(0x(B          99.0 (0x(B         6.656 (0x(B
+(0x(B          99.9 (0x(B         9.032 (0x(B
+(0x(B         100.0 (0x(B         9.032 (0x(B
+(0mqqqqqqqqqqqqqqqvqqqqqqqqqqqqqqqj(B
+[2019-04-08 12:40:49,035 INFO Engine.final-stats] Request label stats:
+(0lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqwqqqqqqqqwqqqqqqqqwqqqqqqqqwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk(B
+(0x(B label                                           (0x(B status (0x(B   succ (0x(B avg_rt (0x(B error                                       (0x(B
+(0tqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqnqqqqqqqqnqqqqqqqqnqqqqqqqqnqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqu(B
+(0x(B ACTION: putTrafficStatus THING: falldetection   (0x(B  FAIL  (0x(B 38.46% (0x(B  0.785 (0x(B Internal Server Error                       (0x(B
+(0x(B                                                 (0x(B        (0x(B        (0x(B        (0x(B Non HTTP response message: Socket closed    (0x(B
+(0x(B                                                 (0x(B        (0x(B        (0x(B        (0x(B Non HTTP response message: Connection reset (0x(B
+(0x(B                                                 (0x(B        (0x(B        (0x(B        (0x(B Non HTTP response message: Broken pipe      (0x(B
+(0x(B PROPERTY: getTrafficStatus THING: falldetection (0x(B  FAIL  (0x(B 45.15% (0x(B  0.473 (0x(B Non HTTP response message: Broken pipe      (0x(B
+(0x(B                                                 (0x(B        (0x(B        (0x(B        (0x(B Non HTTP response message: Socket closed    (0x(B
+(0x(B                                                 (0x(B        (0x(B        (0x(B        (0x(B Non HTTP response message: Connection reset (0x(B
+(0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqvqqqqqqqqvqqqqqqqqvqqqqqqqqvqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj(B
+[2019-04-08 12:40:49,036 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2019-04-08 12:40:49,036 DEBUG Engine.blazemeter] KPI bulk buffer len in post-proc: 14
+[2019-04-08 12:40:49,036 INFO Engine.blazemeter] Sending remaining KPI data to server...
+[2019-04-08 12:40:50,367 DEBUG User] Request: POST https://data.blazemeter.com/submit.php?session_id=r-ext-5cab01ddba850&signature=ci1leHQtNWNhYjAxZGRiYTg1MDoxNTU1OTIwNjA1OjUwYjAxZjc1N2JlMGY2YTc4OWMzODRjOTdkYmU3MzFhN2VmYjU2Y2ExMTU3NGZjNGRiNzUyOTY5ZTAwNmEzMmIxZjJkNjIxODRkZWZhZjVlZWFlMDhiMWRhMWMzZjViZmQ5NTVmN2JmMTA4MjM1YmE0YjFjZTM5ODIxMTM4NzQ4&test_id=6753546&user_id=386483&pq=0&target=labels_bulk&update=1 b'{\n "labels": [\n  {\n   "n": 745,\n   "name": "ALL",\n   "interval": 1,\n   "intervals": [\n    {\n     "ec": 0,\n     "ts": 1554711032,\n     "na": 419,\n     "n": 20,\n     "failed": 0,\n     "rc": [\n      {\n       "n": 20,\n       "f": [],\n       "rc": "200"\n      }'
+[2019-04-08 12:40:50,367 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/submit.php?session_id=r-ext-5cab01ddba850&signature=ci1leHQtNWNhYjAxZGRiYTg1MDoxNTU1OTIwNjA1OjUwYjAxZjc1N2JlMGY2YTc4OWMzODRjOTdkYmU3MzFhN2VmYjU2Y2ExMTU3NGZjNGRiNzUyOTY5ZTAwNmEzMmIxZjJkNjIxODRkZWZhZjVlZWFlMDhiMWRhMWMzZjViZmQ5NTVmN2JmMTA4MjM1YmE0YjFjZTM5ODIxMTM4NzQ4&test_id=6753546&user_id=386483&pq=0&target=labels_bulk&update=1
+[2019-04-08 12:40:50,764 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /submit.php?session_id=r-ext-5cab01ddba850&signature=ci1leHQtNWNhYjAxZGRiYTg1MDoxNTU1OTIwNjA1OjUwYjAxZjc1N2JlMGY2YTc4OWMzODRjOTdkYmU3MzFhN2VmYjU2Y2ExMTU3NGZjNGRiNzUyOTY5ZTAwNmEzMmIxZjJkNjIxODRkZWZhZjVlZWFlMDhiMWRhMWMzZjViZmQ5NTVmN2JmMTA4MjM1YmE0YjFjZTM5ODIxMTM4NzQ4&test_id=6753546&user_id=386483&pq=0&target=labels_bulk&update=1 HTTP/1.1" 200 140
+[2019-04-08 12:40:50,765 DEBUG User] Response [200]: {"api_version":2,"error":null,"result":{"session":{"_id":"r-ext-5cab01ddba850","name":"external","statusCode":100,"status":"INITIALIZING"}}}
+[2019-04-08 12:40:50,773 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext-5cab01ddba850/files?signature=ci1leHQtNWNhYjAxZGRiYTg1MDoxNTU1OTIwNjA1OjUwYjAxZjc1N2JlMGY2YTc4OWMzODRjOTdkYmU3MzFhN2VmYjU2Y2ExMTU3NGZjNGRiNzUyOTY5ZTAwNmEzMmIxZjJkNjIxODRkZWZhZjVlZWFlMDhiMWRhMWMzZjViZmQ5NTVmN2JmMTA4MjM1YmE0YjFjZTM5ODIxMTM4NzQ4&masterId=19303117 b'--===============9119183497805826184==\r\nContent-Disposition: file; name="file"; filename="r-ext-5cab01ddba850-0-c.monitoring.json"\r\nContent-Type: application/json\r\n\r\n{\n "reportInfo": {\n  "sessionId": "r-ext-5cab01ddba850",\n  "timestamp": 1554711050.766985,'
+[2019-04-08 12:40:50,773 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/api/v4/image/r-ext-5cab01ddba850/files?signature=ci1leHQtNWNhYjAxZGRiYTg1MDoxNTU1OTIwNjA1OjUwYjAxZjc1N2JlMGY2YTc4OWMzODRjOTdkYmU3MzFhN2VmYjU2Y2ExMTU3NGZjNGRiNzUyOTY5ZTAwNmEzMmIxZjJkNjIxODRkZWZhZjVlZWFlMDhiMWRhMWMzZjViZmQ5NTVmN2JmMTA4MjM1YmE0YjFjZTM5ODIxMTM4NzQ4&masterId=19303117
+[2019-04-08 12:40:51,636 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-ext-5cab01ddba850/files?signature=ci1leHQtNWNhYjAxZGRiYTg1MDoxNTU1OTIwNjA1OjUwYjAxZjc1N2JlMGY2YTc4OWMzODRjOTdkYmU3MzFhN2VmYjU2Y2ExMTU3NGZjNGRiNzUyOTY5ZTAwNmEzMmIxZjJkNjIxODRkZWZhZjVlZWFlMDhiMWRhMWMzZjViZmQ5NTVmN2JmMTA4MjM1YmE0YjFjZTM5ODIxMTM4NzQ4&masterId=19303117 HTTP/1.1" 200 116
+[2019-04-08 12:40:51,637 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "r-ext-5cab01ddba850-0-c.monitoring.json"
+    ]
+}
+[2019-04-08 12:40:51,638 DEBUG Engine.blazemeter] Set last check time to: 1554711002.120615
+[2019-04-08 12:40:51,638 INFO Engine.blazemeter] Ending data feeding...
+[2019-04-08 12:40:51,638 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/sessions/r-ext-5cab01ddba850/terminate-external {
+ "signature": "ci1leHQtNWNhYjAxZGRiYTg1MDoxNTU1OTIwNjA1OjUwYjAxZjc1N2JlMGY2YTc4OWMzODRjOTdkYmU3MzFhN2VmYjU2Y2ExMTU3NGZjNGRiNzUyOTY5ZTAwNmEzMmIxZjJkNjIxODRkZWZhZjVlZWFlMDhiMWRhMWMzZjViZmQ5NTVmN2JmMTA4MjM1YmE0YjFjZTM5ODIxMTM4NzQ4",
+ "testId": 6753546,
+ "se
+[2019-04-08 12:40:51,639 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/sessions/r-ext-5cab01ddba850/terminate-external
+[2019-04-08 12:40:51,963 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/sessions/r-ext-5cab01ddba850/terminate-external HTTP/1.1" 200 2091
+[2019-04-08 12:40:51,964 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "success": "Terminating",
+        "session": {
+            "id": "r-ext-5cab01ddba850",
+            "name": "external",
+            "userId": 386483,
+            "publicToken": "8eal1lSaHyk
+[2019-04-08 12:40:51,965 INFO Engine.blazemeter] Online report link: https://a.blazemeter.com/app/?public-token=8eal1lSaHyk14XVw2dCmUXeCbmGqf0DChDbnpVC5hsEmup1RIF#reports/r-ext-5cab01ddba850/summary
+[2019-04-08 12:40:51,969 DEBUG Engine.Configuration] Dumping YAML config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/effective.yml
+[2019-04-08 12:40:52,018 DEBUG Engine.Configuration] Dumping JSON config into /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/effective.json
+[2019-04-08 12:40:52,020 INFO root] Artifacts dir: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129
+[2019-04-08 12:40:52,020 INFO root] Done performing with code: 0
+[2019-04-08 12:40:52,021 DEBUG root] Closing log handler: /Users/apple/Desktop/bachelorProject/stressThing/StressThing/2019-04-08_12-39-51.756129/bzt.log
