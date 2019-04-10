@@ -1,2 +1,0 @@
-timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,bytes,grpThreads,allThreads,Latency,Hostname,Connect
-1554717419469,75408,PROPERTY: getstatus THING: falldetection,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,Non HTTP response message: Connect to 172.20.10.3:8000 [/172.20.10.3] failed: Operation timed out,UserScenario 1-1,false,2601,1,1,0,amirhosein-mac.local,75401
