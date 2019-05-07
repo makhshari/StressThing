@@ -15,10 +15,10 @@ exports.getSampleExecution6 = getSampleExecution6;
 
 
 var mainScript = require('./../script');
-var maxUser = "500";
-var maxThroughput = "500";
+var maxUser = "1500";
+var maxThroughput = "100";
 var midUser = "100";
-var midThroughput = "100";
+var midThroughput = "50";
 var time_vector = ["30", "15"];
 var minTime_vector = ["5", "1"];
 var maxTime_vector = ["10", "120"];
@@ -27,15 +27,15 @@ var executions = [];
 var inputConfigsJson;
 
 function getExecutions() {
-  inputConfigsJson = mainScript.system_input("config_input");
+  inputConfigsJson = mainScript.system_input("config_input", 1);
   getUserConfigs();
   getUserExecution();
-  executions.push(getSampleExecution1());
-  executions.push(getSampleExecution2());
-  executions.push(getSampleExecution3());
-  executions.push(getSampleExecution4());
-  executions.push(getSampleExecution5());
-  executions.push(getSampleExecution6());
+  //executions.push(getSampleExecution4())
+  //executions.push(getSampleExecution6())
+  //executions.push(getSampleExecution3())
+  //executions.push(getSampleExecution4())
+  //executions.push(getSampleExecution5())
+  //executions.push(getSampleExecution6())
   return executions;
 }
 function getUserConfigs() {
@@ -111,7 +111,7 @@ function getSampleExecution6() {
   scenario1["concurrency"] = midUser;
   scenario1["ramp-up"] = maxTime_vector[0];
   scenario1["hold-for"] = maxTime_vector[1];
-  scenario1["throughput"] = midThroughput;
+  scenario1["throughput"] = maxThroughput;
   scenario1["scenario"] = "scenario6";
   return scenario1;
 }

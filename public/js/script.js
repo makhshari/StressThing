@@ -39,20 +39,30 @@ function fileSaver(myJSON, filename) {
     console.log("JSON file has been saved.");
   });
 }
-function system_input(filename) {
+function system_input(filename, type) {
   console.log("\nLet Read JSON file:", filename);
   console.log("^________________^\n");
   var fs = require('fs');
   var rawdata = fs.readFileSync(filename + '.json');
   var jsondata = JSON.parse(rawdata);
+  if (type == 0) {} else {}
   return jsondata;
 }
-
+var runTaraus = function runTaraus() {
+  var exec = require('child_process').exec;
+  var child;
+  child = exec("bzt allRequests.json", function (error, stdout, stderr) {
+    console.log('stdout: ' + stdout);
+    console.log('stderr: ' + stderr);
+    if (error !== null) {
+      console.log('exec error: ' + error);
+    }
+  });
+};
 (function main() {
   console.log("\nWelcome to StressThing *__*");
-  var inputThingsJson = system_input("FallDetection");
+  var inputThingsJson = system_input("FallDetection", 0);
   executeInput(inputThingsJson);
   myScenarios.getUserExecution();
-  //testingTools.toTarausJson
   //testingTools.runTaraus();
 })();

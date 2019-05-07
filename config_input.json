@@ -5,19 +5,26 @@
       "ramp-up": "10",
       "hold-for": "10",
       "throughput": "1",
-      "scenario": "UserScenario"
+      "scenario": "BeginerScenario"
 	},
 	{
-     "concurrency": "1",
+     "concurrency": "300",
       "ramp-up": "10",
-      "hold-for": "10",
-      "throughput": "11",
-      "scenario": "secondScenario"
-	}
+      "hold-for": "30",
+      "throughput": "30",
+      "scenario": "ExtremeScenario"
+  },
+  {
+    "concurrency": "20",
+     "ramp-up": "10",
+     "hold-for": "10",
+     "throughput": "11",
+     "scenario": "normalScenario"
+ }
   ],
   "scenarioConfigs":{
   	"maxUser":"400",
-	"maxThroughput":"400",
+	"maxThroughput":"50",
 	"rampUp":"30",
 	"holdFor":"20"
   }
