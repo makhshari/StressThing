@@ -27,15 +27,15 @@ var executions = [];
 var inputConfigsJson;
 
 function getExecutions() {
-  inputConfigsJson = mainScript.system_input("config_input", 1);
+  inputConfigsJson = mainScript.system_input("Config_Input");
   getUserConfigs();
   getUserExecution();
-  //executions.push(getSampleExecution4())
-  //executions.push(getSampleExecution6())
-  //executions.push(getSampleExecution3())
-  //executions.push(getSampleExecution4())
-  //executions.push(getSampleExecution5())
-  //executions.push(getSampleExecution6())
+  executions.push(getSampleExecution4());
+  executions.push(getSampleExecution6());
+  executions.push(getSampleExecution3());
+  executions.push(getSampleExecution4());
+  executions.push(getSampleExecution5());
+  executions.push(getSampleExecution6());
   return executions;
 }
 function getUserConfigs() {

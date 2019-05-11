@@ -7,12 +7,11 @@ exports.system_input = system_input;
 var extractor = require('./app/extractor');
 var myScenarios = require('./app/scenarios');
 var tarausConfigs = require('./app/tarausConfigs');
-//const testingTools = require('./app/testingTools');
-var allRequestsArr = [];
-var scenarios = {};
-var FinalJSON = {};
 
 var executeInput = function executeInput(jsondata) {
+  var FinalJSON = {};
+  var scenarios = {};
+  var allRequestsArr = [];
   var things = jsondata.things;
   for (var i = 0; i < things.length; i++) {
     allRequestsArr = extractor.extractServices(things[i], allRequestsArr);
@@ -26,7 +25,7 @@ var executeInput = function executeInput(jsondata) {
   }
   FinalJSON["scenarios"] = scenarios;
   FinalJSON["reporting"] = tarausConfigs.getReporting();
-  fileSaver(FinalJSON, "allRequests");
+  fileSaver(FinalJSON, "Tool_Input");
 };
 
 function fileSaver(myJSON, filename) {
@@ -39,13 +38,12 @@ function fileSaver(myJSON, filename) {
     console.log("JSON file has been saved.");
   });
 }
-function system_input(filename, type) {
+function system_input(filename) {
   console.log("\nLet Read JSON file:", filename);
   console.log("^________________^\n");
   var fs = require('fs');
   var rawdata = fs.readFileSync(filename + '.json');
   var jsondata = JSON.parse(rawdata);
-  if (type == 0) {} else {}
   return jsondata;
 }
 var runTaraus = function runTaraus() {
@@ -61,8 +59,8 @@ var runTaraus = function runTaraus() {
 };
 (function main() {
   console.log("\nWelcome to StressThing *__*");
-  var inputThingsJson = system_input("FallDetection", 0);
+  var inputThingsJson = system_input("WoT_Input");
   executeInput(inputThingsJson);
   myScenarios.getUserExecution();
-  //testingTools.runTaraus();
+  //runTaraus();
 })();

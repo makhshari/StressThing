@@ -12,7 +12,8 @@
   },
   "scripts": {
     "build": "babel src -d public",
-    "play":"node ./public/js/script.js"
+    "execute":"node ./public/js/script.js",
+    "stress":"bzt Tool_Input.json"
   },
   "repository": {
     "type": "git",

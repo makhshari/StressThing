@@ -1,0 +1,392 @@
+{
+  "execution": [
+    {
+      "concurrency": "1",
+      "ramp-up": "10",
+      "hold-for": "10",
+      "throughput": "1",
+      "scenario": "BeginerScenario"
+    },
+    {
+      "concurrency": "300",
+      "ramp-up": "10",
+      "hold-for": "30",
+      "throughput": "30",
+      "scenario": "ExtremeScenario"
+    },
+    {
+      "concurrency": "20",
+      "ramp-up": "10",
+      "hold-for": "10",
+      "throughput": "11",
+      "scenario": "normalScenario"
+    },
+    {
+      "concurrency": "400",
+      "ramp-up": "30",
+      "hold-for": "20",
+      "throughput": "50",
+      "scenario": "scenario4"
+    },
+    {
+      "concurrency": "200",
+      "ramp-up": "10",
+      "hold-for": "120",
+      "throughput": "50",
+      "scenario": "scenario6"
+    },
+    {
+      "concurrency": "1",
+      "ramp-up": "30",
+      "hold-for": "20",
+      "throughput": "50",
+      "scenario": "scenario3"
+    },
+    {
+      "concurrency": "400",
+      "ramp-up": "30",
+      "hold-for": "20",
+      "throughput": "50",
+      "scenario": "scenario4"
+    },
+    {
+      "concurrency": "200",
+      "ramp-up": "5",
+      "hold-for": "1",
+      "throughput": "25",
+      "scenario": "scenario5"
+    },
+    {
+      "concurrency": "200",
+      "ramp-up": "10",
+      "hold-for": "120",
+      "throughput": "50",
+      "scenario": "scenario6"
+    }
+  ],
+  "scenarios": {
+    "BeginerScenario": {
+      "requests": [
+        {
+          "label": "PROPERTY: status THING: MyLampThing",
+          "url": "http://apple.com",
+          "Method": "GET"
+        },
+        {
+          "label": "ACTION: toggle THING: MyLampThing",
+          "url": "http://google.com",
+          "method": "POST"
+        },
+        {
+          "label": "PROPERTY: on THING: MyThing",
+          "url": "http://aut.ac.ir",
+          "Method": "POST",
+          "body": {
+            "on": "1"
+          }
+        },
+        {
+          "label": "PROPERTY: status THING: MyThing",
+          "url": "http://bing.com",
+          "Method": "POST",
+          "body": {
+            "brightness": "66.90316292881482",
+            "rgb": [
+              "72.70826723522185",
+              "163.18701929173943",
+              "188.17510345035925"
+            ]
+          }
+        },
+        {
+          "label": "ACTION: fade THING: MyThing",
+          "url": "http://samsung.com",
+          "method": "POST",
+          "body": {
+            "from": "8",
+            "to": "35",
+            "duration": "1805699597200771.80"
+          }
+        }
+      ]
+    },
+    "ExtremeScenario": {
+      "requests": [
+        {
+          "label": "PROPERTY: status THING: MyLampThing",
+          "url": "http://apple.com",
+          "Method": "GET"
+        },
+        {
+          "label": "ACTION: toggle THING: MyLampThing",
+          "url": "http://google.com",
+          "method": "POST"
+        },
+        {
+          "label": "PROPERTY: on THING: MyThing",
+          "url": "http://aut.ac.ir",
+          "Method": "POST",
+          "body": {
+            "on": "1"
+          }
+        },
+        {
+          "label": "PROPERTY: status THING: MyThing",
+          "url": "http://bing.com",
+          "Method": "POST",
+          "body": {
+            "brightness": "66.90316292881482",
+            "rgb": [
+              "72.70826723522185",
+              "163.18701929173943",
+              "188.17510345035925"
+            ]
+          }
+        },
+        {
+          "label": "ACTION: fade THING: MyThing",
+          "url": "http://samsung.com",
+          "method": "POST",
+          "body": {
+            "from": "8",
+            "to": "35",
+            "duration": "1805699597200771.80"
+          }
+        }
+      ]
+    },
+    "normalScenario": {
+      "requests": [
+        {
+          "label": "PROPERTY: status THING: MyLampThing",
+          "url": "http://apple.com",
+          "Method": "GET"
+        },
+        {
+          "label": "ACTION: toggle THING: MyLampThing",
+          "url": "http://google.com",
+          "method": "POST"
+        },
+        {
+          "label": "PROPERTY: on THING: MyThing",
+          "url": "http://aut.ac.ir",
+          "Method": "POST",
+          "body": {
+            "on": "1"
+          }
+        },
+        {
+          "label": "PROPERTY: status THING: MyThing",
+          "url": "http://bing.com",
+          "Method": "POST",
+          "body": {
+            "brightness": "66.90316292881482",
+            "rgb": [
+              "72.70826723522185",
+              "163.18701929173943",
+              "188.17510345035925"
+            ]
+          }
+        },
+        {
+          "label": "ACTION: fade THING: MyThing",
+          "url": "http://samsung.com",
+          "method": "POST",
+          "body": {
+            "from": "8",
+            "to": "35",
+            "duration": "1805699597200771.80"
+          }
+        }
+      ]
+    },
+    "scenario4": {
+      "requests": [
+        {
+          "label": "PROPERTY: status THING: MyLampThing",
+          "url": "http://apple.com",
+          "Method": "GET"
+        },
+        {
+          "label": "ACTION: toggle THING: MyLampThing",
+          "url": "http://google.com",
+          "method": "POST"
+        },
+        {
+          "label": "PROPERTY: on THING: MyThing",
+          "url": "http://aut.ac.ir",
+          "Method": "POST",
+          "body": {
+            "on": "1"
+          }
+        },
+        {
+          "label": "PROPERTY: status THING: MyThing",
+          "url": "http://bing.com",
+          "Method": "POST",
+          "body": {
+            "brightness": "66.90316292881482",
+            "rgb": [
+              "72.70826723522185",
+              "163.18701929173943",
+              "188.17510345035925"
+            ]
+          }
+        },
+        {
+          "label": "ACTION: fade THING: MyThing",
+          "url": "http://samsung.com",
+          "method": "POST",
+          "body": {
+            "from": "8",
+            "to": "35",
+            "duration": "1805699597200771.80"
+          }
+        }
+      ]
+    },
+    "scenario6": {
+      "requests": [
+        {
+          "label": "PROPERTY: status THING: MyLampThing",
+          "url": "http://apple.com",
+          "Method": "GET"
+        },
+        {
+          "label": "ACTION: toggle THING: MyLampThing",
+          "url": "http://google.com",
+          "method": "POST"
+        },
+        {
+          "label": "PROPERTY: on THING: MyThing",
+          "url": "http://aut.ac.ir",
+          "Method": "POST",
+          "body": {
+            "on": "1"
+          }
+        },
+        {
+          "label": "PROPERTY: status THING: MyThing",
+          "url": "http://bing.com",
+          "Method": "POST",
+          "body": {
+            "brightness": "66.90316292881482",
+            "rgb": [
+              "72.70826723522185",
+              "163.18701929173943",
+              "188.17510345035925"
+            ]
+          }
+        },
+        {
+          "label": "ACTION: fade THING: MyThing",
+          "url": "http://samsung.com",
+          "method": "POST",
+          "body": {
+            "from": "8",
+            "to": "35",
+            "duration": "1805699597200771.80"
+          }
+        }
+      ]
+    },
+    "scenario3": {
+      "requests": [
+        {
+          "label": "PROPERTY: status THING: MyLampThing",
+          "url": "http://apple.com",
+          "Method": "GET"
+        },
+        {
+          "label": "ACTION: toggle THING: MyLampThing",
+          "url": "http://google.com",
+          "method": "POST"
+        },
+        {
+          "label": "PROPERTY: on THING: MyThing",
+          "url": "http://aut.ac.ir",
+          "Method": "POST",
+          "body": {
+            "on": "1"
+          }
+        },
+        {
+          "label": "PROPERTY: status THING: MyThing",
+          "url": "http://bing.com",
+          "Method": "POST",
+          "body": {
+            "brightness": "66.90316292881482",
+            "rgb": [
+              "72.70826723522185",
+              "163.18701929173943",
+              "188.17510345035925"
+            ]
+          }
+        },
+        {
+          "label": "ACTION: fade THING: MyThing",
+          "url": "http://samsung.com",
+          "method": "POST",
+          "body": {
+            "from": "8",
+            "to": "35",
+            "duration": "1805699597200771.80"
+          }
+        }
+      ]
+    },
+    "scenario5": {
+      "requests": [
+        {
+          "label": "PROPERTY: status THING: MyLampThing",
+          "url": "http://apple.com",
+          "Method": "GET"
+        },
+        {
+          "label": "ACTION: toggle THING: MyLampThing",
+          "url": "http://google.com",
+          "method": "POST"
+        },
+        {
+          "label": "PROPERTY: on THING: MyThing",
+          "url": "http://aut.ac.ir",
+          "Method": "POST",
+          "body": {
+            "on": "1"
+          }
+        },
+        {
+          "label": "PROPERTY: status THING: MyThing",
+          "url": "http://bing.com",
+          "Method": "POST",
+          "body": {
+            "brightness": "66.90316292881482",
+            "rgb": [
+              "72.70826723522185",
+              "163.18701929173943",
+              "188.17510345035925"
+            ]
+          }
+        },
+        {
+          "label": "ACTION: fade THING: MyThing",
+          "url": "http://samsung.com",
+          "method": "POST",
+          "body": {
+            "from": "8",
+            "to": "35",
+            "duration": "1805699597200771.80"
+          }
+        }
+      ]
+    }
+  },
+  "reporting": [
+    {
+      "module": "console"
+    },
+    {
+      "module": "blazemeter"
+    }
+  ]
+}
