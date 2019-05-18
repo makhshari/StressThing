@@ -1,6 +1,12 @@
 # StressThing
-A testing platform to perform stress test on web of things. You can define you WoT system and your ideal stress config and see the result as below:
+A testing platform to perform stress test on web of things. You can define you WoT system and your ideal stress config and do the test.
+results as shown as below:
 
+
+![Alt text](https://github.com/amirosein/StressThing/blob/master/test_results_img/D1_sum.png?raw=true "Title")
+
+
+![Alt text](https://github.com/amirosein/StressThing/blob/master/test_results_img/D1_all.png?raw=true "Title")
 
 # Description
 This testing platform uses **Taraus**, **Blazemeter** and **JMeter** as testing tools.
