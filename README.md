@@ -12,7 +12,7 @@ Results will be presented as below:
 This testing platform uses **Taraus**, **Blazemeter** and **JMeter** as testing tools. Given the advantages of Blazemeter, tests are executed in the cloud and results would be available in a webpage accessible for everyone so you can share the results with your teammates.
 It also uses **W3C WoT Thing Description** as the primary standard for defining your WoT system.
 
-This project aims to overcome different barriers of load and stress testing for Web of Things(WoT) by using the best testing tools and web standards for defined for the Internet of Things(IoT). 
+This project aims to overcome different barriers of load and stress testing for Web of Things(WoT) by using the best testing tools and web standards defined for the Internet of Things(IoT). 
 A notable approach of StressThing is to restrict users to use formal web standards defined for WoT in order to help increase the interoperability of the IoT.
 # Installation
 You need to have node installed. By running this command in the project directory, all the dependencies of the project will be installed.
